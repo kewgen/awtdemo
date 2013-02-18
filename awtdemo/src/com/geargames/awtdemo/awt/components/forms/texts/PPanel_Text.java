@@ -26,7 +26,7 @@ public class PPanel_Text extends DrawablePPanel {
             super(prototype);
         }
 
-        protected void createSlotElementByIndex(IndexObject index) {
+        protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
                 case 13:
                     // Кнопка закрытия окна

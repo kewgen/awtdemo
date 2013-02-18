@@ -24,7 +24,7 @@ public class PMenuExamPanel extends DrawablePPanel {
             super(prototype);
         }
 
-        protected void createSlotElementByIndex(IndexObject index)
+        protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype)
         {
             switch (index.getSlot()) {
                 case 10:

@@ -27,7 +27,7 @@ public class PPanel_Buttons extends DrawablePPanel {
             super(prototype);
         }
 
-        protected void createSlotElementByIndex(IndexObject index) {
+        protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             PElement element = null;
             switch (index.getSlot()) {
                 case 1:
