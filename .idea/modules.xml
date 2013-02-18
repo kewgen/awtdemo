@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/awtdemo/awtdemo.iml" filepath="$PROJECT_DIR$/awtdemo/awtdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gg/awt/gg.awt.console.iml" filepath="$PROJECT_DIR$/../gg/awt/gg.awt.console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../awt/gg.awt.console.iml" filepath="$PROJECT_DIR$/../awt/gg.awt.console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gg/common/gg.common.iml" filepath="$PROJECT_DIR$/../gg/common/gg.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../common/gg.common.iml" filepath="$PROJECT_DIR$/../common/gg.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gg/console/gg.console.iml" filepath="$PROJECT_DIR$/../gg/console/gg.console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../console/gg.console.iml" filepath="$PROJECT_DIR$/../console/gg.console.iml" />
+    </modules>
+  </component>
+</project>
+
