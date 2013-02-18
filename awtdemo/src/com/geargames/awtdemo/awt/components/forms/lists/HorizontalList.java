@@ -8,6 +8,7 @@ import com.geargames.common.Graphics;
 import com.geargames.common.packer.Index;
 import com.geargames.common.packer.PFrame;
 import com.geargames.common.packer.PObject;
+import com.geargames.common.util.ArrayList;
 import com.geargames.common.util.Region;
 
 import java.util.Vector;
@@ -17,11 +18,8 @@ import java.util.Vector;
  * Горизонтальное меню для прокручивания кнопок.
  */
 public class HorizontalList extends HorizontalScrollView {
-    private HorizontalListItemsVector items;
-    private HorizontalListItem prototype;
-    private int position;
-//    private InertMotionListener motionListener;
-//
+    private Vector items;
+//    private int position;
     private Region region;
     private Region prototypeRegion;
 //
@@ -37,11 +35,11 @@ public class HorizontalList extends HorizontalScrollView {
         return true;
     }
 
-    public HorizontalList(FrameCollection collection, PObject listPrototype) {
+    public HorizontalList(ArrayList collection, PObject listPrototype) {
         setMargin(0);
         setStuck(false);
         setStrictlyClipped(false);
-        this.position = 0;
+//        this.position = 0;
         Index frameListIndex = listPrototype.getIndexBySlot(110);
         PFrame frameList = (PFrame) frameListIndex.getPrototype();
 
@@ -52,8 +50,8 @@ public class HorizontalList extends HorizontalScrollView {
         region.setHeight(90/*frameList.getHeight()*/);
 
         Index frameFaceIndex = listPrototype.getIndexBySlot(0);
-        PObject face = (PObject) frameFaceIndex.getPrototype();
-        PFrame frameFace = (PFrame) face.getIndexBySlot(110).getPrototype();
+        PObject faceObject = (PObject) frameFaceIndex.getPrototype();
+        PFrame frameFace = (PFrame) faceObject.getIndexBySlot(110).getPrototype();
 
         prototypeRegion = new Region();
         prototypeRegion.setMinX(frameFaceIndex.getX());
@@ -61,66 +59,59 @@ public class HorizontalList extends HorizontalScrollView {
         prototypeRegion.setWidth(frameFace.getWidth());
         prototypeRegion.setHeight(frameFace.getHeight());
 
-        prototype = new HorizontalListItem(face);
-        prototype.setRegion(prototypeRegion);
-
-        items = new HorizontalListItemsVector(collection, prototype);
+        items = new Vector(collection.size());
+        for (int i=0; i<collection.size(); i++) {
+            PFrame frame = (PFrame) collection.get(i);
+            HorizontalListItem item = new HorizontalListItem(faceObject);
+            item.setRegion(prototypeRegion);
+            item.setValue(frame);
+            items.add(item);
+        }
     }
 
     public void initiateMotionListener() {
-//        CenteredElasticInertMotionListener motionListener = new CenteredElasticInertMotionListener();
-//        motionListener.setInstinctPosition(false);
-//        setMotionListener(ScrollHelper.adjustHorizontalCenteredMenuMotionListener(
-//                motionListener, getDrawRegion(), getItemsAmount(), getItemSize(), getPrototype().getDrawRegion().getMinX()));
+        CenteredElasticInertMotionListener motionListener = new CenteredElasticInertMotionListener();
+        motionListener.setInstinctPosition(false);
+        setMotionListener(ScrollHelper.adjustHorizontalCenteredMenuMotionListener(
+                motionListener, getDrawRegion(), getItemsAmount(), getItemSize(), getPrototype().getDrawRegion().getMinX()));
 
-        InertMotionListener motionListener = new InertMotionListener();
-        setMotionListener(ScrollHelper.adjustHorizontalInertMotionListener(
-                motionListener, getDrawRegion(), getShownItemsAmount(), getItemSize()));
+//        InertMotionListener motionListener = new InertMotionListener();
+//        setMotionListener(ScrollHelper.adjustHorizontalInertMotionListener(
+//                motionListener, getDrawRegion(), getShownItemsAmount(), getItemSize()));
 
 //        ElasticInertMotionListener motionListener = new ElasticInertMotionListener();
 //        setMotionListener(motionListener);
     }
 
     public void initiate(Graphics graphics) {
-//        region.setMinX(region.getMinX());
-//        region.setMinY(region.getMinY());
         initiateMotionListener();
         setInitiated(true);
     }
 
-    public boolean hasNext() {
-        return position + 1 < items.size();
-    }
-
-    public boolean hasPrevious() {
-        return position - 1 >= 0;
-    }
-
-    /**
-     * Отцентровать следующий элемент.
-     */
-    public void next() {
-        if (hasNext()) {
-            getMotionListener().onClick(++position);
-        }
-    }
-
-    /**
-     * Отцентровать предыдущий элемент.
-     */
-    public void previous() {
-        if (hasPrevious()) {
-            getMotionListener().onClick(--position);
-        }
-    }
-
-    /**
-     * Вернуть текущего бойца.
-     *
-     * @return
-     */
-//    public Warrior getWarrior() {
-//        return ((HorizontalListItem) items.elementAt(position)).getWarrior();
+//    public boolean hasNext() {
+//        return position + 1 < items.size();
+//    }
+//
+//    public boolean hasPrevious() {
+//        return position - 1 >= 0;
+//    }
+//
+//    /**
+//     * Отцентровать следующий элемент.
+//     */
+//    public void next() {
+//        if (hasNext()) {
+//            getMotionListener().onClick(++position);
+//        }
+//    }
+//
+//    /**
+//     * Отцентровать предыдущий элемент.
+//     */
+//    public void previous() {
+//        if (hasPrevious()) {
+//            getMotionListener().onClick(--position);
+//        }
 //    }
 
     public Vector getItems() {
@@ -128,6 +119,6 @@ public class HorizontalList extends HorizontalScrollView {
     }
 
     public PPrototypeElement getPrototype() {
-        return prototype;
+        return (PPrototypeElement)items.get(0);
     }
 }

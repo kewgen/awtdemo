@@ -14,6 +14,7 @@ import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 import com.geargames.awtdemo.app.Application;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
+import com.geargames.common.util.ArrayList;
 
 /**
  * User: abarakov
@@ -80,7 +81,7 @@ public class PPanel_Lists extends DrawablePPanel {
 
 //----- Компонент "Горизонтальный список" ------------------------------------------------------------------------------
 
-        FrameCollection frames = new FrameCollection();
+        ArrayList frames = new ArrayList();
         Render render = Application.getInstance().getRender();
         frames.add(render.getFrame(596)); // ?
         frames.add(render.getFrame(593)); // бугай

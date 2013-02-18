@@ -45,7 +45,7 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
     public void setValue(PFrame value) {
         this.value = value;
     }
-//
+
     public void draw(Graphics graphics, int x, int y) {
 //        graphics.drawString(com.geargames.common.String.valueOfC(value), x, y, Anchors.CENTER_ANCHOR);
         value.draw(graphics, x, y);
