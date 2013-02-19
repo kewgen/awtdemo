@@ -88,11 +88,12 @@ public class PPanel_Text extends DrawablePPanel {
         Region regionTextArea = textArea.getDrawRegion();               // Размеры компонента
         regionTextArea.setWidth(160);                                   // Ширина компонента
         regionTextArea.setHeight(80);                                   // Высота компонента
-        textArea.setData(String.valueOfC("Line1\n" +                    // Задаем текст компонента
-                "Line2 Long\n" +
-                "Line3\n" +
-                "Line4\n" +
-                "Line5\n" +
+        textArea.setData(String.valueOfC(                               // Задаем текст компонента
+//                "Line1\n" +
+//                "Line2 Long\n" +
+//                "Line3\n" +
+//                "Line4\n" +
+//                "Line5\n" +
                 "Line6"));
 //        textArea.setFont(Application.getInstance().getFont10());        // Шрифт используемый при отображении
         textArea.setColor(0x0000FF);                                    // Цвет текста и рамки компонента (синий)

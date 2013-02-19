@@ -2,20 +2,20 @@ package com.geargames.awtdemo.awt.components.forms.lists;
 
 import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
-import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
 import com.geargames.awt.utils.motions.InertMotionListener;
-import com.geargames.awtdemo.app.Application;
+import com.geargames.awt.utils.motions.StubMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
-import com.geargames.common.*;
+import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
+import com.geargames.packer.Graphics;
 
 /**
  * User: abarakov
- * Date: 18.02.13
+ * Date: 19.02.13
  */
-public class PButton_InertMotionListener extends PDummyRadioButton { //PDummyEntitledTouchButton
+public class PButton_StubMotionListener extends PDummyRadioButton { //PDummyEntitledTouchButton
 
 //    public PButton_CenteredElasticInertMotionListener(String caption) {
 //        super(caption);
@@ -23,23 +23,23 @@ public class PButton_InertMotionListener extends PDummyRadioButton { //PDummyEnt
 
     private HorizontalList horizontalList;
 
-    public PButton_InertMotionListener(HorizontalList horizontalList, PObject prototype) {
+    public PButton_StubMotionListener(HorizontalList horizontalList, PObject prototype) {
         super(prototype);
         this.horizontalList = horizontalList;
     }
 
     public void action() {
-        InertMotionListener motionListener = new InertMotionListener();
+        StubMotionListener motionListener = new StubMotionListener();
         horizontalList.setMotionListener(
-                ScrollHelper.adjustHorizontalInertMotionListener(
+                ScrollHelper.adjustStubMotionListener(
                         motionListener, horizontalList.getDrawRegion(),
-                        horizontalList.getShownItemsAmount(), horizontalList.getItemSize()
+                        horizontalList.getShownItemsAmount(), horizontalList.getItemSize(), Graphics.LEFT
                 )
         );
     }
 
     public boolean longClick(int x, int y) {
-        TextHint.show(String.valueOfC("InertMotionListener"), x, y);
+        TextHint.show(String.valueOfC("StubMotionListener"), x, y);
         return true;
     }
 

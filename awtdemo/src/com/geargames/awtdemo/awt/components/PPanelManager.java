@@ -17,6 +17,9 @@ import com.geargames.common.util.ArrayList;
 public class PPanelManager /*extends PPanelManager*/ {
     private static PPanelManager instance;
 
+    private int eventX;
+    private int eventY;
+
     private ArrayList drawableElements;
     private ArrayList callableElements;
     private ArrayList modalElements;
@@ -51,6 +54,8 @@ public class PPanelManager /*extends PPanelManager*/ {
      * @param y
      */
     public void event(int code, int param, int x, int y) {
+        eventX = x;
+        eventY = y;
         if (!preDeafElements.isEmpty()) {
             callableElements.removeAll(preDeafElements);
             preDeafElements.clear();
@@ -80,6 +85,22 @@ public class PPanelManager /*extends PPanelManager*/ {
         TextHint hintElement = TextHint.getInstance();
 //        if (hintElement.getVisible())
         hintElement.event(code, param, x, y);
+    }
+
+    /**
+     * Вернуть экранную координату X.
+     * @return
+     */
+    public int getEventX() {
+        return eventX;
+    }
+
+    /**
+     * Вернуть экранную координату Y.
+     * @return
+     */
+    public int getEventY() {
+        return eventY;
     }
 
     /**

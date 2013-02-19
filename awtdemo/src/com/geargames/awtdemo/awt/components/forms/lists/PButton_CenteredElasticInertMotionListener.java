@@ -1,9 +1,12 @@
 package com.geargames.awtdemo.awt.components.forms.lists;
 
+import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
 import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
 import com.geargames.awtdemo.app.Application;
+import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
+import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
@@ -33,5 +36,23 @@ public class PButton_CenteredElasticInertMotionListener extends PDummyRadioButto
                         horizontalList.getItemSize(), horizontalList.getPrototype().getDrawRegion().getMinX()
                 )
         );
+    }
+
+    public boolean longClick(int x, int y) {
+        TextHint.show(String.valueOfC("CenteredElasticInertMotionListener"), x, y);
+        return true;
+    }
+
+    public boolean event(int code, int param, int x, int y) {
+        if (code == Event.EVENT_TOUCH_LONG_CLICK) {
+//            if (getTouchRegion().isWithIn(x, y) && !isState()) {
+            longClick(
+                    PPanelManager.getInstance().getEventX() - x,
+                    PPanelManager.getInstance().getEventY() - y + getDrawRegion().getHeight()
+            );
+//            }
+            return false;
+        }
+        return super.event(code, param, x, y);
     }
 }

@@ -4,10 +4,7 @@ import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
 import com.geargames.awtdemo.app.PFontCollection;
 import com.geargames.awtdemo.app.Render;
-import com.geargames.awtdemo.awt.components.common.PDummyEntitledTouchButton;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
-import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
-import com.geargames.awtdemo.awt.components.forms.buttons.PDummyTouchButton;
 import com.geargames.common.Graphics;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
@@ -18,7 +15,7 @@ import com.geargames.common.util.ArrayList;
 
 /**
  * User: abarakov
- * Date: 08.02.13
+ * Date: 12.02.13
 */
 //PScrollableComponentsPanel
 public class PPanel_Lists extends DrawablePPanel {
@@ -94,20 +91,9 @@ public class PPanel_Lists extends DrawablePPanel {
         frames.add(render.getFrame(596)); // ?
         frames.add(render.getFrame(595)); // офицер
         frames.add(render.getFrame(593)); // бугай
-//        frames.add(render.getFrame(420));
-//        frames.add(render.getFrame(421));
-//        frames.add(render.getFrame(422));
-//        frames.add(render.getFrame(423));
-//        frames.add(render.getFrame(424));
-//        frames.add(render.getFrame(425));
-//        frames.add(render.getFrame(426));
-//        frames.add(render.getFrame(427));
 
         PObject face = Application.getInstance().getRender().getObject(23);
-
         HorizontalList horizontalList = new HorizontalList(frames, face);
-//        horizontalList.se
-
         addChild(horizontalList, 0+229, 0+14);
 
 //----- Кнопки настройки Горизонтального списка ------------------------------------------------------------------------
@@ -119,6 +105,7 @@ public class PPanel_Lists extends DrawablePPanel {
 
         PRadioGroup radioGroup = new PRadioGroup(4);
 
+        // Четыре кнопки выбора соответствующих MotionListener
         PRadioButton buttonListener1 = new PButton_CenteredElasticInertMotionListener(
                 horizontalList, Application.getInstance().getRender().getObject(58));
         buttonListener1.setState(true);
@@ -130,16 +117,27 @@ public class PPanel_Lists extends DrawablePPanel {
         radioGroup.addButton(buttonListener2);
         addChild(buttonListener2, 60, 112);
 
-        PRadioButton buttonListener3 = new PDummyRadioButton(Application.getInstance().getRender().getObject(60));
+        PRadioButton buttonListener3 = new PButton_ElasticInertMotionListener(
+                horizontalList, Application.getInstance().getRender().getObject(60));
         radioGroup.addButton(buttonListener3);
         addChild(buttonListener3, 113, 112);
 
-        PRadioButton buttonListener4 = new PDummyRadioButton(Application.getInstance().getRender().getObject(61));
+        PRadioButton buttonListener4 = new PButton_StubMotionListener(
+                horizontalList, Application.getInstance().getRender().getObject(61));
         radioGroup.addButton(buttonListener4);
         addChild(buttonListener4, 166, 112);
 
-//        PDummyEntitledTouchButton button1 = new PDummyEntitledTouchButton(String.valueOfC("TOUCH"));
+        // Кнопка-переключатель возможности скроллить список с помощью касаний
+        PToggleButton buttonStuck = new PButton_ToggleStuck(
+                horizontalList, Application.getInstance().getRender().getObject(58));
+        addChild(buttonStuck, 235, 112);
 
+        // Кнопка-переключатель режима отсечения крайних элементов списка
+        PToggleButton buttonStrictlyClipped = new PButton_ToggleStrictlyClipped(
+                horizontalList, Application.getInstance().getRender().getObject(59));
+        addChild(buttonStrictlyClipped, 288, 112);
+
+//        PDummyEntitledTouchButton button1 = new PDummyEntitledTouchButton(String.valueOfC("TOUCH"));
 
 //----------------------------------------------------------------------------------------------------------------------
 

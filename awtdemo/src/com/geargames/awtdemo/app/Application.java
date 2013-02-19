@@ -189,7 +189,7 @@ public final class Application {
         Manager.getInstance().destroy(correct);
     }
 
-    private final java.lang.String RMS_SETTINGS = "pfp";
+    private final java.lang.String RMS_SETTINGS = "awtdemo";
 
     public boolean saveOptionsRMS() {
         boolean res = false;
