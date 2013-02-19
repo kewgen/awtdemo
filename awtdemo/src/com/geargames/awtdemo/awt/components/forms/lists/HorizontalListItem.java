@@ -1,12 +1,10 @@
 package com.geargames.awtdemo.awt.components.forms.lists;
 
-import com.geargames.awt.Anchors;
 import com.geargames.awt.components.PPrototypeElement;
 import com.geargames.common.Graphics;
 import com.geargames.common.packer.PFrame;
 import com.geargames.common.packer.Prototype;
 import com.geargames.common.util.NullRegion;
-import com.geargames.common.util.Region;
 
 /**
  * User: abarakov
@@ -45,7 +43,7 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
     public void setValue(PFrame value) {
         this.value = value;
     }
-//
+
     public void draw(Graphics graphics, int x, int y) {
 //        graphics.drawString(com.geargames.common.String.valueOfC(value), x, y, Anchors.CENTER_ANCHOR);
         value.draw(graphics, x, y);
