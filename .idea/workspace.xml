@@ -2,321 +2,379 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="Правка в VerticalScrollableArea">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ElasticInertMotionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_StubMotionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ToggleStrictlyClipped.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ToggleStuck.java" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\README2.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\README3.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\EntryCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\FrameCollection.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/abarakov.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_CenteredElasticInertMotionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_ElasticInertMotionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_InertMotionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_StubMotionListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_VerticalList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/VerticalList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_SpinBoxes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_VerticalList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/CommonLangConsts.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontCharRange.java" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\.idea\dictionaries\.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\DefaultDrawablePPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\DrawablePContentPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\common\PHintedButton.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\EntryCollection.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\FrameCollection.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\HorizontalList.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\HorizontalListItemsVector.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\PPanel_Lists.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\texts\HintedTextArea.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\geargames\common\com\geargames\common\packer\PFontDiapazon.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_port/packer_320_480_full/d0" afterPath="$PROJECT_DIR$/_port/packer_320_480_full/d0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_CenteredElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_CenteredElasticInertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_InertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_Lists.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_Lists.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalListItem.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalListItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledRadioButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledRadioButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledToggleButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledToggleButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledTouchButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledTouchButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PHorizontalScrollView.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PHorizontalScrollView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PLabel.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PLabel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PSimplePrototype.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PSimplePrototype.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PTouchButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PTouchButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PVerticalScrollView.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PVerticalScrollView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ScrollHelper.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ScrollHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TextHelper.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TextHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/String.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/String.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontManager.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontManager.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\HorizontalListItem.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/VerticalListItem.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_CenteredElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_CenteredElasticInertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_ElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_ElasticInertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_InertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_StubMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_StubMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PPanel_Lists.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_HorizontalList.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\main\PButton_Lists.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_HorizontalList.java" />
     </list>
     <ignored path="regolith.iws" />
-    <file path="/ClientAtBattleMarket.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359612550532" ignored="false" />
-    <file path="/mainserver.cfg.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359577070359" ignored="false" />
-    <file path="/ServerGetFrameRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359577348703" ignored="false" />
-    <file path="/ServerGetFrameAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660294265" ignored="false" />
-    <file path="/ClientGetFrameAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359547259959" ignored="false" />
-    <file path="$PROJECT_DIR$/../gg/awt/com/geargames/awt/components/TouchButton.java" changelist="7a939fc1-ba9d-4857-9c93-3c4a3e54a9e3" time="1350380877108" ignored="false" />
-    <file path="$PROJECT_DIR$/../gg/common/com/geargames/common/packer/PFont866.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1350549247450" ignored="false" />
-    <file path="/BagTester.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355730133672" ignored="false" />
-    <file path="/TackleMovementTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356678736593" ignored="false" />
-    <file path="/WarriorHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358774586812" ignored="false" />
-    <file path="/WeaponHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356104790671" ignored="false" />
-    <file path="/BagHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356458349843" ignored="false" />
-    <file path="/PTBag2StoreHouseButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530465453" ignored="false" />
-    <file path="/PTStoreHouse2BagButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530574218" ignored="false" />
-    <file path="/PTWarrior2BagButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530629140" ignored="false" />
-    <file path="/SerializerTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925443343" ignored="false" />
-    <file path="/ServerTackleBag2BodyRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355748731797" ignored="false" />
-    <file path="/ServerTackleBag2GroundRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355749047922" ignored="false" />
-    <file path="/ServerDBTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925523109" ignored="false" />
-    <file path="/log4j.properties" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355752454156" ignored="false" />
-    <file path="/StoreHouseHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356677027812" ignored="false" />
-    <file path="/Warrior.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355757909594" ignored="false" />
-    <file path="/AccountDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359099922536" ignored="false" />
-    <file path="/PWeaponFromStoreHousePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355816335953" ignored="false" />
-    <file path="/PArmorFromStoreHousePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355817399031" ignored="false" />
-    <file path="/StoreHouseVerticalTackleItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358341051078" ignored="false" />
-    <file path="/BagVerticalTackleItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358363557734" ignored="false" />
-    <file path="/fragment.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359574895140" ignored="false" />
-    <file path="/UIUtils.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355825897984" ignored="false" />
-    <file path="/PWeaponExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357936562875" ignored="false" />
-    <file path="/PAbstractTacklePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358341010062" ignored="false" />
-    <file path="/PExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358514654662" ignored="false" />
-    <file path="/Dummy.txt" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358756727625" ignored="false" />
-    <file path="/MainServerHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355910436578" ignored="false" />
-    <file path="/a.dummy" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356121465718" ignored="false" />
-    <file path="/AmmunitionBagHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356683387734" ignored="false" />
-    <file path="/BattleMapSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358834425546" ignored="false" />
-    <file path="/ServerJoinBaseWarriorsRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355910129718" ignored="false" />
-    <file path="/base_warrior_market.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355913873015" ignored="false" />
-    <file path="/account.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359807027421" ignored="false" />
-    <file path="/ServerBaseWarriorMarketManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356121556984" ignored="false" />
-    <file path="/PToggleButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355918617609" ignored="false" />
-    <file path="/PPanelSingletonFabric.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359106153239" ignored="false" />
-    <file path="/VerticalScrollableArea.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355922200546" ignored="false" />
-    <file path="/PContentPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357905100593" ignored="false" />
-    <file path="/HorizontalScrollableArea.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355945641437" ignored="false" />
-    <file path="/warrior.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356121425843" ignored="false" />
-    <file path="/ClientDeferredAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356436667218" ignored="false" />
-    <file path="/BattleCreationTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359805238312" ignored="false" />
-    <file path="/MenuTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356163290718" ignored="false" />
-    <file path="/PTWarrior2StoreHouseButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530654015" ignored="false" />
-    <file path="/PAStoreHouse2BagButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530522625" ignored="false" />
-    <file path="/ClientTackleManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356350337467" ignored="false" />
-    <file path="/ClientMoveTackleByNumber.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659178796" ignored="false" />
-    <file path="/PABag2StoreHouseButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530409781" ignored="false" />
-    <file path="/PTStoreHouse2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530604562" ignored="false" />
-    <file path="/PABag2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530435468" ignored="false" />
-    <file path="/BatchRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659048515" ignored="false" />
-    <file path="/Packets.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359487551859" ignored="false" />
-    <file path="/ClientSerializedMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356342866826" ignored="false" />
-    <file path="/ClientBatchSerializedMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356345161625" ignored="false" />
-    <file path="/BattleGroupCompleteRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659057781" ignored="false" />
-    <file path="/CancelBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659093312" ignored="false" />
-    <file path="/ChangeBaseLocation.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659102453" ignored="false" />
-    <file path="/CheckForNameRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659110640" ignored="false" />
-    <file path="/ClientBattleServiceLoginRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659121500" ignored="false" />
-    <file path="/ClientJoinBaseWarriorsRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659144078" ignored="false" />
-    <file path="/ClientMoveRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659156609" ignored="false" />
-    <file path="/ClientMoveTackle.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659167734" ignored="false" />
-    <file path="/ClientServerGround2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659187796" ignored="false" />
-    <file path="/ClientShootRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659196390" ignored="false" />
-    <file path="/CreateBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359806910968" ignored="false" />
-    <file path="/CreateLoginRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659208875" ignored="false" />
-    <file path="/DoNotListenToBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659223671" ignored="false" />
-    <file path="/EvictAccountRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659243921" ignored="false" />
-    <file path="/GroupReadyStateRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659292546" ignored="false" />
-    <file path="/JoinToAllianceRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659303593" ignored="false" />
-    <file path="/ListenToBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659314156" ignored="false" />
-    <file path="/LoginRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659325687" ignored="false" />
-    <file path="/LoginToBattleServiceRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659344015" ignored="false" />
-    <file path="/LogoutRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659354031" ignored="false" />
-    <file path="/SimpleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660916296" ignored="false" />
-    <file path="/StartBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660938187" ignored="false" />
-    <file path="/BatchMessageManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359792607078" ignored="false" />
-    <file path="/ClientConfigurationFactory.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356350520748" ignored="false" />
-    <file path="/SerializedMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359642245859" ignored="false" />
-    <file path="/ClientAtBase.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359616022001" ignored="false" />
-    <file path="/BatchAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659038296" ignored="false" />
-    <file path="/ConsoleNetwork.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356432884046" ignored="false" />
-    <file path="/Receiver.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356433175578" ignored="false" />
-    <file path="/PAStoreHouse2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530552078" ignored="false" />
-    <file path="/PTBag2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530495203" ignored="false" />
-    <file path="/DrawablePPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357806812671" ignored="false" />
-    <file path="/DefaultDrawablePPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356464503484" ignored="false" />
-    <file path="/DrawablePWariorPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356466698343" ignored="false" />
-    <file path="/WarriorDrawablePPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356465183968" ignored="false" />
-    <file path="/PMerсenaryButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356499961515" ignored="false" />
-    <file path="/Game.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358775763921" ignored="false" />
-    <file path="/ClientAtBaseWarriorsMarket.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356503217265" ignored="false" />
-    <file path="/ServerTackleManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356688272953" ignored="false" />
-    <file path="/MainServerConfiguration.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359576699687" ignored="false" />
-    <file path="/MainServerConfigurationFactory.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356510705593" ignored="false" />
-    <file path="/ServerAmmunition2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356954131375" ignored="false" />
-    <file path="/ServerAmmunition2WeaponRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356517751937" ignored="false" />
-    <file path="/AmmunitionPacket.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356525795609" ignored="false" />
-    <file path="/PTextBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356598806250" ignored="false" />
-    <file path="/PSpinBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356630368222" ignored="false" />
-    <file path="/PTickButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356599549375" ignored="false" />
-    <file path="/PSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356618135359" ignored="false" />
-    <file path="/PUpButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356617845187" ignored="false" />
-    <file path="/PDownSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356617989828" ignored="false" />
-    <file path="/PGradualSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358536783906" ignored="false" />
-    <file path="/PUpGradualSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356630248862" ignored="false" />
-    <file path="/PDownGradualSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356630301581" ignored="false" />
-    <file path="/PDiscretBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356674716921" ignored="false" />
-    <file path="/PDiscretSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356637770143" ignored="false" />
-    <file path="/PStepSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358507279506" ignored="false" />
-    <file path="/PMedikitExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358512510116" ignored="false" />
-    <file path="/PProjectileExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358512492975" ignored="false" />
-    <file path="/PArmorExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358508714709" ignored="false" />
-    <file path="/TackleTransitionHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357729341546" ignored="false" />
-    <file path="/ServerAmmunitionBag2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356788602203" ignored="false" />
-    <file path="/ServerAmmunitionBag2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357717749250" ignored="false" />
-    <file path="/ServerStateTackleBag2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356952482562" ignored="false" />
-    <file path="/ServerStateTackleBag2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356955772734" ignored="false" />
-    <file path="/ServerAmmunitionStoreHouse2Bag.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356957680062" ignored="false" />
-    <file path="/ServerAmmunitionStoreHouse2Warrior.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357720895968" ignored="false" />
-    <file path="/ServerTackleStoreHouse2BagRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357725656093" ignored="false" />
-    <file path="/ServerTackleStoreHouse2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357726742406" ignored="false" />
-    <file path="/ServerTakleWarrior2BagRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357729714250" ignored="false" />
-    <file path="/ServerTackleWarrior2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357732471656" ignored="false" />
-    <file path="/ClientState.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357743750812" ignored="false" />
-    <file path="/GoToBattleMarketRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357762632328" ignored="false" />
-    <file path="/GoToTackleMarketRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357762827921" ignored="false" />
-    <file path="/GoToWarriorMarketRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357749774796" ignored="false" />
-    <file path="/MainOneToClientRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357762622593" ignored="false" />
-    <file path="/DrawablePElement.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357820129875" ignored="false" />
-    <file path="/Anchers.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357803022984" ignored="false" />
-    <file path="/Manager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357834798703" ignored="false" />
-    <file path="/BackPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357846466125" ignored="false" />
-    <file path="/PSkillIndicator.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935939187" ignored="false" />
-    <file path="/PWarriorCharacteristics.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359116194380" ignored="false" />
-    <file path="/PWarriorPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357843529937" ignored="false" />
-    <file path="/PBackButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357898956000" ignored="false" />
-    <file path="/PBattleListPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357884121125" ignored="false" />
-    <file path="/PCenterPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357902953640" ignored="false" />
-    <file path="/PMoneyRegolith.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357890030093" ignored="false" />
-    <file path="/PMoneyRegolithPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358069679437" ignored="false" />
-    <file path="/HorizontalFaces.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359116154536" ignored="false" />
-    <file path="/Graph.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358512129334" ignored="false" />
-    <file path="/Region.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357904160187" ignored="false" />
-    <file path="/PSimplePrototype.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358174712843" ignored="false" />
-    <file path="/NullRegion.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357904419640" ignored="false" />
-    <file path="/PLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357933990875" ignored="false" />
-    <file path="/PHeadlinePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357929450171" ignored="false" />
-    <file path="/PMoneyLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358020259953" ignored="false" />
-    <file path="/PSimpleLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357934490640" ignored="false" />
-    <file path="/PEntitledTouchButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357934564125" ignored="false" />
-    <file path="/PEntitledToggleButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357934596953" ignored="false" />
-    <file path="/PVitalityLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935355406" ignored="false" />
-    <file path="/PHealthLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935475421" ignored="false" />
-    <file path="/PStrengthLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935486781" ignored="false" />
-    <file path="/PSpeedLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935502093" ignored="false" />
-    <file path="/PMarksmanshipLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935869234" ignored="false" />
-    <file path="/PCraftinessLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935880453" ignored="false" />
-    <file path="/PPlayerButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358958546812" ignored="false" />
-    <file path="/ScrollViewItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358169224218" ignored="false" />
-    <file path="/VerticalScrollView.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359020270953" ignored="false" />
-    <file path="/VerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530291546" ignored="false" />
-    <file path="/HorizontalScrollView.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359113803599" ignored="false" />
-    <file path="/HorizontalMenu.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358245493312" ignored="false" />
-    <file path="/HorizontalFaceItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358244840781" ignored="false" />
-    <file path="/HorizontalFaceItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358244491234" ignored="false" />
-    <file path="/VerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358248627968" ignored="false" />
-    <file path="/BagVerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358424337609" ignored="false" />
-    <file path="/StoreHouseVerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358424585437" ignored="false" />
-    <file path="/WarriorVerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358424298890" ignored="false" />
-    <file path="/WarriorVerticalTackleItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358260506796" ignored="false" />
-    <file path="/PScrollViewItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358251978531" ignored="false" />
-    <file path="/Event.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358259500375" ignored="false" />
-    <file path="/PBattleLListItemPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358276880515" ignored="false" />
-    <file path="/PBattleAlliancesPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358278166640" ignored="false" />
-    <file path="/BattleAlliesPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358324192671" ignored="false" />
-    <file path="/PBattlePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358327945859" ignored="false" />
-    <file path="/PBattlesPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359022713609" ignored="false" />
-    <file path="/PBattleListItemVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359017808859" ignored="false" />
-    <file path="/BagVerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530317234" ignored="false" />
-    <file path="/InertMotionListener.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358513599209" ignored="false" />
-    <file path="/ElasticInertMotionListener.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358426670843" ignored="false" />
-    <file path="/ScrollHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358428491078" ignored="false" />
-    <file path="/StoreHouseVerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530358921" ignored="false" />
-    <file path="/WarriorVerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530372562" ignored="false" />
-    <file path="/PBattlesList.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359042782968" ignored="false" />
-    <file path="/PFighterSelectPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358493915225" ignored="false" />
-    <file path="/PStepSpinBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358510905397" ignored="false" />
-    <file path="/PObjectElement.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358500534897" ignored="false" />
-    <file path="/PGradualSpinBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358510915647" ignored="false" />
-    <file path="/PValueComponent.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358510893006" ignored="false" />
-    <file path="/BattleCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358620417890" ignored="false" />
-    <file path="/ClientBattleCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358621255937" ignored="false" />
-    <file path="/ServerBattleCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358679916312" ignored="false" />
-    <file path="/ClientBrowseBattlesAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358843323421" ignored="false" />
-    <file path="/ObjectManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359113167724" ignored="false" />
-    <file path="/BattleCase.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358747700640" ignored="false" />
-    <file path="/PBattleListItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359006447812" ignored="false" />
-    <file path="/PlayerButtonCases.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358954169250" ignored="false" />
-    <file path="/BattleType.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925074609" ignored="false" />
-    <file path="/BattleMap.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358761223609" ignored="false" />
-    <file path="/battle_map.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925925156" ignored="false" />
-    <file path="/Battle.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358764934625" ignored="false" />
-    <file path="/ClientBattleHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777272281" ignored="false" />
-    <file path="/BattleSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766480562" ignored="false" />
-    <file path="/ConfigurationSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766409468" ignored="false" />
-    <file path="/BattleHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358863141750" ignored="false" />
-    <file path="/ServerMoveWarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766563531" ignored="false" />
-    <file path="/ConcurrentBattleServiceContext.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766588890" ignored="false" />
-    <file path="/ServerTrainingBattleCreationManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777707656" ignored="false" />
-    <file path="/ServerBrowseCreatedBattlesAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659456718" ignored="false" />
-    <file path="/BaseConfigurationHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766831453" ignored="false" />
-    <file path="/BattleDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777325218" ignored="false" />
-    <file path="/GroupsSpreadTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925469625" ignored="false" />
-    <file path="/ObserverTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925479046" ignored="false" />
-    <file path="/ServerBattleMarketManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358772176484" ignored="false" />
-    <file path="/BattleMapDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358838935390" ignored="false" />
-    <file path="/ClientMessageDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358841471687" ignored="false" />
-    <file path="/ClientBattleLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358775463968" ignored="false" />
-    <file path="/ClientCreateBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358780392937" ignored="false" />
-    <file path="/TrainingBattle.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777458312" ignored="false" />
-    <file path="/MainServerRequestUtils.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358774809875" ignored="false" />
-    <file path="/ServerListenToBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660648359" ignored="false" />
-    <file path="/ServerCreateBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358786981562" ignored="false" />
-    <file path="/ClientBattleMarketManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358787287187" ignored="false" />
-    <file path="/ServerBrowseBattleMapsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659447156" ignored="false" />
-    <file path="/ClientBrowseBattleMapsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358834192453" ignored="false" />
-    <file path="/projectile.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358859255593" ignored="false" />
-    <file path="/battle.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925906906" ignored="false" />
-    <file path="/BattleConnectionTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358880992609" ignored="false" />
-    <file path="/battle_type.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358930944359" ignored="false" />
-    <file path="/base_configuration.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925889921" ignored="false" />
-    <file path="/PBattleButtons.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359004880546" ignored="false" />
-    <file path="/PBattleCreateButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359022077250" ignored="false" />
-    <file path="/PSelectWarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359102690927" ignored="false" />
-    <file path="/PHorizontalAccountWarriors.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359117735536" ignored="false" />
-    <file path="/PHorizontalAccountWarriorsItemVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359094114974" ignored="false" />
-    <file path="/PHorizontalAccuntWarriorItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359095092067" ignored="false" />
-    <file path="/PHorizontalAccountWarriorItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359805314140" ignored="false" />
-    <file path="/Account.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359098686364" ignored="false" />
-    <file path="/AccountSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359100032770" ignored="false" />
-    <file path="/PButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359102197583" ignored="false" />
-    <file path="/PWarriorInformation.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359106239380" ignored="false" />
-    <file path="/PConfirmWarriorSelection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359104458145" ignored="false" />
-    <file path="/PWarriorInformationCancel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359108178036" ignored="false" />
-    <file path="/PHorizontalAccountWarriorItemVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359125014989" ignored="false" />
-    <file path="/WarriorCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359121139161" ignored="false" />
-    <file path="/ClientWarriorCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359121979505" ignored="false" />
-    <file path="/PExtraFrameManger.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359441428453" ignored="false" />
-    <file path="/PManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359463764671" ignored="false" />
-    <file path="/SimpleServerFrameManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359487255671" ignored="false" />
-    <file path="/PUnresolvedFrameManger.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359472824671" ignored="false" />
-    <file path="/Graphics.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359473912046" ignored="false" />
-    <file path="/ClientFrameRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659134609" ignored="false" />
-    <file path="/RemoteFrameLoader.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359552493222" ignored="false" />
-    <file path="/BattleServiceLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659068359" ignored="false" />
-    <file path="/BattleServiceNewClientLogin.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659082750" ignored="false" />
-    <file path="/FinishBattleMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659256453" ignored="false" />
-    <file path="/FirstServerLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659281453" ignored="false" />
-    <file path="/ServerBag2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659369890" ignored="false" />
-    <file path="/ServerBag2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659380781" ignored="false" />
-    <file path="/ServerBox2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659395468" ignored="false" />
-    <file path="/ServerBox2WarriorAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659467453" ignored="false" />
-    <file path="/ServerBrowseMapsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659482656" ignored="false" />
-    <file path="/ServerCancelBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659493671" ignored="false" />
-    <file path="/ServerChangeActiveAllianceMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660247250" ignored="false" />
-    <file path="/ServerConfirmationAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660270234" ignored="false" />
-    <file path="/ServerEvictAccountFromAllianceAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660283687" ignored="false" />
-    <file path="/ServerGround2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660307781" ignored="false" />
-    <file path="/ServerGround2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660323343" ignored="false" />
-    <file path="/ServerGround2WarriorAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660335125" ignored="false" />
-    <file path="/ServerJoinBaseWarriorsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660350375" ignored="false" />
-    <file path="/ServerJoinToBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660659234" ignored="false" />
-    <file path="/ServerLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660669640" ignored="false" />
-    <file path="/ServerMedikitBag2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660680875" ignored="false" />
-    <file path="/ServerMedikitGround2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660692343" ignored="false" />
-    <file path="/ServerMessageIsLateAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660729390" ignored="false" />
-    <file path="/ServerMoveWarriorAllyAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660742484" ignored="false" />
-    <file path="/ServerMoveWarriorEnemyAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660753000" ignored="false" />
-    <file path="/ServerShootAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660764312" ignored="false" />
-    <file path="/ServerStateTackleGround2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660779250" ignored="false" />
-    <file path="/ServerStopListenAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660791218" ignored="false" />
-    <file path="/ServerTackleBag2BodyAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660802515" ignored="false" />
-    <file path="/ServerTackleBag2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660826812" ignored="false" />
-    <file path="/ServerTackleBag2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660837578" ignored="false" />
-    <file path="/ServerTackleBody2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660849468" ignored="false" />
-    <file path="/ServerTackleBody2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660876750" ignored="false" />
-    <file path="/ServerTackleBox2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660886453" ignored="false" />
-    <file path="/ServerTackleGround2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660896687" ignored="false" />
-    <file path="/ServerUseMedikitAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660906125" ignored="false" />
     <file path="/StartBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660927656" ignored="false" />
+    <file path="/ServerUseMedikitAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660906125" ignored="false" />
+    <file path="/ServerTackleGround2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660896687" ignored="false" />
+    <file path="/ServerTackleBox2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660886453" ignored="false" />
+    <file path="/ServerTackleBody2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660876750" ignored="false" />
+    <file path="/ServerTackleBody2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660849468" ignored="false" />
+    <file path="/ServerTackleBag2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660837578" ignored="false" />
+    <file path="/ServerTackleBag2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660826812" ignored="false" />
+    <file path="/ServerTackleBag2BodyAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660802515" ignored="false" />
+    <file path="/ServerStopListenAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660791218" ignored="false" />
+    <file path="/ServerStateTackleGround2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660779250" ignored="false" />
+    <file path="/ServerShootAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660764312" ignored="false" />
+    <file path="/ServerMoveWarriorEnemyAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660753000" ignored="false" />
+    <file path="/ServerMoveWarriorAllyAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660742484" ignored="false" />
+    <file path="/ServerMessageIsLateAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660729390" ignored="false" />
+    <file path="/ServerMedikitGround2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660692343" ignored="false" />
+    <file path="/ServerMedikitBag2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660680875" ignored="false" />
+    <file path="/ServerLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660669640" ignored="false" />
+    <file path="/ServerJoinToBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660659234" ignored="false" />
+    <file path="/ServerJoinBaseWarriorsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660350375" ignored="false" />
+    <file path="/ServerGround2WarriorAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660335125" ignored="false" />
+    <file path="/ServerGround2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660323343" ignored="false" />
+    <file path="/ServerGround2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660307781" ignored="false" />
+    <file path="/ServerEvictAccountFromAllianceAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660283687" ignored="false" />
+    <file path="/ServerConfirmationAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660270234" ignored="false" />
+    <file path="/ServerChangeActiveAllianceMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660247250" ignored="false" />
+    <file path="/ServerCancelBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659493671" ignored="false" />
+    <file path="/ServerBrowseMapsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659482656" ignored="false" />
+    <file path="/ServerBox2WarriorAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659467453" ignored="false" />
+    <file path="/ServerBox2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659395468" ignored="false" />
+    <file path="/ServerBag2GroundAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659380781" ignored="false" />
+    <file path="/ServerBag2BoxAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659369890" ignored="false" />
+    <file path="/FirstServerLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659281453" ignored="false" />
+    <file path="/FinishBattleMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659256453" ignored="false" />
+    <file path="/BattleServiceNewClientLogin.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659082750" ignored="false" />
+    <file path="/BattleServiceLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659068359" ignored="false" />
+    <file path="/RemoteFrameLoader.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359552493222" ignored="false" />
+    <file path="/ClientFrameRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659134609" ignored="false" />
+    <file path="/Graphics.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359473912046" ignored="false" />
+    <file path="/PUnresolvedFrameManger.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359472824671" ignored="false" />
+    <file path="/SimpleServerFrameManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359487255671" ignored="false" />
+    <file path="/PManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359463764671" ignored="false" />
+    <file path="/PExtraFrameManger.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359441428453" ignored="false" />
+    <file path="/ClientWarriorCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359121979505" ignored="false" />
+    <file path="/WarriorCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359121139161" ignored="false" />
+    <file path="/PHorizontalAccountWarriorItemVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359125014989" ignored="false" />
+    <file path="/PWarriorInformationCancel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359108178036" ignored="false" />
+    <file path="/PConfirmWarriorSelection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359104458145" ignored="false" />
+    <file path="/PWarriorInformation.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359106239380" ignored="false" />
+    <file path="/PButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359102197583" ignored="false" />
+    <file path="/AccountSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359100032770" ignored="false" />
+    <file path="/Account.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359098686364" ignored="false" />
+    <file path="/PHorizontalAccountWarriorItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359805314140" ignored="false" />
+    <file path="/PHorizontalAccuntWarriorItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359095092067" ignored="false" />
+    <file path="/PHorizontalAccountWarriorsItemVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359094114974" ignored="false" />
+    <file path="/PHorizontalAccountWarriors.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359117735536" ignored="false" />
+    <file path="/PSelectWarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359102690927" ignored="false" />
+    <file path="/PBattleCreateButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359022077250" ignored="false" />
+    <file path="/PBattleButtons.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359004880546" ignored="false" />
+    <file path="/base_configuration.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925889921" ignored="false" />
+    <file path="/battle_type.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358930944359" ignored="false" />
+    <file path="/BattleConnectionTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358880992609" ignored="false" />
+    <file path="/battle.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925906906" ignored="false" />
+    <file path="/projectile.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358859255593" ignored="false" />
+    <file path="/ClientBrowseBattleMapsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358834192453" ignored="false" />
+    <file path="/ServerBrowseBattleMapsAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659447156" ignored="false" />
+    <file path="/ClientBattleMarketManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358787287187" ignored="false" />
+    <file path="/ServerCreateBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358786981562" ignored="false" />
+    <file path="/ServerListenToBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660648359" ignored="false" />
+    <file path="/MainServerRequestUtils.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358774809875" ignored="false" />
+    <file path="/TrainingBattle.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777458312" ignored="false" />
+    <file path="/ClientCreateBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358780392937" ignored="false" />
+    <file path="/ClientBattleLoginAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358775463968" ignored="false" />
+    <file path="/ClientMessageDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358841471687" ignored="false" />
+    <file path="/BattleMapDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358838935390" ignored="false" />
+    <file path="/ServerBattleMarketManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358772176484" ignored="false" />
+    <file path="/ObserverTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925479046" ignored="false" />
+    <file path="/GroupsSpreadTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925469625" ignored="false" />
+    <file path="/BattleDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777325218" ignored="false" />
+    <file path="/BaseConfigurationHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766831453" ignored="false" />
+    <file path="/ServerBrowseCreatedBattlesAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659456718" ignored="false" />
+    <file path="/ServerTrainingBattleCreationManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777707656" ignored="false" />
+    <file path="/ConcurrentBattleServiceContext.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766588890" ignored="false" />
+    <file path="/ServerMoveWarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766563531" ignored="false" />
+    <file path="/BattleHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358863141750" ignored="false" />
+    <file path="/ConfigurationSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766409468" ignored="false" />
+    <file path="/BattleSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358766480562" ignored="false" />
+    <file path="/ClientBattleHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358777272281" ignored="false" />
+    <file path="/Battle.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358764934625" ignored="false" />
+    <file path="/battle_map.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925925156" ignored="false" />
+    <file path="/BattleMap.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358761223609" ignored="false" />
+    <file path="/BattleType.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925074609" ignored="false" />
+    <file path="/PlayerButtonCases.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358954169250" ignored="false" />
+    <file path="/PBattleListItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359006447812" ignored="false" />
+    <file path="/BattleCase.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358747700640" ignored="false" />
+    <file path="/ObjectManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359113167724" ignored="false" />
+    <file path="/ClientBrowseBattlesAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358843323421" ignored="false" />
+    <file path="/ServerBattleCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358679916312" ignored="false" />
+    <file path="/ClientBattleCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358621255937" ignored="false" />
+    <file path="/BattleCollection.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358620417890" ignored="false" />
+    <file path="/PValueComponent.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358510893006" ignored="false" />
+    <file path="/PGradualSpinBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358510915647" ignored="false" />
+    <file path="/PObjectElement.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358500534897" ignored="false" />
+    <file path="/PStepSpinBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358510905397" ignored="false" />
+    <file path="/PFighterSelectPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358493915225" ignored="false" />
+    <file path="/PBattlesList.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359042782968" ignored="false" />
+    <file path="/WarriorVerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530372562" ignored="false" />
+    <file path="/StoreHouseVerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530358921" ignored="false" />
+    <file path="/ScrollHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358428491078" ignored="false" />
+    <file path="/ElasticInertMotionListener.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358426670843" ignored="false" />
+    <file path="/InertMotionListener.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358513599209" ignored="false" />
+    <file path="/BagVerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530317234" ignored="false" />
+    <file path="/PBattleListItemVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359017808859" ignored="false" />
+    <file path="/PBattlesPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359022713609" ignored="false" />
+    <file path="/PBattlePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358327945859" ignored="false" />
+    <file path="/BattleAlliesPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358324192671" ignored="false" />
+    <file path="/PBattleAlliancesPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358278166640" ignored="false" />
+    <file path="/PBattleLListItemPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358276880515" ignored="false" />
+    <file path="/Event.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358259500375" ignored="false" />
+    <file path="/PScrollViewItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358251978531" ignored="false" />
+    <file path="/WarriorVerticalTackleItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358260506796" ignored="false" />
+    <file path="/WarriorVerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358424298890" ignored="false" />
+    <file path="/StoreHouseVerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358424585437" ignored="false" />
+    <file path="/BagVerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358424337609" ignored="false" />
+    <file path="/VerticalTackleItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358248627968" ignored="false" />
+    <file path="/HorizontalFaceItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358244491234" ignored="false" />
+    <file path="/HorizontalFaceItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358244840781" ignored="false" />
+    <file path="/HorizontalMenu.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358245493312" ignored="false" />
+    <file path="/HorizontalScrollView.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359113803599" ignored="false" />
+    <file path="/VerticalTackles.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530291546" ignored="false" />
+    <file path="/VerticalScrollView.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359020270953" ignored="false" />
+    <file path="/ScrollViewItem.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358169224218" ignored="false" />
+    <file path="/PPlayerButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358958546812" ignored="false" />
+    <file path="/PCraftinessLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935880453" ignored="false" />
+    <file path="/PMarksmanshipLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935869234" ignored="false" />
+    <file path="/PSpeedLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935502093" ignored="false" />
+    <file path="/PStrengthLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935486781" ignored="false" />
+    <file path="/PHealthLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935475421" ignored="false" />
+    <file path="/PVitalityLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935355406" ignored="false" />
+    <file path="/PEntitledToggleButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357934596953" ignored="false" />
+    <file path="/PEntitledTouchButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357934564125" ignored="false" />
+    <file path="/PSimpleLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357934490640" ignored="false" />
+    <file path="/PMoneyLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358020259953" ignored="false" />
+    <file path="/PHeadlinePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357929450171" ignored="false" />
+    <file path="/PLabel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357933990875" ignored="false" />
+    <file path="/NullRegion.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357904419640" ignored="false" />
+    <file path="/PSimplePrototype.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358174712843" ignored="false" />
+    <file path="/Region.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357904160187" ignored="false" />
+    <file path="/Graph.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358512129334" ignored="false" />
+    <file path="/HorizontalFaces.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359116154536" ignored="false" />
+    <file path="/PMoneyRegolithPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358069679437" ignored="false" />
+    <file path="/PMoneyRegolith.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357890030093" ignored="false" />
+    <file path="/PCenterPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357902953640" ignored="false" />
+    <file path="/PBattleListPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357884121125" ignored="false" />
+    <file path="/PBackButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357898956000" ignored="false" />
+    <file path="/PWarriorPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357843529937" ignored="false" />
+    <file path="/PWarriorCharacteristics.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359116194380" ignored="false" />
+    <file path="/PSkillIndicator.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357935939187" ignored="false" />
+    <file path="/BackPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357846466125" ignored="false" />
+    <file path="/Manager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357834798703" ignored="false" />
+    <file path="/Anchers.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357803022984" ignored="false" />
+    <file path="/DrawablePElement.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357820129875" ignored="false" />
+    <file path="/MainOneToClientRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357762622593" ignored="false" />
+    <file path="/GoToWarriorMarketRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357749774796" ignored="false" />
+    <file path="/GoToTackleMarketRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357762827921" ignored="false" />
+    <file path="/GoToBattleMarketRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357762632328" ignored="false" />
+    <file path="/ClientState.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357743750812" ignored="false" />
+    <file path="/ServerTackleWarrior2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357732471656" ignored="false" />
+    <file path="/ServerTakleWarrior2BagRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357729714250" ignored="false" />
+    <file path="/ServerTackleStoreHouse2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357726742406" ignored="false" />
+    <file path="/ServerTackleStoreHouse2BagRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357725656093" ignored="false" />
+    <file path="/ServerAmmunitionStoreHouse2Warrior.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357720895968" ignored="false" />
+    <file path="/ServerAmmunitionStoreHouse2Bag.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356957680062" ignored="false" />
+    <file path="/ServerStateTackleBag2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356955772734" ignored="false" />
+    <file path="/ServerStateTackleBag2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356952482562" ignored="false" />
+    <file path="/ServerAmmunitionBag2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357717749250" ignored="false" />
+    <file path="/ServerAmmunitionBag2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356788602203" ignored="false" />
+    <file path="/TackleTransitionHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357729341546" ignored="false" />
+    <file path="/PArmorExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358508714709" ignored="false" />
+    <file path="/PProjectileExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358512492975" ignored="false" />
+    <file path="/PMedikitExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358512510116" ignored="false" />
+    <file path="/PStepSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358507279506" ignored="false" />
+    <file path="/PDiscretSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356637770143" ignored="false" />
+    <file path="/PDiscretBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356674716921" ignored="false" />
+    <file path="/PDownGradualSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356630301581" ignored="false" />
+    <file path="/PUpGradualSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356630248862" ignored="false" />
+    <file path="/PGradualSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358536783906" ignored="false" />
+    <file path="/PDownSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356617989828" ignored="false" />
+    <file path="/PUpButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356617845187" ignored="false" />
+    <file path="/PSpinButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356618135359" ignored="false" />
+    <file path="/PTickButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356599549375" ignored="false" />
+    <file path="/PSpinBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356630368222" ignored="false" />
+    <file path="/PTextBox.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356598806250" ignored="false" />
+    <file path="/AmmunitionPacket.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356525795609" ignored="false" />
+    <file path="/ServerAmmunition2WeaponRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356517751937" ignored="false" />
+    <file path="/ServerAmmunition2StoreHouseRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356954131375" ignored="false" />
+    <file path="/MainServerConfigurationFactory.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356510705593" ignored="false" />
+    <file path="/MainServerConfiguration.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359576699687" ignored="false" />
+    <file path="/ServerTackleManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356688272953" ignored="false" />
+    <file path="/ClientAtBaseWarriorsMarket.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356503217265" ignored="false" />
+    <file path="/Game.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358775763921" ignored="false" />
+    <file path="/PMerсenaryButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356499961515" ignored="false" />
+    <file path="/WarriorDrawablePPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356465183968" ignored="false" />
+    <file path="/DrawablePWariorPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356466698343" ignored="false" />
+    <file path="/DefaultDrawablePPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356464503484" ignored="false" />
+    <file path="/DrawablePPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357806812671" ignored="false" />
+    <file path="/PTBag2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530495203" ignored="false" />
+    <file path="/PAStoreHouse2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530552078" ignored="false" />
+    <file path="/Receiver.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356433175578" ignored="false" />
+    <file path="/ConsoleNetwork.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356432884046" ignored="false" />
+    <file path="/BatchAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659038296" ignored="false" />
+    <file path="/ClientAtBase.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359616022001" ignored="false" />
+    <file path="/SerializedMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359642245859" ignored="false" />
+    <file path="/ClientConfigurationFactory.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356350520748" ignored="false" />
+    <file path="/BatchMessageManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359792607078" ignored="false" />
+    <file path="/StartBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660938187" ignored="false" />
+    <file path="/SimpleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660916296" ignored="false" />
+    <file path="/LogoutRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659354031" ignored="false" />
+    <file path="/LoginToBattleServiceRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659344015" ignored="false" />
+    <file path="/LoginRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659325687" ignored="false" />
+    <file path="/ListenToBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659314156" ignored="false" />
+    <file path="/JoinToAllianceRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659303593" ignored="false" />
+    <file path="/GroupReadyStateRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659292546" ignored="false" />
+    <file path="/EvictAccountRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659243921" ignored="false" />
+    <file path="/DoNotListenToBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659223671" ignored="false" />
+    <file path="/CreateLoginRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659208875" ignored="false" />
+    <file path="/CreateBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359806910968" ignored="false" />
+    <file path="/ClientShootRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659196390" ignored="false" />
+    <file path="/ClientServerGround2WarriorRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659187796" ignored="false" />
+    <file path="/ClientMoveTackle.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659167734" ignored="false" />
+    <file path="/ClientMoveRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659156609" ignored="false" />
+    <file path="/ClientJoinBaseWarriorsRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659144078" ignored="false" />
+    <file path="/ClientBattleServiceLoginRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659121500" ignored="false" />
+    <file path="/CheckForNameRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659110640" ignored="false" />
+    <file path="/ChangeBaseLocation.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659102453" ignored="false" />
+    <file path="/CancelBattleRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659093312" ignored="false" />
+    <file path="/BattleGroupCompleteRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659057781" ignored="false" />
+    <file path="/ClientBatchSerializedMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356345161625" ignored="false" />
+    <file path="/ClientSerializedMessage.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356342866826" ignored="false" />
+    <file path="/Packets.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359487551859" ignored="false" />
+    <file path="/BatchRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659048515" ignored="false" />
+    <file path="/PABag2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530435468" ignored="false" />
+    <file path="/PTStoreHouse2WarriorButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530604562" ignored="false" />
+    <file path="/PABag2StoreHouseButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530409781" ignored="false" />
+    <file path="/ClientMoveTackleByNumber.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359659178796" ignored="false" />
+    <file path="/ClientTackleManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356350337467" ignored="false" />
+    <file path="/PAStoreHouse2BagButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530522625" ignored="false" />
+    <file path="/PTWarrior2StoreHouseButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530654015" ignored="false" />
+    <file path="/MenuTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356163290718" ignored="false" />
+    <file path="/BattleCreationTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359805238312" ignored="false" />
+    <file path="/ClientDeferredAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356436667218" ignored="false" />
+    <file path="/warrior.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356121425843" ignored="false" />
+    <file path="/HorizontalScrollableArea.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355945641437" ignored="false" />
+    <file path="/PContentPanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357905100593" ignored="false" />
+    <file path="/VerticalScrollableArea.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355922200546" ignored="false" />
+    <file path="/PPanelSingletonFabric.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359106153239" ignored="false" />
+    <file path="/PToggleButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355918617609" ignored="false" />
+    <file path="/ServerBaseWarriorMarketManager.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356121556984" ignored="false" />
+    <file path="/account.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359807027421" ignored="false" />
+    <file path="/base_warrior_market.hbm.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355913873015" ignored="false" />
+    <file path="/ServerJoinBaseWarriorsRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355910129718" ignored="false" />
+    <file path="/BattleMapSerializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358834425546" ignored="false" />
+    <file path="/AmmunitionBagHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356683387734" ignored="false" />
+    <file path="/a.dummy" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356121465718" ignored="false" />
+    <file path="/MainServerHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355910436578" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358756727625" ignored="false" />
+    <file path="/PExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358514654662" ignored="false" />
+    <file path="/PAbstractTacklePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358341010062" ignored="false" />
+    <file path="/PWeaponExchangePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1357936562875" ignored="false" />
+    <file path="/UIUtils.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355825897984" ignored="false" />
+    <file path="/fragment.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359574895140" ignored="false" />
+    <file path="/BagVerticalTackleItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358363557734" ignored="false" />
+    <file path="/StoreHouseVerticalTackleItemsVector.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358341051078" ignored="false" />
+    <file path="/PArmorFromStoreHousePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355817399031" ignored="false" />
+    <file path="/PWeaponFromStoreHousePanel.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355816335953" ignored="false" />
+    <file path="/AccountDeserializer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359099922536" ignored="false" />
+    <file path="/Warrior.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355757909594" ignored="false" />
+    <file path="/StoreHouseHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356677027812" ignored="false" />
+    <file path="/log4j.properties" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355752454156" ignored="false" />
+    <file path="/ServerDBTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925523109" ignored="false" />
+    <file path="/ServerTackleBag2GroundRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355749047922" ignored="false" />
+    <file path="/ServerTackleBag2BodyRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355748731797" ignored="false" />
+    <file path="/SerializerTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358925443343" ignored="false" />
+    <file path="/PTWarrior2BagButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530629140" ignored="false" />
+    <file path="/PTStoreHouse2BagButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530574218" ignored="false" />
+    <file path="/PTBag2StoreHouseButton.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358530465453" ignored="false" />
+    <file path="/BagHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356458349843" ignored="false" />
+    <file path="/WeaponHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356104790671" ignored="false" />
+    <file path="/WarriorHelper.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1358774586812" ignored="false" />
+    <file path="/TackleMovementTest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1356678736593" ignored="false" />
+    <file path="/BagTester.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1355730133672" ignored="false" />
+    <file path="$PROJECT_DIR$/../gg/common/com/geargames/common/packer/PFont866.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1350549247450" ignored="false" />
+    <file path="$PROJECT_DIR$/../gg/awt/com/geargames/awt/components/TouchButton.java" changelist="7a939fc1-ba9d-4857-9c93-3c4a3e54a9e3" time="1350380877108" ignored="false" />
+    <file path="/ClientGetFrameAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359547259959" ignored="false" />
+    <file path="/ServerGetFrameAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660294265" ignored="false" />
+    <file path="/ServerGetFrameRequest.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359577348703" ignored="false" />
+    <file path="/mainserver.cfg.xml" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359577070359" ignored="false" />
+    <file path="/ClientAtBattleMarket.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359612550532" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +429,24 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" />
     <breakpoint_rules />
-    <ui_properties />
+    <ui_properties>
+      <property name="line_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_flattenPackages" value="true" />
+      <property name="method_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_flattenPackages" value="true" />
+      <property name="exception_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_viewId" value="TABLE" />
+      <property name="field_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_groupByClasses" value="true" />
+      <property name="exception_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="method_breakpoints_groupByMethods" value="false" />
+    </ui_properties>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
@@ -380,41 +455,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PPanel_Lists.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_Lists.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="12" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HorizontalList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HorizontalScrollView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="67" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TextHint.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="41" selection-start="8156" selection-end="8156" vertical-scroll-proportion="0.0">
+            <state line="250" column="46" selection-start="7629" selection-end="7629" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -425,7 +469,7 @@
       <file leaf-file-name="TextArea.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="33" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+            <state line="79" column="25" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -433,28 +477,93 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerticalScrollableArea.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java">
+      <file leaf-file-name="PPanelManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="107" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.70577615">
+            <state line="11" column="27" selection-start="328" selection-end="338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Event.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/Event.java">
+      <file leaf-file-name="TextHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TextHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="80" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+            <state line="19" column="10" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graphics.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../geargames/console/com/geargames/packer/Graphics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="360" column="31" selection-start="11909" selection-end="11909" vertical-scroll-proportion="0.16917293">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PopUp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/PopUp.java">
+      <file leaf-file-name="Graphics.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_21/src.zip!/java/awt/Graphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="100" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0">
+            <state line="765" column="25" selection-start="35200" selection-end="35200" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFontComposite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="32" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFontCharRange.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontCharRange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="43" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFontManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="22" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFont.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="8" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PSprite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PSprite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScrollHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ScrollHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="308" selection-end="405" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -491,22 +600,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ScrollHelper.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalList.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" />
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_HorizontalList.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_VerticalList.java" />
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ToggleStuck.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ToggleStuck1.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_StrictlyClipped.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_Lists.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ElasticInertMotionListener.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_InertMotionListener.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_StubMotionListener.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_CenteredElasticInertMotionListener.java" />
-        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java" />
-        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" />
-        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/PopUp.java" />
-        <option value="$PROJECT_DIR$/../geargames/common/com/geargames/common/Event.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" />
       </list>
     </option>
   </component>
@@ -574,20 +683,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -602,48 +697,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="awtdemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
@@ -707,40 +760,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="texts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -808,60 +827,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -893,14 +870,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="819" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="324" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="824" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="153" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="117" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="150" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="153" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="116" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="150" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.50717705" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.ChangelistConflict" />
+    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="130" />
@@ -936,34 +913,34 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geargames.awtdemo.awt.components.forms.texts" />
+      <recent name="com.geargames.awtdemo.awt.components.forms.main" />
+      <recent name="com.geargames.awtdemo.awt.components.forms.spinboxes" />
       <recent name="com.geargames.awtdemo.awt.components.forms.lists" />
       <recent name="com.geargames.awtdemo.awt.components.forms.progressbars" />
-      <recent name="com.geargames.awtdemo.awt.components.forms.main" />
-      <recent name="com.geargames.awtdemo.awt.components.forms.buttons" />
-      <recent name="com.geargames.awtdemo.awt.components.common" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\texts" />
       <recent name="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2" />
       <recent name="D:\Projects\GUIDemo\client\src\com\geargames\guidemo\awt\components\main" />
       <recent name="D:\mkutuzov\project\regolith\common\src\com\geargames\regolith\units" />
       <recent name="D:\mkutuzov\project\regolith\server.main\src" />
-      <recent name="D:\mkutuzov\project\regolith\server\src\com\geargames\regolith\units\battle" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.geargames.regolith.units" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.geargames.regolith" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\geargames\awtdemo\awtdemo" />
       <recent name="D:\mkutuzov\project\regolith\client\src\com\geargames\regolith\awt\components\warrior\exchange" />
       <recent name="D:\mkutuzov\project\regolith\client\src\com\geargames\regolith\app" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.geargames.regolith" />
     </key>
   </component>
   <component name="RunManager" selected="Application.AWTDemoMain">
@@ -1491,16 +1468,16 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4107744" sideWeight="0.79347" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981017" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37878788" sideWeight="0.70757735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4781145" sideWeight="0.70757735" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30808082" sideWeight="0.49962035" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23082764" sideWeight="0.33904108" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45454547" sideWeight="0.49506453" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.44646925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17160213" sideWeight="0.8473451" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17160213" sideWeight="0.6936027" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27942294" sideWeight="0.90707964" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23234624" sideWeight="0.17845118" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23234624" sideWeight="0.5218855" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2037037" sideWeight="0.76040554" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1637,126 +1614,124 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_CenteredElasticInertMotionListener.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="61" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.25239006">
+        <state line="18" column="13" selection-start="604" selection-end="604" vertical-scroll-proportion="0.24954128">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_StubMotionListener.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="18" selection-start="1953" selection-end="1953" vertical-scroll-proportion="0.6788991">
+        <state line="14" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="-0.21651377">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_InertMotionListener.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="18" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.74862385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ElasticInertMotionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="18" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.6788991">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_ToggleStuck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="14" selection-start="1253" selection-end="1427" vertical-scroll-proportion="0.64021164">
+        <state line="14" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.43669724">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/ScrollableArea.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="82" selection-start="914" selection-end="954" vertical-scroll-proportion="0.0">
+        <state line="48" column="63" selection-start="1846" selection-end="1891" vertical-scroll-proportion="0.4256881">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="61" selection-start="4730" selection-end="4730" vertical-scroll-proportion="0.5816514">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="61" selection-start="1883" selection-end="1883" vertical-scroll-proportion="-1.7575188">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_Lists.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="12" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollableArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="290" selection-end="290" vertical-scroll-proportion="0.33270678">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="67" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+        <state line="262" column="29" selection-start="13605" selection-end="13605" vertical-scroll-proportion="0.33211008">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_HorizontalList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="41" selection-start="8156" selection-end="8156" vertical-scroll-proportion="0.0">
+        <state line="50" column="62" selection-start="1924" selection-end="1969" vertical-scroll-proportion="0.96880734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_VerticalList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="78" selection-start="2727" selection-end="2727" vertical-scroll-proportion="0.2825688">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="328" selection-end="338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="150" selection-end="150" vertical-scroll-proportion="0.18715596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.12477064">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/Graphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="595" selection-end="595" vertical-scroll-proportion="0.33211008">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+        <state line="79" column="25" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/Event.java">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_21/src.zip!/java/awt/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="80" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+        <state line="765" column="25" selection-start="35200" selection-end="35200" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/PopUp.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/console/com/geargames/packer/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="100" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PHorizontalScrollView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="-1.7155963">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="107" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.70577615">
+        <state line="360" column="31" selection-start="11909" selection-end="11909" vertical-scroll-proportion="0.16917293">
           <folding />
         </state>
       </provider>
@@ -1825,11 +1800,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>gg.common</last-edited>
+          <last-edited>awtdemo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

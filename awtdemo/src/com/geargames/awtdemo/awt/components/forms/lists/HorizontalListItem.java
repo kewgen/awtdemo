@@ -1,12 +1,10 @@
 package com.geargames.awtdemo.awt.components.forms.lists;
 
-import com.geargames.awt.Anchors;
 import com.geargames.awt.components.PPrototypeElement;
 import com.geargames.common.Graphics;
 import com.geargames.common.packer.PFrame;
 import com.geargames.common.packer.Prototype;
 import com.geargames.common.util.NullRegion;
-import com.geargames.common.util.Region;
 
 /**
  * User: abarakov

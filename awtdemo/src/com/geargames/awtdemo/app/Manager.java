@@ -288,7 +288,7 @@ public final class Manager extends com.geargames.Manager implements Runnable {
                 break;
             case Canvas.ACTION_UP:
                 if (isDoubleClick()) {
-                    app.eventAdd(Event.EVENT_TOUCH_DOUBBLE_CLICK, 0, null, x, y);
+                    app.eventAdd(Event.EVENT_TOUCH_DOUBLE_CLICK, 0, null, x, y);
                 }
                 if (isLongClick()) {
                     app.eventAdd(Event.EVENT_TOUCH_LONG_CLICK, 0, null, x, y);

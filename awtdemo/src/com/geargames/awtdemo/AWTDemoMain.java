@@ -2,7 +2,6 @@ package com.geargames.awtdemo;
 
 import com.geargames.awtdemo.app.MIDlet;
 import com.geargames.awtdemo.app.Port;
-
 import java.io.IOException;
 
 /**

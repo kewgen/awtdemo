@@ -1,9 +1,8 @@
-package com.geargames.awtdemo.awt.components.forms.progressbars;
+package com.geargames.awtdemo.awt.components.forms.spinboxes;
 
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
 import com.geargames.awtdemo.app.Application;
-import com.geargames.awtdemo.app.Event;
 import com.geargames.awtdemo.app.Graph;
 import com.geargames.awtdemo.app.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
@@ -14,9 +13,9 @@ import com.geargames.common.packer.PObject;
 
 /**
  * User: abarakov
- * Date: 15.02.13
+ * Date: 19.02.13
 */
-public class PPanel_Progressbars extends DrawablePPanel {
+public class PPanel_SpinBoxes extends DrawablePPanel {
 
     protected class PContentPanelImpl extends PContentPanel {
 
@@ -34,7 +33,7 @@ public class PPanel_Progressbars extends DrawablePPanel {
                 case 19:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
-                    caption.setText(String.valueOfC("PROGRESSBARS"));
+                    caption.setText(String.valueOfC("SPIN BOXES"));
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
@@ -58,11 +57,8 @@ public class PPanel_Progressbars extends DrawablePPanel {
 
     PContentPanelImpl сontentPanel;
     PEntitledClosePanelButton buttonClose;
-    PSimpleIndicator simpleIndicator1;
-    PSimpleIndicator simpleIndicator2;
-//    PHintProgressIndicator hintProgressIndicator;
 
-    public PPanel_Progressbars() {
+    public PPanel_SpinBoxes() {
         this(Application.getInstance().getRender().getObject(Graph.PAN_BATTLE_CREATE));
     }
 
@@ -70,7 +66,7 @@ public class PPanel_Progressbars extends DrawablePPanel {
         сontentPanel.addActiveChild(element, X - 227, Y - 163);
     }
 
-    public PPanel_Progressbars(PObject prototype) {
+    public PPanel_SpinBoxes(PObject prototype) {
         super();
         setAnchor(Anchors.CENTER_ANCHOR);
         сontentPanel = new PContentPanelImpl(prototype);
@@ -81,39 +77,32 @@ public class PPanel_Progressbars extends DrawablePPanel {
 //----- Элементы формы -------------------------------------------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();
-        label1.setText(String.valueOfC("P SIMPLE INDICATOR"));
+        label1.setText(String.valueOfC("P GRADUAL SPIN BOX"));
         label1.setFont(PFontCollection.getFontLabel());
         addChild(label1, 20, 40);
 
-        PObject prototypeIndicator1 = Application.getInstance().getRender().getObject(Graph.OBJ_IND_1);
-        PObject prototypeIndicator2 = Application.getInstance().getRender().getObject(Graph.OBJ_IND_CHARACTER);
+        PObject prototypeIndicator = Application.getInstance().getRender().getObject(Graph.OBJ_SPINBOX);
 
-        simpleIndicator1 = new PSimpleIndicator(prototypeIndicator1);
-        addChild(simpleIndicator1, 200, 40);
+        PGradualSpinBox gradualSpinBox = new PGradualSpinBox(prototypeIndicator);
+        gradualSpinBox.setValue((short)0);
+        gradualSpinBox.setFps(Application.mult_fps * 2);
+        gradualSpinBox.setFont(PFontCollection.getFontLabel());
+        addChild(gradualSpinBox, 270, 20);
 
-        simpleIndicator2 = new PSimpleIndicator(prototypeIndicator2);
-        addChild(simpleIndicator2, 200, 70);
+        PSimpleLabel label2 = new PSimpleLabel();
+        label2.setText(String.valueOfC("P STEP SPIN BOX"));
+        label2.setFont(PFontCollection.getFontLabel());
+        addChild(label2, 20, 90);
 
-//        hintProgressIndicator = new PHintProgressIndicator(prototypeIndicator, ...);
-//        addChild(simpleIndicator, 200, 40);
+        PStepSpinBox stepSpinBox = new PStepSpinBox(prototypeIndicator);
+        stepSpinBox.setValue((short)0);
+        stepSpinBox.setFont(PFontCollection.getFontLabel());
+        addChild(stepSpinBox, 270, 70);
     }
 
     public void onHide() {
     }
 
     public void onShow() {
-    }
-
-    private int tickCount = 0;
-
-    public boolean event(int code, int param, int x, int y) {
-        if (code == Event.EVENT_TICK) {
-            tickCount++;
-            simpleIndicator1.setValue(tickCount / 5);
-            simpleIndicator2.setValue(tickCount / 10);
-            if (tickCount == 104)
-                tickCount = 0;
-        }
-        return super.event(code, param, x, y);
     }
 }

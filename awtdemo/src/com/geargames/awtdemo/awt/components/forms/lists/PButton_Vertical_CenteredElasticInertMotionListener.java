@@ -3,7 +3,6 @@ package com.geargames.awtdemo.awt.components.forms.lists;
 import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
 import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
-import com.geargames.awtdemo.app.Application;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
 import com.geargames.common.Event;
@@ -12,28 +11,25 @@ import com.geargames.common.packer.PObject;
 
 /**
  * User: abarakov
- * Date: 18.02.13
+ * Date: 19.02.13
  */
-public class PButton_CenteredElasticInertMotionListener extends PDummyRadioButton { //PDummyEntitledTouchButton
+public class PButton_Vertical_CenteredElasticInertMotionListener extends PDummyRadioButton {
 
-//    public PButton_CenteredElasticInertMotionListener(String caption) {
-//        super(caption);
-//    }
+    private VerticalList verticalList;
 
-    private HorizontalList horizontalList;
-
-    public PButton_CenteredElasticInertMotionListener(HorizontalList horizontalList, PObject prototype) {
+    public PButton_Vertical_CenteredElasticInertMotionListener(VerticalList verticalList, PObject prototype) {
         super(prototype);
-        this.horizontalList = horizontalList;
+        this.verticalList = verticalList;
     }
 
     public void action() {
         CenteredElasticInertMotionListener motionListener = new CenteredElasticInertMotionListener();
         motionListener.setInstinctPosition(false);
-        horizontalList.setMotionListener(
+        verticalList.setMotionListener(
+                //todo: Изменить Horizontal -> Vertical
                 ScrollHelper.adjustHorizontalCenteredMenuMotionListener(
-                        motionListener, getDrawRegion(), horizontalList.getItemsAmount(),
-                        horizontalList.getItemSize(), horizontalList.getPrototype().getDrawRegion().getMinX()
+                        motionListener, verticalList.getDrawRegion(), verticalList.getItemsAmount(),
+                        verticalList.getItemSize(), verticalList.getPrototype().getDrawRegion().getMinY()
                 )
         );
     }

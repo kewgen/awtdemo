@@ -1,7 +1,8 @@
 package com.geargames.awtdemo.awt.components.forms.lists;
 
 import com.geargames.awt.TextHint;
-import com.geargames.awt.utils.motions.ElasticInertMotionListener;
+import com.geargames.awt.utils.ScrollHelper;
+import com.geargames.awt.utils.motions.InertMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
 import com.geargames.common.Event;
@@ -12,28 +13,27 @@ import com.geargames.common.packer.PObject;
  * User: abarakov
  * Date: 19.02.13
  */
-public class PButton_ElasticInertMotionListener extends PDummyRadioButton {
+public class PButton_Vertical_InertMotionListener extends PDummyRadioButton {
 
-    private HorizontalList horizontalList;
+    private VerticalList verticalList;
 
-    public PButton_ElasticInertMotionListener(HorizontalList horizontalList, PObject prototype) {
+    public PButton_Vertical_InertMotionListener(VerticalList verticalList, PObject prototype) {
         super(prototype);
-        this.horizontalList = horizontalList;
+        this.verticalList = verticalList;
     }
 
     public void action() {
-        ElasticInertMotionListener motionListener = new ElasticInertMotionListener();
-        horizontalList.setMotionListener(motionListener);
-//        horizontalList.setMotionListener(
-//                ScrollHelper.adjustHorizontalInertMotionListener(
-//                        motionListener, horizontalList.getDrawRegion(),
-//                        horizontalList.getShownItemsAmount(), horizontalList.getItemSize()
-//                )
-//        );
+        InertMotionListener motionListener = new InertMotionListener();
+        verticalList.setMotionListener(
+                ScrollHelper.adjustVerticalInertMotionListener(
+                        motionListener, verticalList.getDrawRegion(),
+                        verticalList.getShownItemsAmount(), verticalList.getItemSize()
+                )
+        );
     }
 
     public boolean longClick(int x, int y) {
-        TextHint.show(String.valueOfC("ElasticInertMotionListener"), x, y);
+        TextHint.show(String.valueOfC("InertMotionListener"), x, y);
         return true;
     }
 

@@ -2,10 +2,10 @@ package com.geargames.awtdemo.awt.components.forms.lists;
 
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
+import com.geargames.awtdemo.app.Graph;
 import com.geargames.awtdemo.app.PFontCollection;
 import com.geargames.awtdemo.app.Render;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
-import com.geargames.common.Graphics;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
@@ -18,7 +18,7 @@ import com.geargames.common.util.ArrayList;
  * Date: 12.02.13
 */
 //PScrollableComponentsPanel
-public class PPanel_Lists extends DrawablePPanel {
+public class PPanel_HorizontalList extends DrawablePPanel {
 
     protected class PContentPanelImpl extends PContentPanel {
 
@@ -37,8 +37,8 @@ public class PPanel_Lists extends DrawablePPanel {
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
                     caption.setFont(PFontCollection.getFontFormTitle());
-                    caption.setData(String.valueOfC("СПИСКИ"));
-                    addActiveChild(caption, index);
+                    caption.setText(String.valueOfC("ГОРИЗОНТАЛЬНЫЙ СПИСОК"));
+                    addPassiveChild(caption, index);
                     break;
                 default:
 //                    super.createDefaultElementByIndex(index);
@@ -48,6 +48,7 @@ public class PPanel_Lists extends DrawablePPanel {
 
         protected void createDefaultElementByIndex(IndexObject index) {
             switch (index.getSlot()) {
+                // Игнорируем некоторые элементы формы пакера
                 case 0:
                 case 2:
                     break;
@@ -60,15 +61,15 @@ public class PPanel_Lists extends DrawablePPanel {
     PContentPanelImpl сontentPanel;
     PEntitledClosePanelButton buttonClose;
 
-    public PPanel_Lists() {
-        this(Application.getInstance().getRender().getObject(12));
+    public PPanel_HorizontalList() {
+        this(Application.getInstance().getRender().getObject(Graph.PAN_BATTLE_CREATE));
     }
 
     private void addChild(PElement element, int X, int Y) {
         сontentPanel.addActiveChild(element, X - 231, Y - 163);
     }
 
-    public PPanel_Lists(PObject prototype) {
+    public PPanel_HorizontalList(PObject prototype) {
         super();
         setAnchor(Anchors.CENTER_ANCHOR);
         сontentPanel = new PContentPanelImpl(prototype);
@@ -92,37 +93,37 @@ public class PPanel_Lists extends DrawablePPanel {
         frames.add(render.getFrame(595)); // офицер
         frames.add(render.getFrame(593)); // бугай
 
-        PObject face = Application.getInstance().getRender().getObject(23);
-        HorizontalList horizontalList = new HorizontalList(frames, face);
+        PObject listPrototype = render.getObject(Graph.OBJ_LIST_FIGHTER);
+        HorizontalList horizontalList = new HorizontalList(frames, listPrototype);
         addChild(horizontalList, 0+229, 0+14);
 
 //----- Кнопки настройки Горизонтального списка ------------------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();
-        label1.setData(String.valueOfC("LISTENER:"));
+        label1.setText(String.valueOfC("LISTENER:"));
         label1.setFont(PFontCollection.getFontLabel());
         addChild(label1, 9, 100);
 
         PRadioGroup radioGroup = new PRadioGroup(4);
 
         // Четыре кнопки выбора соответствующих MotionListener
-        PRadioButton buttonListener1 = new PButton_CenteredElasticInertMotionListener(
+        PRadioButton buttonListener1 = new PButton_Horizontal_CenteredElasticInertMotionListener(
                 horizontalList, Application.getInstance().getRender().getObject(58));
         buttonListener1.setState(true);
         radioGroup.addButton(buttonListener1);
         addChild(buttonListener1, 7, 112);
 
-        PRadioButton buttonListener2 = new PButton_InertMotionListener(
+        PRadioButton buttonListener2 = new PButton_Horizontal_InertMotionListener(
                 horizontalList, Application.getInstance().getRender().getObject(59));
         radioGroup.addButton(buttonListener2);
         addChild(buttonListener2, 60, 112);
 
-        PRadioButton buttonListener3 = new PButton_ElasticInertMotionListener(
+        PRadioButton buttonListener3 = new PButton_Horizontal_ElasticInertMotionListener(
                 horizontalList, Application.getInstance().getRender().getObject(60));
         radioGroup.addButton(buttonListener3);
         addChild(buttonListener3, 113, 112);
 
-        PRadioButton buttonListener4 = new PButton_StubMotionListener(
+        PRadioButton buttonListener4 = new PButton_Horizontal_StubMotionListener(
                 horizontalList, Application.getInstance().getRender().getObject(61));
         radioGroup.addButton(buttonListener4);
         addChild(buttonListener4, 166, 112);
@@ -139,21 +140,12 @@ public class PPanel_Lists extends DrawablePPanel {
 
 //        PDummyEntitledTouchButton button1 = new PDummyEntitledTouchButton(String.valueOfC("TOUCH"));
 
-//----------------------------------------------------------------------------------------------------------------------
-
     }
 
-    @Override
     public void onHide() {
     }
 
-    @Override
     public void onShow() {
-    }
-
-    @Override
-    public void draw(Graphics graphics) {
-        super.draw(graphics);
     }
 
 }

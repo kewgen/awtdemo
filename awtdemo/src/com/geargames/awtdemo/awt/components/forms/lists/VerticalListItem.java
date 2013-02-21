@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.awt.components.forms.lists2;
+package com.geargames.awtdemo.awt.components.forms.lists;
 
 import com.geargames.awt.components.PPrototypeElement;
 import com.geargames.common.Graphics;
@@ -8,13 +8,14 @@ import com.geargames.common.util.NullRegion;
 
 /**
  * User: abarakov
- * Элемент горизонтального списка.
+ * Элемент вертикального списка.
  */
-public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
+@Deprecated
+public class VerticalListItem extends PPrototypeElement { // PTouchButton {
 //    private Region region;
     private PFrame value;
 
-    public HorizontalListItem(Prototype prototype) {
+    public VerticalListItem(Prototype prototype) {
 //        super(prototype);
         setPrototype(prototype);
         setRegion(NullRegion.instance);
@@ -43,9 +44,8 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
     public void setValue(PFrame value) {
         this.value = value;
     }
-//
+
     public void draw(Graphics graphics, int x, int y) {
-//        graphics.drawString(com.geargames.common.String.valueOfC(value), x, y, Anchors.CENTER_ANCHOR);
         value.draw(graphics, x, y);
     }
 //

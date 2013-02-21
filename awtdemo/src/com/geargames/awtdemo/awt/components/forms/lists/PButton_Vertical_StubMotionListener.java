@@ -2,7 +2,6 @@ package com.geargames.awtdemo.awt.components.forms.lists;
 
 import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
-import com.geargames.awt.utils.motions.InertMotionListener;
 import com.geargames.awt.utils.motions.StubMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
@@ -15,25 +14,21 @@ import com.geargames.packer.Graphics;
  * User: abarakov
  * Date: 19.02.13
  */
-public class PButton_StubMotionListener extends PDummyRadioButton { //PDummyEntitledTouchButton
+public class PButton_Vertical_StubMotionListener extends PDummyRadioButton {
 
-//    public PButton_CenteredElasticInertMotionListener(String caption) {
-//        super(caption);
-//    }
+    private VerticalList verticalList;
 
-    private HorizontalList horizontalList;
-
-    public PButton_StubMotionListener(HorizontalList horizontalList, PObject prototype) {
+    public PButton_Vertical_StubMotionListener(VerticalList verticalList, PObject prototype) {
         super(prototype);
-        this.horizontalList = horizontalList;
+        this.verticalList = verticalList;
     }
 
     public void action() {
         StubMotionListener motionListener = new StubMotionListener();
-        horizontalList.setMotionListener(
+        verticalList.setMotionListener(
                 ScrollHelper.adjustStubMotionListener(
-                        motionListener, horizontalList.getDrawRegion(),
-                        horizontalList.getShownItemsAmount(), horizontalList.getItemSize(), Graphics.LEFT
+                        motionListener, verticalList.getDrawRegion(),
+                        verticalList.getShownItemsAmount(), verticalList.getItemSize(), Graphics.TOP
                 )
         );
     }

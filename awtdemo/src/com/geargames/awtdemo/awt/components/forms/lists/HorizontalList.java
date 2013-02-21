@@ -1,7 +1,6 @@
 package com.geargames.awtdemo.awt.components.forms.lists;
 
-import com.geargames.awt.components.HorizontalScrollView;
-import com.geargames.awt.components.PPrototypeElement;
+import com.geargames.awt.components.PHorizontalScrollView;
 import com.geargames.awt.utils.ScrollHelper;
 import com.geargames.awt.utils.motions.*;
 import com.geargames.common.Graphics;
@@ -15,55 +14,26 @@ import java.util.Vector;
 
 /**
  * User: abarakov
- * Горизонтальное меню для прокручивания кнопок.
+ * Горизонтальный список для прокручивания элементов.
  */
-public class HorizontalList extends HorizontalScrollView {
+public class HorizontalList extends PHorizontalScrollView {
     private Vector items;
-//    private int position;
-    private Region region;
-    private Region prototypeRegion;
-//
-    public Region getDrawRegion() {
-        return region;
-    }
-
-    public Region getTouchRegion() {
-        return region;
-    }
 
     public boolean isVisible() {
         return true;
     }
 
     public HorizontalList(ArrayList collection, PObject listPrototype) {
-        setMargin(0);
-        setStuck(false);
-        setStrictlyClipped(false);
-//        this.position = 0;
-        Index frameListIndex = listPrototype.getIndexBySlot(110);
-        PFrame frameList = (PFrame) frameListIndex.getPrototype();
-
-        region = new Region();
-        region.setMinX(frameListIndex.getX());
-        region.setMinY(frameListIndex.getY());
-        region.setWidth(frameList.getWidth());
-        region.setHeight(90/*frameList.getHeight()*/);
+        super(listPrototype);
 
         Index frameFaceIndex = listPrototype.getIndexBySlot(0);
         PObject faceObject = (PObject) frameFaceIndex.getPrototype();
-        PFrame frameFace = (PFrame) faceObject.getIndexBySlot(110).getPrototype();
-
-        prototypeRegion = new Region();
-        prototypeRegion.setMinX(frameFaceIndex.getX());
-        prototypeRegion.setMinY(frameFaceIndex.getY());
-        prototypeRegion.setWidth(frameFace.getWidth());
-        prototypeRegion.setHeight(frameFace.getHeight());
 
         items = new Vector(collection.size());
         for (int i=0; i<collection.size(); i++) {
             PFrame frame = (PFrame) collection.get(i);
             HorizontalListItem item = new HorizontalListItem(faceObject);
-            item.setRegion(prototypeRegion);
+            item.setRegion(getPrototype().getDrawRegion());
             item.setValue(frame);
             items.add(item);
         }
@@ -88,37 +58,8 @@ public class HorizontalList extends HorizontalScrollView {
         setInitiated(true);
     }
 
-//    public boolean hasNext() {
-//        return position + 1 < items.size();
-//    }
-//
-//    public boolean hasPrevious() {
-//        return position - 1 >= 0;
-//    }
-//
-//    /**
-//     * Отцентровать следующий элемент.
-//     */
-//    public void next() {
-//        if (hasNext()) {
-//            getMotionListener().onClick(++position);
-//        }
-//    }
-//
-//    /**
-//     * Отцентровать предыдущий элемент.
-//     */
-//    public void previous() {
-//        if (hasPrevious()) {
-//            getMotionListener().onClick(--position);
-//        }
-//    }
-
     public Vector getItems() {
         return items;
     }
 
-    public PPrototypeElement getPrototype() {
-        return (PPrototypeElement)items.get(0);
-    }
 }

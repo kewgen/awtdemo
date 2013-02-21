@@ -3,6 +3,7 @@ package com.geargames.awtdemo.awt.components.forms.main;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.PButton;
 import com.geargames.awt.components.PElement;
+import com.geargames.awtdemo.app.Graph;
 import com.geargames.common.Graphics;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
@@ -42,7 +43,7 @@ public class PMainPanel extends DrawablePPanel {
     }
 
     public PMainPanel() {
-        this(Application.getInstance().getRender().getObject(7)); // Прототип задается только для определения размеров панели
+        this(Application.getInstance().getRender().getObject(Graph.PAN_TYPE_BATTLE)); // Прототип задается только для определения размеров панели
     }
 
     public PMainPanel(PObject prototype) {
@@ -51,7 +52,7 @@ public class PMainPanel extends DrawablePPanel {
         сontentPanel = new PContentPanelImpl(prototype);
         setElement(сontentPanel);
 
-        spriteBorder = Application.getInstance().getRender().getSprite(28);
+        spriteBorder = Application.getInstance().getRender().getSprite(Graph.SPR_PANEL_FRAME);
 
         Region region = getElement().getDrawRegion();
         region.setMinX(0);
@@ -67,14 +68,20 @@ public class PMainPanel extends DrawablePPanel {
         PButton buttonText = new PButton_Text(String.valueOfC("ТЕКСТОВЫЕ"));
         addChild(buttonText, 180, 20);
 
-        PButton buttonLists = new PButton_Lists(String.valueOfC("СПИСКИ"));
-        addChild(buttonLists, 20, 70);
+        PButton buttonHorizontalList = new PButton_HorizontalList(String.valueOfC("ГОРИЗ. СПИСОК"));
+        addChild(buttonHorizontalList, 20, 70);
+
+        PButton buttonVerticalList = new PButton_VerticalList(String.valueOfC("ВЕРТ. СПИСОК"));
+        addChild(buttonVerticalList, 180, 70);
 
         PButton buttonMenuExam = new PButton_MenuExam(String.valueOfC("ОБРАЗЕЦ МЕНЮ"));
-        addChild(buttonMenuExam, 180, 70);
+        addChild(buttonMenuExam, 20, 120);
 
         PButton buttonProgressbars = new PButton_Progressbars(String.valueOfC("PROGRESS BARS"));
-        addChild(buttonProgressbars, 20, 120);
+        addChild(buttonProgressbars, 180, 120);
+
+        PButton buttonSpinBoxes = new PButton_SpinBoxes(String.valueOfC("SPIN BOXES"));
+        addChild(buttonSpinBoxes, 20, 170);
 
         PButton buttonExit = new PButton_Exit(String.valueOfC("ВЫХОД"));
         addChild(buttonExit, 20, 375);

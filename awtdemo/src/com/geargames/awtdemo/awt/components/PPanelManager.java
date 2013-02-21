@@ -9,7 +9,7 @@ import com.geargames.common.Render;
 import com.geargames.common.util.ArrayList;
 
 /**
- * User: mikhail v. kutuzov
+ * User: mikhail v. kutuzov, abarakov
  * Класс создан, для создания и настройки объектов панелей верхнего уровня, а так же для доступа к этим объектам и
  * отображением их на экране.
  * Работает в однопоточном режиме.

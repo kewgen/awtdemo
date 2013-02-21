@@ -73,23 +73,23 @@ public class PPanel_Buttons extends DrawablePPanel {
                     break;
                 case 15:
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setData(String.valueOfC("TOUCH BUTTONS"));
+                    ((PSimpleLabel)element).setText(String.valueOfC("TOUCH BUTTONS"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
                     break;
                 case 16:
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setData(String.valueOfC("TOGGLE BUTTONS"));
+                    ((PSimpleLabel)element).setText(String.valueOfC("TOGGLE BUTTONS"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
                     break;
                 case 17:
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setData(String.valueOfC("RADIO BUTTONS"));
+                    ((PSimpleLabel)element).setText(String.valueOfC("RADIO BUTTONS"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
                     break;
                 case 19:
                     // Заголовок окна
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setData(String.valueOfC("КНОПКИ"));
+                    ((PSimpleLabel)element).setText(String.valueOfC("КНОПКИ"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontFormTitle());
                     break;
                 default:
@@ -103,6 +103,7 @@ public class PPanel_Buttons extends DrawablePPanel {
 
         protected void createDefaultElementByIndex(IndexObject index) {
             switch (index.getSlot()) {
+                // Игнорируем некоторые элементы формы пакера
                 case 0:
                     break;
                 default:
@@ -131,12 +132,9 @@ public class PPanel_Buttons extends DrawablePPanel {
         buttonClose.setParent(this);
     }
 
-    @Override
     public void onHide() {
     }
 
-    @Override
     public void onShow() {
     }
-
 }

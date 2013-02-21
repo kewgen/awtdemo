@@ -2,6 +2,7 @@ package com.geargames.awtdemo.awt.components.common;
 
 import com.geargames.awt.components.PEntitledTouchButton;
 import com.geargames.awtdemo.app.Application;
+import com.geargames.awtdemo.app.Graph;
 import com.geargames.awtdemo.app.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.common.String;
@@ -21,7 +22,7 @@ public class PEntitledClosePanelButton extends PEntitledTouchButton {
     }
 
     public PEntitledClosePanelButton() {
-        this(Application.getInstance().getRender().getObject(53));
+        this(Application.getInstance().getRender().getObject(Graph.OBJ_BUT));
     }
 
     public void setParent(DrawablePPanel parent) {
