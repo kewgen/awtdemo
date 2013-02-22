@@ -20,11 +20,11 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
     private TextArea[] textAreaList;
     private final int[] colorList = {
             //R G B
-            0x0000FF,
-            0x00FF00,
-            0xFF0000,
-            0x000000,
-            0xFFFFFF
+            0xffffff,
+            0x0000ff,
+            0x00ff00,
+            0xff0000,
+            0x000000
     };
     private int indexColor = 0;
 

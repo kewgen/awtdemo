@@ -93,14 +93,21 @@ public class PPanel_Text extends DrawablePPanel {
         regionTextArea1.setWidth(160);                                   // Ширина компонента
         regionTextArea1.setHeight(80);                                   // Высота компонента
         textArea1.setText(String.valueOfC(                               // Задаем текст компонента
+                "\n" +
+                "\n" +
+                "\n" +
                 "Line1\n" +
                 "Line2 Long\n" +
+                "\n" +
+                "\n" +
                 "Line3 Long Long Long\n" +
                 "Line4 Long Long Long Long Long Long\n" +
                 "Line5\n" +
-                "Line6"));
+                "Line6" +
+                "\n" +
+                "\n"));
         textArea1.setFont(null);                                         // Системный шрифт будет использоваться при отображении
-        textArea1.setColor(0x0000FF);                                    // Цвет текста и рамки компонента (синий)
+        textArea1.setColor(0xffffff);                                    // Цвет текста и рамки компонента (синий)
         textArea1.setFormat(Graphics.LEFT);                              // Выравнивание текста по горизонтали
         textArea1.setEllipsis(false);                                    //
         textArea1.setX(0);                                               // Позиция компонента по горизонтали относительно родителя
@@ -123,7 +130,7 @@ public class PPanel_Text extends DrawablePPanel {
                 "LINE5\n" +
                 "LINE6"));
         textArea2.setFont(PFontCollection.getFont10());                  // Растровый шрифт будет использоваться при отображении
-        textArea2.setColor(0x0000FF);                                    // Цвет текста и рамки компонента (синий)
+        textArea2.setColor(0xffffff);                                    // Цвет текста и рамки компонента (синий)
         textArea2.setFormat(Graphics.LEFT);                              // Выравнивание текста по горизонтали
         textArea2.setEllipsis(false);                                    //
         textArea2.setX(0);                                               // Позиция компонента по горизонтали относительно родителя

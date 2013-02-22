@@ -2,9 +2,7 @@ package com.geargames.awtdemo.awt.components.forms.lists;
 
 import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
-import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
 import com.geargames.awt.utils.motions.InertMotionListener;
-import com.geargames.awtdemo.app.Application;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
 import com.geargames.common.*;

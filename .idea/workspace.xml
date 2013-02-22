@@ -2,79 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="Правка в VerticalScrollableArea">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/abarakov.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_CenteredElasticInertMotionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_ElasticInertMotionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_InertMotionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_StubMotionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_VerticalList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/VerticalList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_SpinBoxes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_VerticalList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/CommonLangConsts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontCharRange.java" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\.idea\dictionaries\.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\DefaultDrawablePPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\DrawablePContentPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\common\PHintedButton.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\EntryCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\FrameCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\HorizontalList.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\HorizontalListItemsVector.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\PPanel_Lists.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\texts\HintedTextArea.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\geargames\common\com\geargames\common\packer\PFontDiapazon.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_port/packer_320_480_full/d0" afterPath="$PROJECT_DIR$/_port/packer_320_480_full/d0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalListItem.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/HorizontalListItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_InertMotionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_StubMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_StubMotionListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledRadioButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledRadioButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledToggleButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledToggleButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledTouchButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PEntitledTouchButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollView.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollableArea.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollableArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PContentPanel.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PContentPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PHorizontalScrollView.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PHorizontalScrollView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PLabel.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PLabel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PSimplePrototype.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PSimplePrototype.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PTouchButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PTouchButton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PVerticalScrollView.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PVerticalScrollView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/ScrollableArea.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/ScrollableArea.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ScrollHelper.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ScrollHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollView.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TextHelper.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TextHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/Graphics.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/Graphics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/String.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/String.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontManager.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontManager.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2\HorizontalListItem.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/VerticalListItem.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_CenteredElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_CenteredElasticInertMotionListener.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_ElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_ElasticInertMotionListener.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_InertMotionListener.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_StubMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_StubMotionListener.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PPanel_Lists.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_HorizontalList.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\main\PButton_Lists.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_HorizontalList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/console/com/geargames/packer/Graphics.java" afterPath="$PROJECT_DIR$/../geargames/console/com/geargames/packer/Graphics.java" />
     </list>
     <ignored path="regolith.iws" />
     <file path="/StartBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660927656" ignored="false" />
@@ -458,10 +409,57 @@
       <file leaf-file-name="TextHint.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="250" column="46" selection-start="7629" selection-end="7629" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PPanel_Text.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="20" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HorizontalScrollView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="53" selection-start="3073" selection-end="3073" vertical-scroll-proportion="2.9009175">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HorizontalScrollableArea.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollableArea.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="80" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerticalScrollableArea.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="48" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerticalScrollView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="69" selection-start="2832" selection-end="2832" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -469,19 +467,10 @@
       <file leaf-file-name="TextArea.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="25" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0">
+            <state line="103" column="46" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PPanelManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="328" selection-end="338" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -489,7 +478,7 @@
       <file leaf-file-name="TextHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TextHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="10" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+            <state line="72" column="90" selection-start="3937" selection-end="3937" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -497,37 +486,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graphics.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Graphics.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/console/com/geargames/packer/Graphics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="360" column="31" selection-start="11909" selection-end="11909" vertical-scroll-proportion="0.16917293">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graphics.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_21/src.zip!/java/awt/Graphics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="765" column="25" selection-start="35200" selection-end="35200" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PFontComposite.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="32" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PFontCharRange.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontCharRange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="43" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+            <state line="4" column="29" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -536,7 +498,25 @@
       <file leaf-file-name="PFontManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="22" selection-start="5764" selection-end="5764" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFontComposite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="17" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PFontCharRange.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontCharRange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="46" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -545,25 +525,7 @@
       <file leaf-file-name="PFont.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="8" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PSprite.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PSprite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScrollHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ScrollHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="3" selection-start="308" selection-end="405" vertical-scroll-proportion="0.0">
+            <state line="48" column="17" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -600,22 +562,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" />
+        <option value="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PContentPanel.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PVerticalScrollView.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PHorizontalScrollView.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_InertMotionListener.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_StubMotionListener.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_InertMotionListener.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_StubMotionListener.java" />
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/ScrollableArea.java" />
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_HorizontalList.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_VerticalList.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollView.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollableArea.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollView.java" />
       </list>
     </option>
   </component>
@@ -697,21 +659,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
+              <option name="myItemId" value="console" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -721,19 +669,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,19 +679,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awtdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awtdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="awtdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="awt" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -771,60 +737,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="awtdemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lists" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1435,7 +1347,15 @@
       <created>1361278278874</created>
       <updated>1361278278874</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Добавлены демо для SpinBox, ProgressBar, VerticalList и улучшена демо для TextArea">
+      <created>1361442693222</created>
+      <updated>1361442693222</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Рефакторинг P*SpinBox, PFont*, TextArea классов. Правка и добавление комментариев.">
+      <created>1361443115965</created>
+      <updated>1361443115965</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -1463,12 +1383,12 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8215488" sideWeight="0.25436598" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5016835" sideWeight="0.25436598" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4107744" sideWeight="0.79347" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37373737" sideWeight="0.79347" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981017" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4781145" sideWeight="0.70757735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32154882" sideWeight="0.70757735" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30808082" sideWeight="0.49962035" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23082764" sideWeight="0.33904108" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45454547" sideWeight="0.49506453" order="2" side_tool="false" content_ui="tabs" />
@@ -1477,7 +1397,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17160213" sideWeight="0.6936027" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27942294" sideWeight="0.90707964" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23234624" sideWeight="0.5218855" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23234624" sideWeight="0.6784512" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2037037" sideWeight="0.76040554" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1525,7 +1445,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правка в VerticalScrollableArea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг P*SpinBox, PFont*, TextArea классов. Правка и добавление комментариев." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1538,8 +1458,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.55825245" />
-    <MESSAGE value="изменились тесты в связи с недавними изменениями common" />
-    <MESSAGE value="изменения в связи с недавними изменениями common" />
     <MESSAGE value="упрощён(с учётом однопоточности) менеджер окошек" />
     <MESSAGE value="интерфейс перемещения предметов склад-сумка-боец" />
     <MESSAGE value="боец потерял поле загрузка(load) появился helper для сумки бойца. изменился подсчёт массы оружия." />
@@ -1563,6 +1481,8 @@
     <MESSAGE value="Избавился от HorizontalListItemsVector" />
     <MESSAGE value="Добавлен awtdemo.storage" />
     <MESSAGE value="Правка в VerticalScrollableArea" />
+    <MESSAGE value="Добавлены демо для SpinBox, ProgressBar, VerticalList и улучшена демо для TextArea" />
+    <MESSAGE value="Рефакторинг P*SpinBox, PFont*, TextArea классов. Правка и добавление комментариев." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1614,124 +1534,122 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_InertMotionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="604" selection-end="604" vertical-scroll-proportion="0.24954128">
+        <state line="29" column="57" selection-start="1095" selection-end="1115" vertical-scroll-proportion="0.33211008">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="-0.21651377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.43669724">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="63" selection-start="1846" selection-end="1891" vertical-scroll-proportion="0.4256881">
+        <state line="36" column="62" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.33433735">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java">
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_StubMotionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="61" selection-start="4730" selection-end="4730" vertical-scroll-proportion="0.5816514">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="32" column="59" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.51129943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Horizontal_InertMotionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="59" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.51129943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PButton_Vertical_StubMotionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="57" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.51129943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/ScrollableArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="62" selection-start="2846" selection-end="2846" vertical-scroll-proportion="0.09357798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="17" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="61" selection-start="1883" selection-end="1883" vertical-scroll-proportion="-1.7575188">
+        <state line="107" column="20" selection-start="4342" selection-end="4342" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Graph.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="29" selection-start="13605" selection-end="13605" vertical-scroll-proportion="0.33211008">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_HorizontalList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="62" selection-start="1924" selection-end="1969" vertical-scroll-proportion="0.96880734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/lists/PPanel_VerticalList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="78" selection-start="2727" selection-end="2727" vertical-scroll-proportion="0.2825688">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="328" selection-end="338" vertical-scroll-proportion="0.0">
+        <state line="19" column="25" selection-start="558" selection-end="558" vertical-scroll-proportion="0.33126935">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/DrawablePPanel.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="150" selection-end="150" vertical-scroll-proportion="0.18715596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.12477064">
+        <state line="88" column="69" selection-start="2832" selection-end="2832" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/Graphics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="9" selection-start="595" selection-end="595" vertical-scroll-proportion="0.33211008">
+        <state line="53" column="8" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.33126935">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="25" selection-start="2842" selection-end="2842" vertical-scroll-proportion="0.0">
+        <state line="103" column="46" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_21/src.zip!/java/awt/Graphics.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/VerticalScrollableArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="765" column="25" selection-start="35200" selection-end="35200" vertical-scroll-proportion="0.0">
+        <state line="41" column="48" selection-start="1841" selection-end="1841" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/console/com/geargames/packer/Graphics.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollableArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="360" column="31" selection-start="11909" selection-end="11909" vertical-scroll-proportion="0.16917293">
+        <state line="54" column="80" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/HorizontalScrollView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="53" selection-start="3073" selection-end="3073" vertical-scroll-proportion="2.9009175">
           <folding />
         </state>
       </provider>

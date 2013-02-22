@@ -19,7 +19,7 @@ import com.geargames.common.packer.PObject;
 public class PButton_ToggleFormat extends PEntitledTouchButton {
 
     private TextArea[] textAreaList;
-    private final int[] formatList = {
+    private static final int[] formatList = {
             Graphics.LEFT,
             Graphics.RIGHT,
             Graphics.HCENTER

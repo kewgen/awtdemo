@@ -496,10 +496,6 @@ public final class Application {
 
     private void draw(Graphics graphics) {
         try {
-            // todo: Очистку холста в белый цвет нужно убрать
-            graphics.setColor(0xffffff);
-            graphics.fillRect(0, 0, i_buf.getWidth(), i_buf.getHeight());
-
             if (backgroundImage != null) {
 //                backgroundImage.draw(graphics, 0, 0);
                 graphics.drawImage(backgroundImage, i_buf.getWidth() / 2, i_buf.getHeight() / 2,
@@ -514,7 +510,7 @@ public final class Application {
             panels.draw(graphics);
 
             if (stateInfoString != null && stateInfoString.length() > 0) {
-                graphics.setColor(0x000000);
+                graphics.setColor(0xffffff);
                 //TODO установить фонт!
                 graphics.drawString(stateInfoString, 12, Port.getH() - 36, 0);
             }

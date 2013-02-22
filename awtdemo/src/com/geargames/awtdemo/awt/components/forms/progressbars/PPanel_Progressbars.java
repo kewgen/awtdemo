@@ -34,7 +34,7 @@ public class PPanel_Progressbars extends DrawablePPanel {
                 case 19:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
-                    caption.setText(String.valueOfC("PROGRESSBARS"));
+                    caption.setText(String.valueOfC("PROGRESS BARS"));
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
