@@ -5,6 +5,7 @@ import com.geargames.Recorder;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.TextHint;
 import com.geargames.awtdemo.packer.PUnitCreator;
+import com.geargames.awtdemo.timers.TimerManager;
 import com.geargames.common.String;
 import com.geargames.common.packer.PFont;
 import com.geargames.common.packer.PFontManager;
@@ -407,7 +408,8 @@ public final class Application {
                 return;
             }
             long time_delay_ai_start = System.currentTimeMillis();
-            processTimers();
+//            processTimers();
+            TimerManager.getInstance().update();
             Ticker.processTickers();
             eventProcess();
             gameEvent(Event.EVENT_TICK, 0, 0, 0);
