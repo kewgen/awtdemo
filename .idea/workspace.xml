@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="Правка в VerticalScrollableArea">
+    <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="">
       <change type="DELETED" beforePath="D:\Projects\awtdemo\.idea\workspace.xml" afterPath="" />
     </list>
     <ignored path="regolith.iws" />
@@ -1475,7 +1475,11 @@
       <created>1361781416816</created>
       <updated>1361781416816</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Удаление workspace.xml из репозитория">
+      <created>1361781477577</created>
+      <updated>1361781477577</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -1565,7 +1569,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправление мелких косяков" />
+    <option name="LAST_COMMIT_MESSAGE" value="Удаление workspace.xml из репозитория" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1578,7 +1582,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.55825245" />
-    <MESSAGE value="коммит, перед внесчением изменений в BattleType&#10;0. изменилась сущность аммуниция&#10;1. изменился маппинг аммуниции и сумки с аммуницией в базу&#10;2.TackleTransitionHelper.java для однотипности действий над ккладью на сервере и клиенте" />
     <MESSAGE value="коммит, перед внесчением изменений в BattleType" />
     <MESSAGE value="коммит, перед внесчением изменений в BattleType&#10;добавилась групповая обработка событий" />
     <MESSAGE value="В PContentPanel изменен механизм загрузки объектов из пакерного прототипа. Также внесены небольшие изменения в TextHint." />
@@ -1603,6 +1606,7 @@
     <MESSAGE value="Доработка TextArea под новый TextHelper.textIndexing()" />
     <MESSAGE value="Добавлены прототипы классов Timer" />
     <MESSAGE value="Исправление мелких косяков" />
+    <MESSAGE value="Удаление workspace.xml из репозитория" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
