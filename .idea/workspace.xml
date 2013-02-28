@@ -2,7 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\.idea\workspace.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ToggleEllipsis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PPanel_Text.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/AWTObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/Timer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerIdMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/HintTouchListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TouchListener.java" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\VerticalListItem.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\timers\DelayTimer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\timers\MultipleTimer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\timers\PeriodicTimer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\timers\SingleTimer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\timers\Timer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\timers\TimerManager.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\geargames\awt\com\geargames\awt\utils\ClickListener.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\geargames\awt\com\geargames\awt\utils\HintClickListener.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Etimer.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Etimer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Ticker.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Ticker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/PPanelManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_HorizontalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_HorizontalList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_VerticalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_VerticalList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerIdMap.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerIdMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Anchors.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Anchors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Drawable.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Drawable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/DrawablePElement.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/DrawablePElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/VanishingLabel.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/VanishingLabel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/FlyingVanishingLabel.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/FlyingVanishingLabel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/MovingObjectsFactory.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/MovingObjectsFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/VanishFinishAdviser.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/VanishFinishAdviser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PElement.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PObjectElement.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PObjectElement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PRadioButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PRadioButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PToggleButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PToggleButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PTouchButton.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PTouchButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PValueComponent.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PValueComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/GraphicsStrategy.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/GraphicsStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/LinearVanishingStrategy.java" afterPath="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/LinearVanishingStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/common/com/geargames/common/Event.java" afterPath="$PROJECT_DIR$/../geargames/common/com/geargames/common/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../geargames/console/com/geargames/env/ConsoleEnvironment.java" afterPath="$PROJECT_DIR$/../geargames/console/com/geargames/env/ConsoleEnvironment.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\HorizontalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/HorizontalList.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\HorizontalListItem.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/HorizontalListItem.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Horizontal_CenteredElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_CenteredElasticInertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Horizontal_ElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_ElasticInertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Horizontal_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_InertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Horizontal_StubMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_StubMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_ToggleStrictlyClipped.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/PButton_ToggleStrictlyClipped.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_ToggleStuck.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/PButton_ToggleStuck.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Vertical_CenteredElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_CenteredElasticInertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Vertical_ElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_ElasticInertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Vertical_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_InertMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PButton_Vertical_StubMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_StubMotionListener.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PPanel_HorizontalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PPanel_HorizontalList.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\PPanel_VerticalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PPanel_VerticalList.java" />
+      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists\VerticalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/VerticalList.java" />
     </list>
     <ignored path="regolith.iws" />
     <file path="/StartBattleAnswer.java" changelist="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" time="1359660927656" ignored="false" />
@@ -356,20 +427,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" />
     <line_breakpoints default_suspend_policy="SuspendAll">
-      <breakpoint url="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/PopUp.java" line="20" class="com.geargames.awt.PopUp" package="com.geargames.awt">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" line="249" class="com.geargames.awt.TextHint" package="com.geargames.awt">
+      <breakpoint url="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerManager.java" line="108" class="com.geargames.awt.timers.TimerManager" package="com.geargames.awt.timers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -393,10 +451,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TimerManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerManager.java">
+      <file leaf-file-name="Manager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0">
+            <state line="413" column="23" selection-start="11428" selection-end="11428" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -404,28 +462,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Timer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/Timer.java">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="441" selection-end="441" vertical-scroll-proportion="0.47971782">
-              <folding />
+            <state line="11" column="3" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleTimer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/SingleTimer.java">
+      <file leaf-file-name="PPanel_Text.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PPanel_Text.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultipleTimer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/MultipleTimer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+            <state line="148" column="34" selection-start="7492" selection-end="7492" vertical-scroll-proportion="0.35150376">
               <folding />
             </state>
           </provider>
@@ -434,16 +485,100 @@
       <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="411" column="46" selection-start="13754" selection-end="13754" vertical-scroll-proportion="0.0">
+            <state line="367" column="19" selection-start="11974" selection-end="12136" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimerManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="379" column="64" selection-start="15839" selection-end="15839" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Timer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="51" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimerIdMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerIdMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="61" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Manager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java">
+      <file leaf-file-name="TextHint.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="361" column="23" selection-start="10411" selection-end="10411" vertical-scroll-proportion="0.0">
+            <state line="106" column="47" selection-start="3723" selection-end="3723" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PGradualSpinBox.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="33" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PStepSpinButton.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="0" selection-end="728" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PGradualSpinButton.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="97" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PStepSpinBox.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="24" selection-start="0" selection-end="2154" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AWTObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/AWTObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="68" selection-start="867" selection-end="907" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -480,22 +615,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java" />
-        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/TextArea.java" />
-        <option value="$PROJECT_DIR$/../geargames/console/com/geargames/packer/Graphics.java" />
-        <option value="$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFont.java" />
-        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/DelayTimer.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/SingleTimer.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/MultipleTimer.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java" />
-        <option value="$PROJECT_DIR$/../geargames/common/com/geargames/common/util/ArrayHelper.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerManager.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/FlyingVanishingLabel.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/cinematics/consumers/MovingObjectsFactory.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PElement.java" />
         <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Drawable.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerIdMap.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/PeriodicTimer.java" />
-        <option value="$PROJECT_DIR$/../geargames/common/com/geargames/common/Graphics.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerManager.java" />
-        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/Timer.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/GraphicsStrategy.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/LinearVanishingStrategy.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/VanishingLabel.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerIdMap.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/AWTObject.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/texts/PButton_ToggleColor.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/hints/PButton_ToggleColor.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ToggleColor.java" />
+        <option value="$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PPanel_Text.java" />
       </list>
     </option>
   </component>
@@ -577,7 +712,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="console" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -590,28 +725,6 @@
               <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -629,198 +742,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="awtdemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="localize" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -853,23 +776,23 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="140" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="158" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="139" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="156" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="155" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="157" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="115" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="113" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="117" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="162" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="822" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="160" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="816" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="324" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="827" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="819" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="117" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="157" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="160" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="116" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="153" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="154" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.50717705" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -877,7 +800,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="130" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="130" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="34" />
     <property name="project.structure.proportion" value="0.15" />
@@ -914,29 +837,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geargames.awt.timers" />
+      <recent name="com.geargames.awt" />
+      <recent name="com.geargames.awtdemo.timers" />
       <recent name="com.geargames.awtdemo.awt.components.forms.texts" />
       <recent name="com.geargames.awtdemo.awt.components.forms.main" />
-      <recent name="com.geargames.awtdemo.awt.components.forms.spinboxes" />
-      <recent name="com.geargames.awtdemo.awt.components.forms.lists" />
-      <recent name="com.geargames.awtdemo.awt.components.forms.progressbars" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components" />
       <recent name="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\texts" />
       <recent name="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\lists2" />
       <recent name="D:\Projects\GUIDemo\client\src\com\geargames\guidemo\awt\components\main" />
       <recent name="D:\mkutuzov\project\regolith\common\src\com\geargames\regolith\units" />
-      <recent name="D:\mkutuzov\project\regolith\server.main\src" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.geargames.regolith.units" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.geargames.regolith" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\geargames\awtdemo\awtdemo" />
       <recent name="D:\mkutuzov\project\regolith\client\src\com\geargames\regolith\awt\components\warrior\exchange" />
       <recent name="D:\mkutuzov\project\regolith\client\src\com\geargames\regolith\app" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.geargames.regolith" />
     </key>
   </component>
   <component name="RunManager" selected="Application.AWTDemoMain">
@@ -1479,7 +1402,11 @@
       <created>1361781477577</created>
       <updated>1361781477577</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Удаление workspace.xml из репозитория">
+      <created>1361782324396</created>
+      <updated>1361782324396</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -1507,21 +1434,21 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25925925" sideWeight="0.25436598" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8080808" sideWeight="0.25436598" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37373737" sideWeight="0.79347" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4124579" sideWeight="0.79347" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981017" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3939394" sideWeight="0.70757735" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30808082" sideWeight="0.49962035" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42255893" sideWeight="0.70757735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30808082" sideWeight="0.49962035" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23082764" sideWeight="0.33904108" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45454547" sideWeight="0.49506453" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.44646925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4753227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17160213" sideWeight="0.6936027" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953683" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27942294" sideWeight="0.90707964" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23234624" sideWeight="0.6060606" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23234624" sideWeight="0.5774411" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2037037" sideWeight="0.76040554" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1658,118 +1585,130 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Manager.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="361" column="23" selection-start="10411" selection-end="10411" vertical-scroll-proportion="0.0">
+        <state line="35" column="28" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.8707483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/GraphicsStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.6360544">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/TouchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="169" selection-end="169" vertical-scroll-proportion="0.52040815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/HintTouchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="284" selection-end="284" vertical-scroll-proportion="0.40550458">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/timers/TimerIdMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="61" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Drawable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+        <state line="9" column="22" selection-start="225" selection-end="225" vertical-scroll-proportion="0.28073394">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_21/src.zip!/java/lang/Integer.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="30" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.33211008">
-          <folding />
+        <state line="22" column="4" selection-start="360" selection-end="666" vertical-scroll-proportion="0.49908257">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Event.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/AWTObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="0.06238532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="136" selection-end="136" vertical-scroll-proportion="0.12477064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/utils/ClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="158" selection-end="158" vertical-scroll-proportion="0.28073394">
+        <state line="25" column="68" selection-start="867" selection-end="907" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/TextHint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="19" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.63909775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/PeriodicTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="134" selection-end="134" vertical-scroll-proportion="0.24954128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerIdMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="114" selection-end="114" vertical-scroll-proportion="0.18715596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/util/ArrayHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.9565217">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontCharRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.695652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/packer/PFontManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../geargames/common/com/geargames/common/Graphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="575" selection-end="575" vertical-scroll-proportion="0.26984128">
+        <state line="106" column="47" selection-start="3723" selection-end="3723" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerManager.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0">
+        <state line="14" column="24" selection-start="0" selection-end="2154" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/Timer.java">
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="441" selection-end="441" vertical-scroll-proportion="0.47971782">
+        <state line="5" column="33" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PStepSpinButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="0" selection-end="728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/components/PGradualSpinButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="97" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/app/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="367" column="19" selection-start="11974" selection-end="12136" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../geargames/awt/com/geargames/awt/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PPanel_Text.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="34" selection-start="7492" selection-end="7492" vertical-scroll-proportion="0.35150376">
           <folding />
         </state>
       </provider>

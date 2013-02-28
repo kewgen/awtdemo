@@ -1,7 +1,7 @@
 package com.geargames.awtdemo.awt.components.forms.main;
 
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledTouchButton;
-import com.geargames.awtdemo.awt.components.forms.lists.PPanel_HorizontalList;
+import com.geargames.awtdemo.awt.components.forms.list.horz.PPanel_HorizontalList;
 import com.geargames.common.String;
 
 /**

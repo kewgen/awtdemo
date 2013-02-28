@@ -4,8 +4,9 @@ import com.geargames.Debug;
 import com.geargames.Recorder;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.TextHint;
+import com.geargames.awt.AWTObject;
 import com.geargames.awtdemo.packer.PUnitCreator;
-import com.geargames.awtdemo.timers.TimerManager;
+import com.geargames.awt.timers.TimerManager;
 import com.geargames.common.String;
 import com.geargames.common.packer.PFont;
 import com.geargames.common.packer.PFontManager;
@@ -20,18 +21,17 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.util.Enumeration;
-import java.util.Vector;
 
-public final class Application {
+public final class Application extends com.geargames.awt.Application {
 
-    // Posible names: appInstance
-    private static Application instance;
+    public static final int mult_fps = /*@MULT_FPS@*/4/*END*/;//1 2 4 = 6 12 24
 
-    public static final int mult_fps = /*@MULT_FPS@*/2/*END*/;//1 2 4 = 6 12 24
+    //    private static Lock startLock = new MELock();
+    private PPanelManager panels = PPanelManager.getInstance();
 
-    // Состояние регистрации
+   // Состояние регистрации
     private Loader loader;
+    private Render render;
     private PFontManager fontManager;
 
     private boolean vibrationEnabled;
@@ -41,11 +41,13 @@ public final class Application {
     private int clientId;
 
     private boolean isLoading = true; // true, если данные загружаются
-    private Render render;
     private static int globalTick;
 
-//    private static Lock startLock = new MELock();
-    private PPanelManager panels = PPanelManager.getInstance();
+    protected Graphics graphicsBuffer;
+    protected Image i_buf;
+    private boolean is_drawing;
+//    private int time_delay_ai;
+//    private int time_delay_render;
 
     //TODO Переименовать stateInfo
     private String stateInfoString = null;
@@ -54,16 +56,9 @@ public final class Application {
     // splash
     private Image backgroundImage = createBackgroundImage();
 
-    public Render getRender() {
-        return render;
-    }
-
-    public Graphics getGraphics() {
-        return graphicsBuffer;
-    }
-
     // Конструктор
-    private Application() {
+    public Application() {
+        super();
         if (graphicsBuffer == null) {
             createScreenBuffer(Port.getW(), Port.getH());
         }
@@ -72,12 +67,33 @@ public final class Application {
     }
 
     public static Application getInstance(){
-        if(instance == null){
+        Application instance = (Application)com.geargames.awt.Application.getInstance();
+        if (instance == null){
 //            startLock.lock();
             instance = new Application();
 //            startLock.release();
         }
         return instance;
+    }
+
+    public Graphics getGraphics() {
+        return graphicsBuffer;
+    }
+
+    public Render getRender() {
+        return render;
+    }
+
+    public void createScreenBuffer(int w, int h) {
+        try {
+            i_buf = Image.createImage(w, h);
+            graphicsBuffer = i_buf.getGraphics();
+            if (render != null) {
+                getGraphics().setRender(render);
+            }
+        } catch (Exception ex) {
+            Debug.logEx(ex);
+        }
     }
 
     private void drawSplash() {
@@ -110,21 +126,13 @@ public final class Application {
         drawSplash();
     }
 
-    public void createScreenBuffer(int w, int h) {
-        try {
-            i_buf = Image.createImage(w, h);
-            graphicsBuffer = i_buf.getGraphics();
-            if (render != null) getGraphics().setRender(render);
-        } catch (Exception ex) {
-            Debug.logEx(ex);
-        }
-    }
-
     public void loading() {
 
         tSleep = System.currentTimeMillis();
 
-        Debug.log(String.valueOfC("Memory total,free:").concatL(Manager.getTotalMemory()).concatC(",").concatL(Manager.getFreeMemory()));
+        Debug.log(String.valueOfC("Memory total, free: ").
+                concatL(/*Debug.formatSize*/(Manager.getTotalMemory())).
+                concatC(", ").concatL(/*Debug.formatSize*/(Manager.getFreeMemory())));
 
         drawSplash("Loading...");
 
@@ -148,14 +156,10 @@ public final class Application {
         PFont baseFont = fontManager.getFont(0);
         PFontCollection.initiate(fontManager, baseFont);
 
-
-
 //        drawSplash(String.valueOfC("Init network..."));
 
         initPreferenceOnStart();
         isLoading = false;
-
-//        rmenuRun();
 
         panels.initiate(render);
 
@@ -265,141 +269,13 @@ public final class Application {
         return fontManager;
     }
 
-    // ------------ EVENTS CONTROL -------------
-
-    // Очередь сообщений, дублёр предназначен для исключения добавления нового события в момент обработки списка событий
-    private Vector msgQueue;// = new Vector(64);
-
-    public void eventAdd(int eventid, int param, Object data) {
-        eventAdd(eventid, param, data, 0, 0);
-    }
-
-    public void eventAdd(int eventid, int param, Object data, int x, int y) {
-        if (msgQueue == null) {
-            msgQueue = new Vector(64);
-        }
-        boolean normal = msgQueue.size() < 64;
-        if (!normal) Debug.warning(String.valueOfC("queue length exceed 64 events"));
-        Event event = new Event(eventid, param, data, x, y);
-        msgQueue.addElement(event);
-    }
-
     protected void eventProcess() {
-        if (msgQueue == null)
-            return;
-
-        try {
-            //передача указателей на хранилища событий для разнесения обработки и добавления событий
-            synchronized (msgQueue) {
-
-                while (!msgQueue.isEmpty()) {
-                    Event event = (Event) msgQueue.firstElement();
-                    msgQueue.removeElement(event);//перед вызовом события нужно его убрать из очереди на случай эксепта
-                    onEvent(event);
-                    event = null;//ObjC
-                }
-
-            }
-            if (Application.isTimer(Manager.TIMERID_KEYDELAY) && !Application.isTimer(Manager.TIMERID_KEYREPEAT))//TODO сделать один интервал на все фпс
-                eventAdd(Event.EVENT_KEY_REPEATED, Manager.getInstance().getPressedKey(), null);
-        } catch (Exception e) {
-            Debug.logEx(e);
-        }
-    }
-
-    // ------------ TIMERS CONTROL -------------
-    private static Vector timers;
-
-    //Timers
-    public final static int TIMER_CONTROLPACKET = 0x000001FF;//отправка контрольного пакета
-    public final static int TIMER_CONTROLPACKET_MS = 30 * 1000;
-
-    public static boolean isTimer(int timerId) {
-        return Application.findTimer(timerId) != null;
-    }
-
-    private static Etimer findTimer(int timerId) {
-        if (timers == null) timers = new Vector(16);
-        for (Enumeration e = timers.elements(); e.hasMoreElements(); ) {
-            Etimer timer = (Etimer) e.nextElement();
-            if (timer.getId() == timerId)
-                return timer;
-        }
-        return null;
-    }
-
-    public final void setTimer(int timerId, long interval) {
-        Application.setTimer(timerId, interval, 0, false);
-    }
-
-    public static final void setTimer(int timerId, long interval, long data, boolean periodic) {
-
-        Etimer timer = Application.findTimer(timerId);
-
-        if (timer == null) {
-            timer = new Etimer(timerId, interval, data, periodic);
-            timers.addElement(timer);
-        }
-        //Debug.trace("timer " + Integer.toHexString((int) timer[0]) + " set");
-    }
-
-    public final void resetTimer(int timerId) {
-        Etimer timer = Application.findTimer(timerId);
-        if (timer != null) timer.setTime(System.currentTimeMillis());
-    }
-
-    public final void killTimer(int timerId) {
-        for (Enumeration e = timers.elements(); e.hasMoreElements(); ) {
-            Etimer timer = (Etimer) e.nextElement();
-            if (timer.getId() == timerId) {
-                timers.removeElement(timer);
-                return;
-            }
-        }
-    }
-
-    public final long getTimerElapsedTime(int timerId) {
-        Etimer timer = Application.findTimer(timerId);
-        //Debug.assertMsg("getTimerElapsedTime. Timer " + timerId + " not found", timer != null);
-        return System.currentTimeMillis() - timer.getTime();
-    }
-
-    public final boolean isTimerExpired(int timerId) {
-        Etimer timer = Application.findTimer(timerId);
-        //Debug.assertMsg("isTimerExpied. Timer " + timerId + " not found", timer != null);
-        long timedelta = (System.currentTimeMillis() - timer.getTime());
-        return timedelta >= timer.getWait();
-    }
-
-    public final void clearTimers() {
-        timers.removeAllElements();
-    }
-
-    public void processTimers() {
-        if (timers == null) return;
-        for (Enumeration e = timers.elements(); e.hasMoreElements(); ) {
-            Etimer timer = (Etimer) e.nextElement();
-
-            long timedelta = (System.currentTimeMillis() - timer.getTime());
-            if (timedelta >= timer.getWait()) {
-                int timer_ = timer.getId();
-                eventAdd(Event.EVENT_TIMER_END, timer_, timer);
-                if ((timer.getData() & 0x8000000000000000L) != 0) {
-                    timer.setTime(System.currentTimeMillis());
-                } else {
-                    timers.removeElement(timer);
-                }
-            }
-        }
+        super.eventProcess();
+//        if (Application.isTimer(Manager.TIMERID_KEYDELAY) && !Application.isTimer(Manager.TIMERID_KEYREPEAT))//TODO сделать один интервал на все фпс
+//            eventAdd(Event.EVENT_KEY_REPEATED, Manager.getInstance().getPressedKey(), null);
     }
 
     // ---------------MAIN LOOP------------------
-
-    protected Graphics graphicsBuffer;
-    protected Image i_buf;
-    private boolean is_drawing;
-    private int time_delay_ai;
-    private int time_delay_render;
 
     public void mainLoop() {
         try {
@@ -409,15 +285,15 @@ public final class Application {
             }
             long time_delay_ai_start = System.currentTimeMillis();
 //            processTimers();
-            TimerManager.getInstance().update();
+            TimerManager.update();
             Ticker.processTickers();
             eventProcess();
-            gameEvent(Event.EVENT_TICK, 0, 0, 0);
-            time_delay_ai = (int) (System.currentTimeMillis() - time_delay_ai_start);
+            gameEvent(Event.EVENT_TICK, 0, 0, 0); //todo: убрать тики
+//            time_delay_ai = (int) (System.currentTimeMillis() - time_delay_ai_start);
 
-            long time_delay_render_start = System.currentTimeMillis();
+//            long time_delay_render_start = System.currentTimeMillis();
             draw(graphicsBuffer);
-            time_delay_render = (int) (System.currentTimeMillis() - time_delay_render_start);
+//            time_delay_render = (int) (System.currentTimeMillis() - time_delay_render_start);
 
             if (true/* || this.equals(manager.getDisplay())*/) {
                 is_drawing = true;
@@ -457,34 +333,41 @@ public final class Application {
             Manager.paused(1);
         }
 
-        if (arr_side) arr_tick++;
-        else arr_tick--;
-        if (arr_tick > 2) arr_side = false;
-        else if (arr_tick == 0) arr_side = true;
+        if (arr_side) {
+            arr_tick++;
+        } else {
+            arr_tick--;
+        }
+        if (arr_tick > 2) {
+            arr_side = false;
+        } else if (arr_tick == 0) {
+            arr_side = true;
+        }
     }
 
-    public static boolean isTick() {
-        return (globalTick % mult_fps == 0) ? true : false;
-    }
-
-    public static int getTick() {
-        return globalTick;
-    }
+//    public static boolean isTick() {
+//        return (globalTick % mult_fps == 0) ? true : false;
+//    }
+//
+//    public static int getTick() {
+//        return globalTick;
+//    }
 
     // --------------- MESSAGE HANDLERS --------------------------------------------------------------------------------
 
-    protected void onEvent(Event event) {
+    /**
+     * Выполнение всех манипуляций на один игровой тик
+     */
+    protected void onEvent(com.geargames.common.Event event) {
         int code = event.getUid();
         int param = event.getParam();
 
-        if (code == Event.EVENT_TIMER_END) {
-            switch (param) {
-                case TIMER_CONTROLPACKET:
-                    return;
-            }
+        Object element = event.getData();
+        if (element != null) {
+            ((AWTObject)element).event(code, param, event.getX(), event.getY());
+        } else {
+            gameEvent(code, param, event.getX(), event.getY());
         }
-
-        gameEvent(code, param, event.getX(), event.getY());
     }
 
     /**

@@ -28,20 +28,18 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
         }
     }
 
-    public boolean longClick(int x, int y) {
+    public void showHint(int x, int y) {
         TextHint.show(String.valueOfC("Toggle ellipsis"), x, y);
-        return true;
     }
 
     public boolean event(int code, int param, int x, int y) {
-        if (code == Event.EVENT_TOUCH_LONG_CLICK) {
+        if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
-            longClick(
+            showHint(
                     PPanelManager.getInstance().getEventX() - x,
                     PPanelManager.getInstance().getEventY() - y + getDrawRegion().getHeight()
             );
 //            }
-            return false;
         }
         return super.event(code, param, x, y);
     }

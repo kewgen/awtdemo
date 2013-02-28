@@ -85,7 +85,6 @@ public class PPanel_SpinBoxes extends DrawablePPanel {
 
         PGradualSpinBox gradualSpinBox = new PGradualSpinBox(prototypeIndicator);
         gradualSpinBox.setValue((short)0);
-        gradualSpinBox.setFps(Application.mult_fps * 2);
         gradualSpinBox.setFont(PFontCollection.getFontLabel());
         addChild(gradualSpinBox, 270, 20);
 

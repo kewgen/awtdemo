@@ -3,9 +3,15 @@ package com.geargames.awtdemo.timers;
 /**
  * User: abarakov
  * Date: 25.02.13 10:16
+ * Список кодов клиентских таймеров.
  */
-public class TimerIdMap {
-    // awt components timers
-    public final static int AWT_TEXTHINT_GRAPHICS_STRATEGY_TICK = -5001;
-    public final static int AWT_SPINBOX_BUTTON_TICK             = -6001;
+public class TimerIdMap extends com.geargames.awt.timers.TimerIdMap {
+    /*
+     * Пожалуйста, выбирайте id следуя следующему правилу:
+     *     отрицательные id - для всех системных таймеров (таймеров общего кода);
+     *     id = 0..20000 - для клиентских таймеров с константным id.
+     */
+
+    public final static int AWTDEMO_PROGRESSBARS_TICK = 1000;
+
 }

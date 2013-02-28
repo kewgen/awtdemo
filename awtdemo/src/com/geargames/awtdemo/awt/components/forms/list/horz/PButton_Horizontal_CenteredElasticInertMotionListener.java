@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.awt.components.forms.lists;
+package com.geargames.awtdemo.awt.components.forms.list.horz;
 
 import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
@@ -11,43 +11,40 @@ import com.geargames.common.packer.PObject;
 
 /**
  * User: abarakov
- * Date: 19.02.13
+ * Date: 18.02.13
  */
-public class PButton_Vertical_CenteredElasticInertMotionListener extends PDummyRadioButton {
+public class PButton_Horizontal_CenteredElasticInertMotionListener extends PDummyRadioButton {
 
-    private VerticalList verticalList;
+    private HorizontalList horizontalList;
 
-    public PButton_Vertical_CenteredElasticInertMotionListener(VerticalList verticalList, PObject prototype) {
+    public PButton_Horizontal_CenteredElasticInertMotionListener(HorizontalList horizontalList, PObject prototype) {
         super(prototype);
-        this.verticalList = verticalList;
+        this.horizontalList = horizontalList;
     }
 
     public void action() {
         CenteredElasticInertMotionListener motionListener = new CenteredElasticInertMotionListener();
         motionListener.setInstinctPosition(false);
-        verticalList.setMotionListener(
-                //todo: Изменить Horizontal -> Vertical
+        horizontalList.setMotionListener(
                 ScrollHelper.adjustHorizontalCenteredMenuMotionListener(
-                        motionListener, verticalList.getDrawRegion(), verticalList.getItemsAmount(),
-                        verticalList.getItemSize(), verticalList.getPrototype().getDrawRegion().getMinY()
+                        motionListener, horizontalList.getDrawRegion(), horizontalList.getItemsAmount(),
+                        horizontalList.getItemSize(), horizontalList.getPrototype().getDrawRegion().getMinX()
                 )
         );
     }
 
-    public boolean longClick(int x, int y) {
+    public void showHint(int x, int y) {
         TextHint.show(String.valueOfC("CenteredElasticInertMotionListener"), x, y);
-        return true;
     }
 
     public boolean event(int code, int param, int x, int y) {
-        if (code == Event.EVENT_TOUCH_LONG_CLICK) {
+        if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
-            longClick(
+            showHint(
                     PPanelManager.getInstance().getEventX() - x,
                     PPanelManager.getInstance().getEventY() - y + getDrawRegion().getHeight()
             );
 //            }
-            return false;
         }
         return super.event(code, param, x, y);
     }

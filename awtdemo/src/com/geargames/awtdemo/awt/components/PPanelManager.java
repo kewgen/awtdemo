@@ -81,7 +81,7 @@ public class PPanelManager /*extends PPanelManager*/ {
             modal.event(code, param, x, y);
         }
 
-        // TODO TextHint должен отрисовываться через список drawableElements, а не в индивидуальном порядке
+        //todo: TextHint должен получать события, находясь в списке callableElements, а не в индивидуальном порядке
         TextHint hintElement = TextHint.getInstance();
 //        if (hintElement.getVisible())
         hintElement.event(code, param, x, y);
@@ -129,7 +129,7 @@ public class PPanelManager /*extends PPanelManager*/ {
             }
         }
 
-        // TODO TextHint должен отрисовываться через список drawableElements, а не в индивидуальном порядке
+        //todo: TextHint должен отрисовываться находясь в списке drawableElements, а не в индивидуальном порядке
         TextHint hintElement = TextHint.getInstance();
 //        if (hintElement.getVisible())
             hintElement.draw(graphics);

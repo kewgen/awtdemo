@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.awt.components.forms.lists;
+package com.geargames.awtdemo.awt.components.forms.list.vlist;
 
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
@@ -7,6 +7,8 @@ import com.geargames.awtdemo.app.Graph;
 import com.geargames.awtdemo.app.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
+import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStrictlyClipped;
+import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStuck;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;

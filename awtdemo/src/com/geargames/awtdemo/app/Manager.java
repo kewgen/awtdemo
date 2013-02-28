@@ -11,9 +11,9 @@ import com.geargames.awtdemo.awt.components.PPanelManager;
 
 public final class Manager extends com.geargames.Manager implements Runnable {
 
-    public final static boolean DEBUG = true;//главный дебаг, если false отключает все остальные дебаги
+    public final static boolean DEBUG = true; // Главный дебаг, если false отключает все остальные дебаги
 
-    // ****************************** Settings ******************************
+    // ***** Settings **************************************************************************************************
 
     private Application app;
     private MIDlet midlet;
@@ -26,7 +26,7 @@ public final class Manager extends com.geargames.Manager implements Runnable {
     private boolean enabledOkKey = true;
     private boolean enabledCancelKey = true;
 
-    // ------------------ Manage ------------------------
+    // ----- Manage ----------------------------------------------------------------------------------------------------
 
     private static Manager self_manger;
     private Canvas canvas;
@@ -48,7 +48,8 @@ public final class Manager extends com.geargames.Manager implements Runnable {
         return self_manger;
     }
 
-    public static Manager getManager() {//для андроида после выхода из спячки
+    // Для андроида после выхода из спячки
+    public static Manager getManager() {
         return self_manger;
     }
 
@@ -69,20 +70,25 @@ public final class Manager extends com.geargames.Manager implements Runnable {
 
 
     // ------------------ Screen ------------------------
-    public void paint(Graphics g) {
-        //Manager.log("Manager.paint");
-        if (Port.IS_CONSOLE) g.onCache(5000);
+    public void paint(Graphics graphics) {
+//        Manager.log("Manager.paint");
+        if (Port.IS_CONSOLE) {
+            graphics.onCache(5000);
+        }
         try {
-            if (app == null) return;//Application еще не создан
-            g.drawImage(app.getBuffer(), Port.SCREEN_DX, Port.SCREEN_DY, 0);
+            if (app == null) {
+                return; // Application еще не создан
+            }
+            graphics.drawImage(app.getBuffer(), Port.SCREEN_DX, Port.SCREEN_DY, 0);
         } catch (Exception e) {
             Manager.logEx(e);
         }
-        //if (Port.OPEN_GL && Port.isAndroid()) game.app.getGraphics().finish();
+//        if (Port.OPEN_GL && Port.isAndroid()) {
+//            game.app.getGraphics().finish();
+//        }
         app.setIsDrawing(false);
-        //Debug.trace(" paint");
+//        Debug.trace(" paint");
     }
-
 
     public void repaintStart() {
         canvas.repaintStart();
@@ -90,16 +96,20 @@ public final class Manager extends com.geargames.Manager implements Runnable {
         midlet.repaint();
     }
 
-    public void resizeScreenBuffer(int w, int h) {//изменение размеров экранного буфера
-        if (app == null) return;
+    //изменение размеров экранного буфера
+    public void resizeScreenBuffer(int w, int h) {
+        if (app == null) {
+            return;
+        }
         Port.setWH(w, h);
         app.createScreenBuffer(w, h);
         PPanelManager.getInstance().onScreenResize();
     }
 
+    // ----- MIDLET EVENTS HANDLERS ------------------------------------------------------------------------------------
 
-    // ------------MIDLET EVENTS HANDLERS--------
-    public void startApp() {// Обработчик события startApp мидлета
+    // Обработчик события startApp мидлета
+    public void startApp() {
         isSuspended = false;
         create();
         if (Port.OPEN_GL && Port.IS_ANDROID) {//вызов потока аи и рендера делает OpenGL
@@ -110,7 +120,8 @@ public final class Manager extends com.geargames.Manager implements Runnable {
         }
     }
 
-    public void pauseApp() {// Обработчик события pauseApp мидлета
+    // Обработчик события pauseApp мидлета
+    public void pauseApp() {
         isSuspended = true;
         //onPause();
         Display.getDisplay(midlet).setCurrent(null);
@@ -121,17 +132,19 @@ public final class Manager extends com.geargames.Manager implements Runnable {
         destroy(true);
     }
 
-    private boolean destroy_correct;// Обработчик события destroyApp мидлета
+    private boolean destroy_correct;
 
+    // Обработчик события destroyApp мидлета
     public void destroy(boolean correct) {
         destroy_correct = correct;
         stopMainThread();
-        //if (game.Port.isAndroid()) midlet.onDestroy();
+//        if (game.Port.isAndroid()) {
+//            midlet.onDestroy();
+//        }
         if (Port.OPEN_GL && Port.IS_ANDROID) runStop();
         midlet.notifyDestroyed();
-        //setCanvasDisplay(null);
+//        setCanvasDisplay(null);
     }
-
 
     // ------------THREAD CONTROL----------------
     public void startMainThread() {// Запускает поток Main game.Game loop
@@ -270,8 +283,8 @@ public final class Manager extends com.geargames.Manager implements Runnable {
             if (canvas.isKeyValid(key) || canvas.isTouchSupport) {
                 app.eventAdd(Event.EVENT_KEY_RELEASED, key, null);
                 lastKey = pressedKey = 0;
-                app.killTimer(TIMERID_KEYREPEAT);
-                app.killTimer(TIMERID_KEYDELAY);
+//                app.killTimer(TIMERID_KEYREPEAT);
+//                app.killTimer(TIMERID_KEYDELAY);
             }
         } catch (Exception e) {
             Debug.assertMsg(String.valueOfC("keyReleased [FILELINE]"), false);

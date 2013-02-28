@@ -1,7 +1,7 @@
-package com.geargames.awtdemo.awt.components.forms.texts;
+package com.geargames.awtdemo.awt.components.forms.hints;
 
 import com.geargames.awt.TextHint;
-import com.geargames.awt.components.ScrollableArea;
+import com.geargames.awt.components.TextArea;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyToggleButton;
 import com.geargames.common.Event;
@@ -12,24 +12,24 @@ import com.geargames.common.packer.PObject;
  * User: abarakov
  * Date: 21.02.13
  */
-public class PButton_ToggleStrictlyClipped extends PDummyToggleButton {
+public class PButton_ToggleEllipsis extends PDummyToggleButton {
 
-    private ScrollableArea[] scrollableAreaList;
+    private TextArea[] textAreaList;
 
-    public PButton_ToggleStrictlyClipped(ScrollableArea[] scrollableAreaList, PObject prototype) {
+    public PButton_ToggleEllipsis(TextArea[] textAreaList, PObject prototype) {
         super(prototype);
-        this.scrollableAreaList = scrollableAreaList;
+        this.textAreaList = textAreaList;
     }
 
     public void action() {
-        for (int i = 0; i < scrollableAreaList.length; i++) {
-            ScrollableArea scrollableArea = scrollableAreaList[i];
-            scrollableArea.setStrictlyClipped(this.isState());
+        for (int i = 0; i < textAreaList.length; i++) {
+            TextArea textArea = textAreaList[i];
+            textArea.setEllipsis(this.isState());
         }
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("Toggle StrictlyClipped"), x, y);
+        TextHint.show(String.valueOfC("Toggle ellipsis"), x, y);
     }
 
     public boolean event(int code, int param, int x, int y) {

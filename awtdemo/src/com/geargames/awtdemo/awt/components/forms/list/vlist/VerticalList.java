@@ -1,15 +1,10 @@
-package com.geargames.awtdemo.awt.components.forms.lists;
+package com.geargames.awtdemo.awt.components.forms.list.vlist;
 
 import com.geargames.awt.components.PPrototypeElement;
 import com.geargames.awt.components.PVerticalScrollView;
-import com.geargames.awt.utils.ScrollHelper;
-import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
 import com.geargames.awt.utils.motions.ElasticInertMotionListener;
 import com.geargames.common.Graphics;
-import com.geargames.common.packer.Index;
-import com.geargames.common.packer.PFrame;
 import com.geargames.common.packer.PObject;
-import com.geargames.common.util.ArrayList;
 
 import java.util.Vector;
 

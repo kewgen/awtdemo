@@ -1,9 +1,8 @@
-package com.geargames.awtdemo.awt.components.forms.lists;
+package com.geargames.awtdemo.awt.components.forms.list.vlist;
 
 import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
 import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
-import com.geargames.awtdemo.app.Application;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
 import com.geargames.common.Event;
@@ -12,42 +11,41 @@ import com.geargames.common.packer.PObject;
 
 /**
  * User: abarakov
- * Date: 18.02.13
+ * Date: 19.02.13
  */
-public class PButton_Horizontal_CenteredElasticInertMotionListener extends PDummyRadioButton {
+public class PButton_Vertical_CenteredElasticInertMotionListener extends PDummyRadioButton {
 
-    private HorizontalList horizontalList;
+    private VerticalList verticalList;
 
-    public PButton_Horizontal_CenteredElasticInertMotionListener(HorizontalList horizontalList, PObject prototype) {
+    public PButton_Vertical_CenteredElasticInertMotionListener(VerticalList verticalList, PObject prototype) {
         super(prototype);
-        this.horizontalList = horizontalList;
+        this.verticalList = verticalList;
     }
 
     public void action() {
         CenteredElasticInertMotionListener motionListener = new CenteredElasticInertMotionListener();
         motionListener.setInstinctPosition(false);
-        horizontalList.setMotionListener(
+        verticalList.setMotionListener(
+                //todo: Изменить Horizontal -> Vertical
                 ScrollHelper.adjustHorizontalCenteredMenuMotionListener(
-                        motionListener, horizontalList.getDrawRegion(), horizontalList.getItemsAmount(),
-                        horizontalList.getItemSize(), horizontalList.getPrototype().getDrawRegion().getMinX()
+                        motionListener, verticalList.getDrawRegion(), verticalList.getItemsAmount(),
+                        verticalList.getItemSize(), verticalList.getPrototype().getDrawRegion().getMinY()
                 )
         );
     }
 
-    public boolean longClick(int x, int y) {
+    public void showHint(int x, int y) {
         TextHint.show(String.valueOfC("CenteredElasticInertMotionListener"), x, y);
-        return true;
     }
 
     public boolean event(int code, int param, int x, int y) {
-        if (code == Event.EVENT_TOUCH_LONG_CLICK) {
+        if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
-            longClick(
+            showHint(
                     PPanelManager.getInstance().getEventX() - x,
                     PPanelManager.getInstance().getEventY() - y + getDrawRegion().getHeight()
             );
 //            }
-            return false;
         }
         return super.event(code, param, x, y);
     }

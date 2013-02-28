@@ -8,6 +8,8 @@ import com.geargames.awtdemo.app.Graph;
 import com.geargames.awtdemo.app.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
+import com.geargames.awtdemo.timers.TimerIdMap;
+import com.geargames.awt.timers.TimerManager;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
@@ -96,24 +98,29 @@ public class PPanel_Progressbars extends DrawablePPanel {
 
 //        hintProgressIndicator = new PHintProgressIndicator(prototypeIndicator, ...);
 //        addChild(simpleIndicator, 200, 40);
-    }
 
-    public void onHide() {
+        TimerManager.setPeriodicTimer(TimerIdMap.AWTDEMO_PROGRESSBARS_TICK, 500, this);
     }
 
     public void onShow() {
     }
 
+    public void onHide() {
+        TimerManager.killTimer(TimerIdMap.AWTDEMO_PROGRESSBARS_TICK);
+    }
+
     private int tickCount = 0;
 
     public boolean event(int code, int param, int x, int y) {
-        if (code == Event.EVENT_TICK) {
+        if (code == Event.EVENT_TIMER && param == TimerIdMap.AWTDEMO_PROGRESSBARS_TICK) {
             tickCount++;
-            simpleIndicator1.setValue(tickCount / 5);
-            simpleIndicator2.setValue(tickCount / 10);
-            if (tickCount == 104)
+            simpleIndicator1.setValue(tickCount);
+            simpleIndicator2.setValue(tickCount / 2);
+            if (tickCount == 20)
                 tickCount = 0;
+            return false;
+        } else {
+            return super.event(code, param, x, y);
         }
-        return super.event(code, param, x, y);
     }
 }

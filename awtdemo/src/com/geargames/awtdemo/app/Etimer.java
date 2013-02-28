@@ -1,6 +1,6 @@
 package com.geargames.awtdemo.app;
 
-
+@Deprecated
 public class Etimer {
     private int eid;
     private long etime;//время отсчета

@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.awt.components.forms.lists;
+package com.geargames.awtdemo.awt.components.forms.list.horz;
 
 import com.geargames.awt.components.PHorizontalScrollView;
 import com.geargames.awt.utils.ScrollHelper;
@@ -8,7 +8,6 @@ import com.geargames.common.packer.Index;
 import com.geargames.common.packer.PFrame;
 import com.geargames.common.packer.PObject;
 import com.geargames.common.util.ArrayList;
-import com.geargames.common.util.Region;
 
 import java.util.Vector;
 
