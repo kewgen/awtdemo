@@ -62,19 +62,19 @@ public class PMainPanel extends DrawablePPanel {
 
 //----- Кнопки для открывания форм с демо компонентами -----------------------------------------------------------------
 
-        PButton buttonButtons = new PButton_Buttons(String.valueOfC("КНОПКИ"));
+        PButton buttonButtons = new PButton_Buttons(String.valueOfC("BUTTONS"));
         addChild(buttonButtons, 20, 20);
 
-        PButton buttonText = new PButton_Text(String.valueOfC("ТЕКСТОВЫЕ"));
+        PButton buttonText = new PButton_Text(String.valueOfC("TEXTS"));
         addChild(buttonText, 180, 20);
 
-        PButton buttonHorizontalList = new PButton_HorizontalList(String.valueOfC("ГОРИЗ. СПИСОК"));
+        PButton buttonHorizontalList = new PButton_HorizontalList(String.valueOfC("HORZ LISTS"));
         addChild(buttonHorizontalList, 20, 70);
 
-        PButton buttonVerticalList = new PButton_VerticalList(String.valueOfC("ВЕРТ. СПИСОК"));
+        PButton buttonVerticalList = new PButton_VerticalList(String.valueOfC("VERT LISTS"));
         addChild(buttonVerticalList, 180, 70);
 
-        PButton buttonMenuExam = new PButton_MenuExam(String.valueOfC("ОБРАЗЕЦ МЕНЮ"));
+        PButton buttonMenuExam = new PButton_MenuExam(String.valueOfC("MENU EXAMPLE"));
         addChild(buttonMenuExam, 20, 120);
 
         PButton buttonProgressbars = new PButton_Progressbars(String.valueOfC("PROGRESS BARS"));
@@ -83,7 +83,10 @@ public class PMainPanel extends DrawablePPanel {
         PButton buttonSpinBoxes = new PButton_SpinBoxes(String.valueOfC("SPIN BOXES"));
         addChild(buttonSpinBoxes, 20, 170);
 
-        PButton buttonExit = new PButton_Exit(String.valueOfC("ВЫХОД"));
+        PButton buttonSpinHints = new PButton_Hints(String.valueOfC("HINTS"));
+        addChild(buttonSpinHints, 180, 170);
+
+        PButton buttonExit = new PButton_Exit(String.valueOfC("EXIT"));
         addChild(buttonExit, 20, 375);
     }
 

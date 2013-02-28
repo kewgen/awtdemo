@@ -64,4 +64,10 @@ public class PFontCollection {
         checkInstance();
         return instance.font12;
     }
+
+    public static PFont getFontHint() {
+        checkInstance();
+        return instance.font12;
+    }
+
 }

@@ -165,6 +165,7 @@ public final class Application extends com.geargames.awt.Application {
 
         TextHint textHint = TextHint.getInstance();
         textHint.setSkinObject(render.getFrame(675), render, 16, 24, 16, 24); //todo: Установить правильный скин и размеры
+//        textHint.setDefaultFont(PFontCollection.getFontHint());
 
 
         stateInfoString = String.valueOfC("");
