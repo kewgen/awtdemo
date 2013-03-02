@@ -26,7 +26,7 @@ public class PButton_ShowHint4 extends PDummyEntitledToggleButton {
             TextHint.show(String.valueOfC("ВСПЛЫВАЮЩАЯ ПОДСКАЗКА С ИСПОЛЬЗОВАНИЕМ РАСТРОВОГО ШРИФТА И СТАНДАРТНЫМИ НАСТРОЙКАМИ"),
                     PPanelManager.getInstance().getEventX() - x,
                     PPanelManager.getInstance().getEventY() - y + getDrawRegion().getHeight(),
-                    PFontCollection.getFontHint());
+                    150, 1000, 150, PFontCollection.getFontHint(), false);
         }
         return super.event(code, param, x, y);
     }

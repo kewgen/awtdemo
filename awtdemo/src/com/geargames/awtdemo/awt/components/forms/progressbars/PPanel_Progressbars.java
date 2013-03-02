@@ -111,16 +111,17 @@ public class PPanel_Progressbars extends DrawablePPanel {
 
     private int tickCount = 0;
 
-    public boolean event(int code, int param, int x, int y) {
-        if (code == Event.EVENT_TIMER && param == TimerIdMap.AWTDEMO_PROGRESSBARS_TICK) {
+    /**
+     * Метод вызывается каждый раз при срабатывании таймера.
+     * @param timerId - идентификатор сработавшего таймера, который вызвал данный метод.
+     */
+    public void onTimer(int timerId) {
+        if (timerId == TimerIdMap.AWTDEMO_PROGRESSBARS_TICK) {
             tickCount++;
             simpleIndicator1.setValue(tickCount);
             simpleIndicator2.setValue(tickCount / 2);
             if (tickCount == 20)
                 tickCount = 0;
-            return false;
-        } else {
-            return super.event(code, param, x, y);
         }
     }
 }

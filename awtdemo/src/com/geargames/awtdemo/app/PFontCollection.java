@@ -9,6 +9,7 @@ import com.geargames.common.packer.PFontManager;
  * Date: 14.02.13 19:27
  */
 public class PFontCollection {
+
     private static PFontCollection instance;
 
     private PFont font10;

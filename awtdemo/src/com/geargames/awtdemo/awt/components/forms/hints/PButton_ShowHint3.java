@@ -23,10 +23,10 @@ public class PButton_ShowHint3 extends PDummyEntitledToggleButton {
 
     public boolean event(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
-            TextHint.show(String.valueOfC("ВСПЛЫВАЮЩАЯ ПОДСКАЗКА С ИСПОЛЬЗОВАНИЕМ РАСТРОВОГО ШРИФТА И СТАНДАРТНЫМИ НАСТРОЙКАМИ"),
+            TextHint.show(String.valueOfC("БЫСТРО ВСПЛЫВАЮЩАЯ И МЕДЛЕННО СКРЫВАЮЩАЯСЯ ПОДСКАЗКА ИСПОЛЬЗУЮЩАЯ РАСТРОВЫЙ ШРИФТ"),
                     PPanelManager.getInstance().getEventX() - x,
                     PPanelManager.getInstance().getEventY() - y + getDrawRegion().getHeight(),
-                    PFontCollection.getFontHint());
+                    150, 2000, 2000, PFontCollection.getFontHint(), false);
         }
         return super.event(code, param, x, y);
     }

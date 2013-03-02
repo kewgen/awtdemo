@@ -4,7 +4,6 @@ import com.geargames.Debug;
 import com.geargames.Recorder;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.TextHint;
-import com.geargames.awt.AWTObject;
 import com.geargames.awtdemo.packer.PUnitCreator;
 import com.geargames.awt.timers.TimerManager;
 import com.geargames.common.String;
@@ -16,7 +15,7 @@ import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.packer.Graphics;
 import com.geargames.packer.Image;
 
-import java.awt.*;
+import java.awt.Point;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
@@ -24,6 +23,7 @@ import java.io.DataOutputStream;
 
 public final class Application extends com.geargames.awt.Application {
 
+    //todo: Удалить mult_fps
     public static final int mult_fps = /*@MULT_FPS@*/4/*END*/;//1 2 4 = 6 12 24
 
     //    private static Lock startLock = new MELock();
@@ -46,8 +46,6 @@ public final class Application extends com.geargames.awt.Application {
     protected Graphics graphicsBuffer;
     protected Image i_buf;
     private boolean is_drawing;
-//    private int time_delay_ai;
-//    private int time_delay_render;
 
     //TODO Переименовать stateInfo
     private String stateInfoString = null;
@@ -66,9 +64,9 @@ public final class Application extends com.geargames.awt.Application {
         /*ObjC uncomment*///return self;
     }
 
-    public static Application getInstance(){
+    public static Application getInstance() {
         Application instance = (Application)com.geargames.awt.Application.getInstance();
-        if (instance == null){
+        if (instance == null) {
 //            startLock.lock();
             instance = new Application();
 //            startLock.release();
@@ -284,17 +282,12 @@ public final class Application extends com.geargames.awt.Application {
                 Manager.paused(10);
                 return;
             }
-            long time_delay_ai_start = System.currentTimeMillis();
-//            processTimers();
             TimerManager.update();
             Ticker.processTickers();
             eventProcess();
             gameEvent(Event.EVENT_TICK, 0, 0, 0); //todo: убрать тики
-//            time_delay_ai = (int) (System.currentTimeMillis() - time_delay_ai_start);
 
-//            long time_delay_render_start = System.currentTimeMillis();
             draw(graphicsBuffer);
-//            time_delay_render = (int) (System.currentTimeMillis() - time_delay_render_start);
 
             if (true/* || this.equals(manager.getDisplay())*/) {
                 is_drawing = true;
@@ -360,15 +353,12 @@ public final class Application extends com.geargames.awt.Application {
      * Выполнение всех манипуляций на один игровой тик
      */
     protected void onEvent(com.geargames.common.Event event) {
-        int code = event.getUid();
-        int param = event.getParam();
-
-        Object element = event.getData();
-        if (element != null) {
-            ((AWTObject)element).event(code, param, event.getX(), event.getY());
-        } else {
-            gameEvent(code, param, event.getX(), event.getY());
-        }
+//        Object element = event.getData();
+//        if (element != null) {
+//            ((AWTObject)element).event(event.getUid(), event.getParam(), event.getX(), event.getY());
+//        } else {
+            gameEvent(event.getUid(), event.getParam(), event.getX(), event.getY());
+//        }
     }
 
     /**

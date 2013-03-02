@@ -76,16 +76,16 @@ public class PPanel_Hints extends DrawablePPanel {
         //----- Кнопки для отображения примеров всплывающих подсказок --------------------------------------------------
 
         PButton_ShowHint1 buttonHint1 = new PButton_ShowHint1(String.valueOfC("HINT 1"));
-        addChild(buttonHint1, 20, 60);
+        addChild(buttonHint1, 20, 30);
 
         PButton_ShowHint2 buttonHint2 = new PButton_ShowHint2(String.valueOfC("HINT 2"));
-        addChild(buttonHint2, 180, 60);
+        addChild(buttonHint2, 180, 30);
 
         PButton_ShowHint3 buttonHint3 = new PButton_ShowHint3(String.valueOfC("HINT 3"));
-        addChild(buttonHint3, 20, 110);
+        addChild(buttonHint3, 20, 80);
 
         PButton_ShowHint4 buttonHint4 = new PButton_ShowHint4(String.valueOfC("HINT 4"));
-        addChild(buttonHint4, 180, 110);
+        addChild(buttonHint4, 180, 80);
     }
 
     public void onHide() {
