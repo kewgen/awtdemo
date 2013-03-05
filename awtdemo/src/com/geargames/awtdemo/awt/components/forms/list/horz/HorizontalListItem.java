@@ -20,7 +20,7 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
         setRegion(NullRegion.instance);
     }
 
-//    public boolean event(int code, int param, int x, int y) {
+//    public boolean onEvent(int code, int param, int x, int y) {
 //        return false;
 //    }
 //
@@ -49,11 +49,7 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
         value.draw(graphics, x, y);
     }
 //
-//    public boolean isVisible() {
-//        return true;
-//    }
-//
-//    public void action() {
+//    public void onClick() {
 //
 //    }
 

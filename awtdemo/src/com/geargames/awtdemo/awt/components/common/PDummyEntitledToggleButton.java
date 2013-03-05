@@ -22,6 +22,6 @@ public class PDummyEntitledToggleButton extends PEntitledToggleButton {
         this(Application.getInstance().getRender().getObject(Graph.OBJ_BUT), caption);
     }
 
-    public void action() {
+    public void onClick() {
     }
 }

@@ -16,17 +16,17 @@ public class PButton_ShowHint1 extends PDummyEntitledToggleButton {
         super(text);
     }
 
-    public void action() {
+    public void onClick() {
         // Не требуется
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
             TextHint.show(String.valueOfC("ВСПЛЫВАЮЩАЯ ПОДСКАЗКА С ИСПОЛЬЗОВАНИЕМ СИСТЕМНОГО ШРИФТА И СТАНДАРТНЫМИ НАСТРОЙКАМИ"),
                     PPanelManager.getInstance().getEventX() - x,
                     PPanelManager.getInstance().getEventY() - y + getDrawRegion().getHeight(),
                     null);
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

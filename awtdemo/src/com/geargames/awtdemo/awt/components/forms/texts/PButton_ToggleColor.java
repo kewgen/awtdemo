@@ -39,7 +39,7 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
         this.textAreaList = textAreaList;
     }
 
-    public void action() {
+    public void onClick() {
         indexColor++;
         if (indexColor == colorList.length) {
             indexColor = 0;
@@ -54,7 +54,7 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
         TextHint.show(String.valueOfC("Toggle color"), x, y);
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
             showHint(
@@ -63,6 +63,6 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
             );
 //            }
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

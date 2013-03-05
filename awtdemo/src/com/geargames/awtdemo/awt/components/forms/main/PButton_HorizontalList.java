@@ -14,7 +14,7 @@ public class PButton_HorizontalList extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         PPanel_HorizontalList panel = new PPanel_HorizontalList();
         panel.showModal();
     }

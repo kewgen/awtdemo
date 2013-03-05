@@ -13,7 +13,7 @@ public class PButton_Exit extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         System.exit(0);
     }
 }

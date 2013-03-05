@@ -21,7 +21,7 @@ public class PButton_Vertical_ElasticInertMotionListener extends PDummyRadioButt
         this.verticalList = verticalList;
     }
 
-    public void action() {
+    public void onClick() {
         ElasticInertMotionListener motionListener = new ElasticInertMotionListener();
         verticalList.setMotionListener(motionListener);
 //        verticalList.setMotionListener(
@@ -36,7 +36,7 @@ public class PButton_Vertical_ElasticInertMotionListener extends PDummyRadioButt
         TextHint.show(String.valueOfC("ElasticInertMotionListener"), x, y);
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
                 showHint(
@@ -45,6 +45,6 @@ public class PButton_Vertical_ElasticInertMotionListener extends PDummyRadioButt
                 );
 //            }
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

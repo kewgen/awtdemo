@@ -22,7 +22,7 @@ public class PButton_Horizontal_InertMotionListener extends PDummyRadioButton {
         this.horizontalList = horizontalList;
     }
 
-    public void action() {
+    public void onClick() {
         InertMotionListener motionListener = new InertMotionListener();
         horizontalList.setMotionListener(
                 ScrollHelper.adjustHorizontalInertMotionListener(
@@ -36,7 +36,7 @@ public class PButton_Horizontal_InertMotionListener extends PDummyRadioButton {
         TextHint.show(String.valueOfC("InertMotionListener"), x, y);
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
                 showHint(
@@ -45,6 +45,6 @@ public class PButton_Horizontal_InertMotionListener extends PDummyRadioButton {
                 );
 //            }
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

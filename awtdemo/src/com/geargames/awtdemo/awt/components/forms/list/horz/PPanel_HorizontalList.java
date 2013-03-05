@@ -111,7 +111,7 @@ public class PPanel_HorizontalList extends DrawablePPanel {
         // Четыре кнопки выбора соответствующих MotionListener
         PRadioButton buttonListener1 = new PButton_Horizontal_CenteredElasticInertMotionListener(
                 horizontalList, Application.getInstance().getRender().getObject(58));
-        buttonListener1.setState(true);
+        buttonListener1.setChecked(true);
         radioGroup.addButton(buttonListener1);
         addChild(buttonListener1, 7, 112);
 

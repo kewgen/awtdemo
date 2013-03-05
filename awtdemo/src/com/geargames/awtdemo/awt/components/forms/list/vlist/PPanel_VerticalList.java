@@ -114,7 +114,7 @@ public class PPanel_VerticalList extends DrawablePPanel {
         PRadioButton buttonListener3 = new PButton_Vertical_ElasticInertMotionListener(
                 verticalList, Application.getInstance().getRender().getObject(60));
         radioGroup.addButton(buttonListener3);
-        buttonListener3.setState(true);
+        buttonListener3.setChecked(true);
         addChild(buttonListener3, 113, 42);
 
         PRadioButton buttonListener4 = new PButton_Vertical_StubMotionListener(

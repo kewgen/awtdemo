@@ -21,15 +21,15 @@ public class PButton_ToggleStuck extends PDummyToggleButton {
         this.scrollableArea = scrollableArea;
     }
 
-    public void action() {
-        scrollableArea.setStuck(this.isState());
+    public void onClick() {
+        scrollableArea.setStuck(this.getChecked());
     }
 
     public void showHint(int x, int y) {
         TextHint.show(String.valueOfC("Toggle stuck"), x, y);
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
             showHint(
@@ -38,6 +38,6 @@ public class PButton_ToggleStuck extends PDummyToggleButton {
             );
 //            }
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

@@ -53,7 +53,7 @@ public class PPanelManager /*extends PPanelManager*/ {
      * @param x
      * @param y
      */
-    public void event(int code, int param, int x, int y) {
+    public void onEvent(int code, int param, int x, int y) {
         eventX = x;
         eventY = y;
         if (!preDeafElements.isEmpty()) {
@@ -63,28 +63,28 @@ public class PPanelManager /*extends PPanelManager*/ {
         if (code == Event.EVENT_TICK) {
             for (int i = 0; i < callableElements.size(); i++) {
                 Drawable element = (Drawable) callableElements.get(i);
-                element.event(code, param, 0, 0);
+                element.onEvent(code, param, 0, 0);
             }
             for (int i = 0; i < modalElements.size(); i++) {
                 Drawable element = (Drawable) modalElements.get(i);
-                element.event(code, param, 0, 0);
+                element.onEvent(code, param, 0, 0);
             }
         } else
         if (modalElements.isEmpty()) {
             for (int i = callableElements.size()-1; i >= 0; i--) {
                 Drawable element = (Drawable) callableElements.get(i);
-                if (element.event(code, param, x, y))
+                if (element.onEvent(code, param, x, y))
                     break;
             }
         } else {
             Drawable modal = (Drawable) modalElements.get(modalElements.size()-1);
-            modal.event(code, param, x, y);
+            modal.onEvent(code, param, x, y);
         }
 
         //todo: TextHint должен получать события, находясь в списке callableElements, а не в индивидуальном порядке
         TextHint hintElement = TextHint.getInstance();
 //        if (hintElement.getVisible())
-        hintElement.event(code, param, x, y);
+        hintElement.onEvent(code, param, x, y);
     }
 
     /**

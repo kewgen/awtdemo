@@ -15,10 +15,6 @@ import java.util.Vector;
 public class VerticalList extends PVerticalScrollView {
     private Vector items;
 
-    public boolean isVisible() {
-        return true;
-    }
-
     public VerticalList(int collectionSize, PObject listPrototype) {
         super(listPrototype);
 

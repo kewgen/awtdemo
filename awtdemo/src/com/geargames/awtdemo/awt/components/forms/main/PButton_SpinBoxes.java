@@ -14,7 +14,7 @@ public class PButton_SpinBoxes extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         PPanel_SpinBoxes panel = new PPanel_SpinBoxes();
         panel.showModal();
     }

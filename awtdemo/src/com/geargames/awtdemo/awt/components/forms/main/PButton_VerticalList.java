@@ -14,7 +14,7 @@ public class PButton_VerticalList extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         PPanel_VerticalList panel = new PPanel_VerticalList();
         panel.showModal();
     }

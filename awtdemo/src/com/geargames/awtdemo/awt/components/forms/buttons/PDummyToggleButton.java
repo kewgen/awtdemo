@@ -13,6 +13,6 @@ public class PDummyToggleButton extends PToggleButton {
         super(prototype);
     }
 
-    public void action() {
+    public void onClick() {
     }
 }

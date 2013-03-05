@@ -14,7 +14,7 @@ public class PButton_MenuExam extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         PMenuExamPanel panel = new PMenuExamPanel();
         panel.showModal();
     }

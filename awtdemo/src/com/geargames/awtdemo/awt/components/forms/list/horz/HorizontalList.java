@@ -18,10 +18,6 @@ import java.util.Vector;
 public class HorizontalList extends PHorizontalScrollView {
     private Vector items;
 
-    public boolean isVisible() {
-        return true;
-    }
-
     public HorizontalList(ArrayList collection, PObject listPrototype) {
         super(listPrototype);
 

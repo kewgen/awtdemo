@@ -29,7 +29,7 @@ public class PEntitledClosePanelButton extends PEntitledTouchButton {
         this.parent = parent;
     }
 
-    public void action() {
+    public void onClick() {
         parent.hide();
     }
 }

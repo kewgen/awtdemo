@@ -13,6 +13,6 @@ public class PDummyRadioButton extends PRadioButton {
         super(prototype);
     }
 
-    public void action() {
+    public void onClick() {
     }
 }

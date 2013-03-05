@@ -21,15 +21,15 @@ public class PButton_ToggleStrictlyClipped extends PDummyToggleButton {
         this.scrollableArea = scrollableArea;
     }
 
-    public void action() {
-        scrollableArea.setStrictlyClipped(this.isState());
+    public void onClick() {
+        scrollableArea.setStrictlyClipped(this.getChecked());
     }
 
     public void showHint(int x, int y) {
         TextHint.show(String.valueOfC("Toggle StrictlyClipped"), x, y);
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
             showHint(
@@ -38,6 +38,6 @@ public class PButton_ToggleStrictlyClipped extends PDummyToggleButton {
             );
 //            }
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

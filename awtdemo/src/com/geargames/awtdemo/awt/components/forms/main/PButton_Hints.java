@@ -14,7 +14,7 @@ public class PButton_Hints extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         PPanel_Hints panel = new PPanel_Hints();
         panel.showModal();
     }

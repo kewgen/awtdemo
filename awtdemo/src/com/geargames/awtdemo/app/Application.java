@@ -23,16 +23,13 @@ import java.io.DataOutputStream;
 
 public final class Application extends com.geargames.awt.Application {
 
-    //todo: Удалить mult_fps
+    @Deprecated
     public static final int mult_fps = /*@MULT_FPS@*/4/*END*/;//1 2 4 = 6 12 24
 
-    //    private static Lock startLock = new MELock();
-    private PPanelManager panels = PPanelManager.getInstance();
-
-   // Состояние регистрации
     private Loader loader;
     private Render render;
     private PFontManager fontManager;
+    private PPanelManager panels = PPanelManager.getInstance();
 
     private boolean vibrationEnabled;
     private boolean soundEnabled;
@@ -54,6 +51,8 @@ public final class Application extends com.geargames.awt.Application {
     // splash
     private Image backgroundImage = createBackgroundImage();
 
+    private static Application instance;
+
     // Конструктор
     public Application() {
         super();
@@ -61,15 +60,11 @@ public final class Application extends com.geargames.awt.Application {
             createScreenBuffer(Port.getW(), Port.getH());
         }
 //        drawSplash();
-        /*ObjC uncomment*///return self;
     }
 
     public static Application getInstance() {
-        Application instance = (Application)com.geargames.awt.Application.getInstance();
         if (instance == null) {
-//            startLock.lock();
             instance = new Application();
-//            startLock.release();
         }
         return instance;
     }
@@ -129,8 +124,8 @@ public final class Application extends com.geargames.awt.Application {
         tSleep = System.currentTimeMillis();
 
         Debug.log(String.valueOfC("Memory total, free: ").
-                concatL(/*Debug.formatSize*/(Manager.getTotalMemory())).
-                concatC(", ").concatL(/*Debug.formatSize*/(Manager.getFreeMemory())));
+                concatL(/*Debug.formatSize*/(Manager.getTotalMemory())).concatC(", ").
+                concatL(/*Debug.formatSize*/(Manager.getFreeMemory())));
 
         drawSplash("Loading...");
 
@@ -159,12 +154,11 @@ public final class Application extends com.geargames.awt.Application {
         initPreferenceOnStart();
         isLoading = false;
 
-        panels.initiate(render);
-
         TextHint textHint = TextHint.getInstance();
         textHint.setSkinObject(render.getFrame(675), render, 16, 24, 16, 24); //todo: Установить правильный скин и размеры
 //        textHint.setDefaultFont(PFontCollection.getFontHint());
 
+        panels.initiate(render);
 
         stateInfoString = String.valueOfC("");
     }
@@ -355,7 +349,7 @@ public final class Application extends com.geargames.awt.Application {
     protected void onEvent(com.geargames.common.Event event) {
 //        Object element = event.getData();
 //        if (element != null) {
-//            ((AWTObject)element).event(event.getUid(), event.getParam(), event.getX(), event.getY());
+//            ((Eventable)element).onEvent(event.getUid(), event.getParam(), event.getX(), event.getY());
 //        } else {
             gameEvent(event.getUid(), event.getParam(), event.getX(), event.getY());
 //        }
@@ -365,7 +359,7 @@ public final class Application extends com.geargames.awt.Application {
      * Выполнение всех манипуляций на один игровой тик
      */
     public void gameEvent(int code, int param, int x, int y) {
-        panels.event(code, param, x, y);
+        panels.onEvent(code, param, x, y);
     }
 
     // ----------------- DRAWING ---------------------------------------------------------------------------------------

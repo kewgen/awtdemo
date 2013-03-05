@@ -21,10 +21,10 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
         this.textAreaList = textAreaList;
     }
 
-    public void action() {
+    public void onClick() {
         for (int i = 0; i < textAreaList.length; i++) {
             TextArea textArea = textAreaList[i];
-            textArea.setEllipsis(this.isState());
+            textArea.setEllipsis(this.getChecked());
         }
     }
 
@@ -32,7 +32,7 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
         TextHint.show(String.valueOfC("Toggle ellipsis"), x, y);
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
             showHint(
@@ -41,6 +41,6 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
             );
 //            }
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

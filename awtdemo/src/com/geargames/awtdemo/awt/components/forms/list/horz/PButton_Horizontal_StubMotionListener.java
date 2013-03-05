@@ -23,7 +23,7 @@ public class PButton_Horizontal_StubMotionListener extends PDummyRadioButton {
         this.horizontalList = horizontalList;
     }
 
-    public void action() {
+    public void onClick() {
         StubMotionListener motionListener = new StubMotionListener();
         horizontalList.setMotionListener(
                 //todo: adjustStubMotionListener только для Vertical?
@@ -38,7 +38,7 @@ public class PButton_Horizontal_StubMotionListener extends PDummyRadioButton {
         TextHint.show(String.valueOfC("StubMotionListener"), x, y);
     }
 
-    public boolean event(int code, int param, int x, int y) {
+    public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
                 showHint(
@@ -47,6 +47,6 @@ public class PButton_Horizontal_StubMotionListener extends PDummyRadioButton {
                 );
 //            }
         }
-        return super.event(code, param, x, y);
+        return super.onEvent(code, param, x, y);
     }
 }

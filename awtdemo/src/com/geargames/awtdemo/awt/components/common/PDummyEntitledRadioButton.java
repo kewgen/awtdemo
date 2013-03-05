@@ -22,6 +22,6 @@ public class PDummyEntitledRadioButton extends PEntitledRadioButton {
         this(Application.getInstance().getRender().getObject(Graph.OBJ_BUT), caption);
     }
 
-    public void action() {
+    public void onClick() {
     }
 }

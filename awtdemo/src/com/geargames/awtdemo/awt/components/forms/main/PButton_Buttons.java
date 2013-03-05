@@ -14,7 +14,7 @@ public class PButton_Buttons extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         PPanel_Buttons panel = new PPanel_Buttons();
         panel.showModal();
     }

@@ -14,7 +14,7 @@ public class PButton_Progressbars extends PDummyEntitledTouchButton {
         super(caption);
     }
 
-    public void action() {
+    public void onClick() {
         PPanel_Progressbars panel = new PPanel_Progressbars();
         panel.showModal();
     }
