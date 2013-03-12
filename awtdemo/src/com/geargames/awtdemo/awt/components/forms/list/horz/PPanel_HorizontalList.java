@@ -2,16 +2,16 @@ package com.geargames.awtdemo.awt.components.forms.list.horz;
 
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
-import com.geargames.awtdemo.app.Graph;
-import com.geargames.awtdemo.app.PFontCollection;
-import com.geargames.awtdemo.app.Render;
+import com.geargames.awtdemo.application.Graph;
+import com.geargames.awtdemo.application.PFontCollection;
+import com.geargames.awtdemo.application.Render;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
 import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStrictlyClipped;
 import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStuck;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
-import com.geargames.awtdemo.app.Application;
+import com.geargames.awtdemo.application.Application;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.common.util.ArrayList;
 

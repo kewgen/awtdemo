@@ -1,7 +1,7 @@
 //../regolith/_port/packer_320_480_full
 //Fri Jan 18 15:19:11 MSK 2013 , version: 108
 
-package com.geargames.awtdemo.app;
+package com.geargames.awtdemo.application;
 
 public class Graph {
 

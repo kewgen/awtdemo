@@ -21,7 +21,7 @@ public class PButton_ToggleStuck extends PDummyToggleButton {
         this.scrollableArea = scrollableArea;
     }
 
-    public void onClick() {
+    public void onCheckedChanged() {
         scrollableArea.setStuck(this.getChecked());
     }
 

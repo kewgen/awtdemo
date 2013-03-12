@@ -2,14 +2,14 @@ package com.geargames.awtdemo.awt.components.forms.progressbars;
 
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
-import com.geargames.awtdemo.app.Application;
-import com.geargames.awtdemo.app.Event;
-import com.geargames.awtdemo.app.Graph;
-import com.geargames.awtdemo.app.PFontCollection;
+import com.geargames.awtdemo.application.Application;
+import com.geargames.awtdemo.application.Graph;
+import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
 import com.geargames.awtdemo.timers.TimerIdMap;
 import com.geargames.awt.timers.TimerManager;
+import com.geargames.awt.timers.OnTimerListener;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
@@ -18,7 +18,7 @@ import com.geargames.common.packer.PObject;
  * User: abarakov
  * Date: 15.02.13
 */
-public class PPanel_Progressbars extends DrawablePPanel {
+public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListener {
 
     protected class PContentPanelImpl extends PContentPanel {
 

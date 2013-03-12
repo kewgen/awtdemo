@@ -1,7 +1,7 @@
 package com.geargames.awtdemo;
 
-import com.geargames.awtdemo.app.MIDlet;
-import com.geargames.awtdemo.app.Port;
+import com.geargames.awtdemo.application.MIDlet;
+import com.geargames.awtdemo.application.Port;
 import java.io.IOException;
 
 /**
@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class AWTDemoMain extends com.geargames.Main {
 
-     public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         LOG_FILE_NAME = "awtdemo";
         AWTDemoMain main = new AWTDemoMain();
         main.commonMain(args);

@@ -1,7 +1,7 @@
 package com.geargames.awtdemo.awt.components.forms.hints;
 
 import com.geargames.awt.TextHint;
-import com.geargames.awtdemo.app.PFontCollection;
+import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledToggleButton;
 import com.geargames.common.Event;

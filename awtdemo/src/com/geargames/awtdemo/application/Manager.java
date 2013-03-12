@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.app;
+package com.geargames.awtdemo.application;
 
 import com.geargames.Debug;
 import com.geargames.MIDlet;
@@ -7,6 +7,7 @@ import com.geargames.common.String;
 import com.geargames.packer.Canvas;
 import com.geargames.packer.Display;
 import com.geargames.common.Graphics;
+import com.geargames.common.Event;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 
 public final class Manager extends com.geargames.Manager implements Runnable {

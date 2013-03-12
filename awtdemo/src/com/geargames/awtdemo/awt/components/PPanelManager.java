@@ -60,16 +60,6 @@ public class PPanelManager /*extends PPanelManager*/ {
             callableElements.removeAll(preDeafElements);
             preDeafElements.clear();
         }
-        if (code == Event.EVENT_TICK) {
-            for (int i = 0; i < callableElements.size(); i++) {
-                Drawable element = (Drawable) callableElements.get(i);
-                element.onEvent(code, param, 0, 0);
-            }
-            for (int i = 0; i < modalElements.size(); i++) {
-                Drawable element = (Drawable) modalElements.get(i);
-                element.onEvent(code, param, 0, 0);
-            }
-        } else
         if (modalElements.isEmpty()) {
             for (int i = callableElements.size()-1; i >= 0; i--) {
                 Drawable element = (Drawable) callableElements.get(i);

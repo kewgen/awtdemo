@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.app;
+package com.geargames.awtdemo.application;
 
 import com.geargames.Debug;
 import com.geargames.common.Port;

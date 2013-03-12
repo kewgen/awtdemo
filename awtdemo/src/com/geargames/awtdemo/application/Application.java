@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.app;
+package com.geargames.awtdemo.application;
 
 import com.geargames.Debug;
 import com.geargames.Recorder;
@@ -7,6 +7,7 @@ import com.geargames.awt.TextHint;
 import com.geargames.awtdemo.packer.PUnitCreator;
 import com.geargames.awt.timers.TimerManager;
 import com.geargames.common.String;
+import com.geargames.common.Event;
 import com.geargames.common.packer.PFont;
 import com.geargames.common.packer.PFontManager;
 import com.geargames.common.util.ArrayByte;
@@ -276,10 +277,8 @@ public final class Application extends com.geargames.awt.Application {
                 Manager.paused(10);
                 return;
             }
-            TimerManager.update();
-            Ticker.processTickers();
             eventProcess();
-            gameEvent(Event.EVENT_TICK, 0, 0, 0); //todo: убрать тики
+            TimerManager.update();
 
             draw(graphicsBuffer);
 
@@ -346,7 +345,7 @@ public final class Application extends com.geargames.awt.Application {
     /**
      * Выполнение всех манипуляций на один игровой тик
      */
-    protected void onEvent(com.geargames.common.Event event) {
+    protected void onEvent(Event event) {
 //        Object element = event.getData();
 //        if (element != null) {
 //            ((Eventable)element).onEvent(event.getUid(), event.getParam(), event.getX(), event.getY());

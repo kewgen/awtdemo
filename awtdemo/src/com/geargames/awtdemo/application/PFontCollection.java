@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.app;
+package com.geargames.awtdemo.application;
 
 import com.geargames.common.packer.PFont;
 import com.geargames.common.packer.PFontComposite;

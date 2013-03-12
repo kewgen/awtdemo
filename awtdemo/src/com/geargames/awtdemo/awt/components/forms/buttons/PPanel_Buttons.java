@@ -2,8 +2,8 @@ package com.geargames.awtdemo.awt.components.forms.buttons;
 
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
-import com.geargames.awtdemo.app.Application;
-import com.geargames.awtdemo.app.PFontCollection;
+import com.geargames.awtdemo.application.Application;
+import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledRadioButton;
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledToggleButton;

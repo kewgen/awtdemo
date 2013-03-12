@@ -1,9 +1,9 @@
 package com.geargames.awtdemo.awt.components.common;
 
 import com.geargames.awt.components.PTouchButton;
-import com.geargames.awtdemo.app.Graph;
+import com.geargames.awtdemo.application.Graph;
 import com.geargames.common.packer.PObject;
-import com.geargames.awtdemo.app.Application;
+import com.geargames.awtdemo.application.Application;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 
 /**
