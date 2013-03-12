@@ -1,6 +1,6 @@
 package com.geargames.awtdemo.application;
 
-import com.geargames.Debug;
+import com.geargames.ConsoleDebug;
 import com.geargames.Recorder;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.TextHint;
@@ -8,6 +8,8 @@ import com.geargames.awtdemo.packer.PUnitCreator;
 import com.geargames.awt.timers.TimerManager;
 import com.geargames.common.String;
 import com.geargames.common.Event;
+import com.geargames.common.env.Environment;
+import com.geargames.common.env.SystemEnvironment;
 import com.geargames.common.packer.PFont;
 import com.geargames.common.packer.PFontManager;
 import com.geargames.common.util.ArrayByte;
@@ -24,8 +26,8 @@ import java.io.DataOutputStream;
 
 public final class Application extends com.geargames.awt.Application {
 
-    @Deprecated
-    public static final int mult_fps = /*@MULT_FPS@*/4/*END*/;//1 2 4 = 6 12 24
+    public static final int FPS_MAXIMUM = 30;
+    private final java.lang.String RMS_SETTINGS = "awtdemo";
 
     private Loader loader;
     private Render render;
@@ -39,11 +41,10 @@ public final class Application extends com.geargames.awt.Application {
     private int clientId;
 
     private boolean isLoading = true; // true, если данные загружаются
-    private static int globalTick;
 
     protected Graphics graphicsBuffer;
     protected Image i_buf;
-    private boolean is_drawing;
+    private boolean isDrawing;
 
     //TODO Переименовать stateInfo
     private String stateInfoString = null;
@@ -85,17 +86,16 @@ public final class Application extends com.geargames.awt.Application {
             if (render != null) {
                 getGraphics().setRender(render);
             }
-        } catch (Exception ex) {
-            Debug.logEx(ex);
+        } catch (Exception e) {
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
     }
 
     private void drawSplash() {
         try {
             if (backgroundImage != null) {
-//                backgroundImage.draw(graphicsBuffer, 0, 0);
-                graphicsBuffer.drawImage(backgroundImage, i_buf.getWidth() / 2, i_buf.getHeight() / 2,
-                        Graphics.HCENTER | Graphics.VCENTER);
+                graphicsBuffer.drawImage(backgroundImage, 0, 0);
+//                graphicsBuffer.drawImage(backgroundImage, i_buf.getWidth() / 2, i_buf.getHeight() / 2);
             } else {
                 graphicsBuffer.setColor(0xffffff);
                 graphicsBuffer.fillRect(0, 0, i_buf.getWidth(), i_buf.getHeight());
@@ -111,7 +111,7 @@ public final class Application extends com.geargames.awt.Application {
             Thread.yield();
             Manager.paused(10);
         } catch (Exception e) {
-            logEx(e);
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
     }
 
@@ -124,7 +124,7 @@ public final class Application extends com.geargames.awt.Application {
 
         tSleep = System.currentTimeMillis();
 
-        Debug.log(String.valueOfC("Memory total, free: ").
+        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("Memory total, free: ").
                 concatL(/*Debug.formatSize*/(Manager.getTotalMemory())).concatC(", ").
                 concatL(/*Debug.formatSize*/(Manager.getFreeMemory())));
 
@@ -172,23 +172,22 @@ public final class Application extends com.geargames.awt.Application {
     private void initPreferenceOnStart() {
         if (!loadOptionsRMS()) {
             resetPreference();
-            saveOptionsRMS();//при запуске создаём рмс
+            saveOptionsRMS();
         }
     }
 
     protected void onStop(boolean correct) {
-        log(String.valueOfC("onStop.disconnect"));
-        if (correct)
-            saveOptionsRMS(); // При выходе из игры
-        Debug.trace("Application.onStop");
+        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("onStop.disconnect"));
+        if (correct) {
+            saveOptionsRMS();
+        }
+        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("Application.onStop"));
     }
 
     public void destroy(boolean correct) {
-        log(String.valueOfC("destroy ").concatC(correct ? "correct" : "uncorrect"));
+        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("destroy ").concatC(correct ? "correct" : "uncorrect"));
         Manager.getInstance().destroy(correct);
     }
-
-    private final java.lang.String RMS_SETTINGS = "awtdemo";
 
     public boolean saveOptionsRMS() {
         boolean res = false;
@@ -207,16 +206,20 @@ public final class Application extends com.geargames.awt.Application {
 
             res = Recorder.RMSStoreSave(RMS_SETTINGS, baos, false);
 
-            Debug.log(String.valueOfC("Rms.Prefs saved: vibra:").concatC(vibrationEnabled ? "On" : "Off").concatC(" sound:").concatC(soundEnabled ? "On" : "Off").concatC(" userId:").concatI(userId).concatC(" clientId:").concatI(clientId));
+            SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("Rms.Prefs saved: vibra:").concatC(vibrationEnabled ? "On" : "Off").concatC(" sound:").concatC(soundEnabled ? "On" : "Off").concatC(" userId:").concatI(userId).concatC(" clientId:").concatI(clientId));
         } catch (Exception e) {
-            Debug.trace(String.valueOfC("Save prefs "), e);
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("Save prefs "), e);
             res = false;
         } finally {
             try {
-                if (dos != null) dos.close();
-                if (baos != null) baos.close();
+                if (dos != null) {
+                    dos.close();
+                }
+                if (baos != null) {
+                    baos.close();
+                }
             } catch (Exception e) {
-                logEx(e);
+                ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
             }
             return res;
         }
@@ -240,21 +243,23 @@ public final class Application extends com.geargames.awt.Application {
                         userMidletId = dis.readInt();
                         res = true;
 
-                        Debug.log(String.valueOfC("Rms.Prefs load:"));
-                        Debug.log(String.valueOfC(" id:").concatI(userId));
+                        SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Rms.Prefs load:"));
+                        SystemEnvironment.getInstance().getDebug().log(String.valueOfC(" id:").concatI(userId));
                     }
                 } catch (Exception e) {
-                    Debug.trace(String.valueOfC("RMSLoad prefs "), e);
+                    ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("RMSLoad prefs "), e);
                     Recorder.RMSStoreClean(RMS_SETTINGS);
                     return false;
                 }
-                if (dis != null) dis.close();
+                if (dis != null) {
+                    dis.close();
+                }
                 /*ObjC uncomment*///[bais release];
                 /*ObjC uncomment*///[dis release];
             }
             return res;
         } catch (Exception e) {
-            Debug.trace(String.valueOfC("RMSLoad stream "), e);
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("RMSLoad stream "), e);
             return false;
         }
     }
@@ -283,20 +288,17 @@ public final class Application extends com.geargames.awt.Application {
             draw(graphicsBuffer);
 
             if (true/* || this.equals(manager.getDisplay())*/) {
-                is_drawing = true;
+                isDrawing = true;
                 /*ObjC uncomment*///is_drawing = false;
                 Manager.getInstance().repaintStart();
                 Thread.yield();
-                while (is_drawing) {
-                    Thread.yield();
+                while (isDrawing) {
                     Manager.paused(5);
                 }
             }
-            int fps = 8 * mult_fps;
-            manageFPS(fps);
-            globalTick++;
+            manageFPS(FPS_MAXIMUM);
         } catch (Exception e) {
-            logEx(e);
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
     }
 
@@ -308,14 +310,17 @@ public final class Application extends com.geargames.awt.Application {
     public void manageFPS(int fps) {
         if (fps != 0) {
             int timeFPS = (1000 / fps);//задержка для установленного фпс
-            long timeElapsed = System.currentTimeMillis() - tSleep;//реальная задержка
+            Environment environment = SystemEnvironment.getInstance().getEnvironment();
+            long timeElapsed = environment.currentTimeMillis() - tSleep;//реальная задержка
             long paused = timeFPS - timeElapsed;//делаем затержку для выдерживания фпс
-            if (timeElapsed <= 0) timeElapsed = 1;
+            if (timeElapsed <= 0) {
+                timeElapsed = 1;
+            }
             if (paused > 0) {
                 Manager.paused(paused);
             }
             fps_cur = (fps_cur + 1000 / (timeElapsed/* - (paused > 0 ? paused : 0)*/)) / 2;
-            tSleep = System.currentTimeMillis();
+            tSleep = environment.currentTimeMillis();
         } else {
             Manager.paused(1);
         }
@@ -331,14 +336,6 @@ public final class Application extends com.geargames.awt.Application {
             arr_side = true;
         }
     }
-
-//    public static boolean isTick() {
-//        return (globalTick % mult_fps == 0) ? true : false;
-//    }
-//
-//    public static int getTick() {
-//        return globalTick;
-//    }
 
     // --------------- MESSAGE HANDLERS --------------------------------------------------------------------------------
 
@@ -367,8 +364,7 @@ public final class Application extends com.geargames.awt.Application {
         try {
             if (backgroundImage != null) {
 //                backgroundImage.draw(graphics, 0, 0);
-                graphics.drawImage(backgroundImage, i_buf.getWidth() / 2, i_buf.getHeight() / 2,
-                        Graphics.HCENTER | Graphics.VCENTER);
+                graphics.drawImage(backgroundImage, 0, 0);
             } else {
 //                graphics.setColor(0xffffff);
 //                graphics.fillRect(0, 0, i_buf.getWidth(), i_buf.getHeight());
@@ -384,7 +380,7 @@ public final class Application extends com.geargames.awt.Application {
                 graphics.drawString(stateInfoString, 12, Port.getH() - 36, 0);
             }
         } catch (Exception e) {
-            logEx(e);
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
         /*ObjC uncomment*///if ([Port isOpenGL]) [gles_view paintEnd];
     }
@@ -394,21 +390,11 @@ public final class Application extends com.geargames.awt.Application {
     }
 
     public boolean isDrawing() {
-        return is_drawing;
+        return isDrawing;
     }
 
-    public void setIsDrawing(boolean is_drawing_) {
-        this.is_drawing = is_drawing_;
-    }
-
-    // -----------------------------------------------------------------------------------------------------------------
-
-    private void log(String str) {
-        Debug.log(str);
-    }
-
-    private void logEx(Exception e) {
-        Debug.logEx(e);
+    public void setIsDrawing(boolean isDrawing) {
+        this.isDrawing = isDrawing;
     }
 
     // -----------------------------------------------------------------------------------------------------------------
@@ -417,8 +403,8 @@ public final class Application extends com.geargames.awt.Application {
     {
         try {
             return Image.createImage(String.valueOfC("/s1.png"), Manager.getInstance());
-        } catch (Exception ex) {
-            Debug.logEx(ex);
+        } catch (Exception e) {
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
             return null;
         }
     }

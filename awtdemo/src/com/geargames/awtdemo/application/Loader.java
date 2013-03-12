@@ -1,8 +1,9 @@
 package com.geargames.awtdemo.application;
 
-import com.geargames.Debug;
+import com.geargames.ConsoleDebug;
 import com.geargames.common.Port;
 import com.geargames.common.String;
+import com.geargames.common.env.SystemEnvironment;
 import com.geargames.common.packer.PManager;
 import com.geargames.common.util.ArrayByte;
 import com.geargames.common.util.ArrayList;
@@ -14,18 +15,6 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Vector;
-
-
-/*ObjC interface*///#import "Debug.h"
-///*ObjC interface*///#import "Util.h"
-/*ObjC interface*///@class Image;
-
-/*ObjC uncomment*///#import "MIDlet.h"
-/*ObjC uncomment*///#import "Manager.h"
-/*ObjC uncomment*///#import "GLView.h"
-/*ObjC uncomment*///#import "Port.h"
-/*ObjC uncomment*///#import "pfp2ViewController.h"
-
 
 /*
 * Класс предназначен для разбора данных из пакера, а именно:
@@ -100,7 +89,7 @@ public class Loader {
         int data_len;
         ArrayByte data;
 
-        Manager.log(String.valueOfC("Load images from ").concat(pack_name).concatC("\tcount:").concatI(img_count));
+        SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Load images from ").concat(pack_name).concatC("\tcount:").concatI(img_count));
         try {
 
             DataInputStream dis = new DataInputStream(manager.getMidlet().getResourceAsStream(pack_name));
@@ -115,7 +104,7 @@ public class Loader {
                 int len_b2 = dis.readByte() & 0xff;
                 data_len = len_b0 << 16 | len_b1 << 8 | len_b2;
                 if (DEBUG)
-                    Manager.log(String.valueOfC(" ").concatI(img_cur).concatC(" ").concatI(data_len).concatC(" "));
+                    SystemEnvironment.getInstance().getDebug().log(String.valueOfC(" ").concatI(img_cur).concatC(" ").concatI(data_len).concatC(" "));
 
                 data = new ArrayByte(data_len);
                 dis.read(data.getArray(), 0, data_len);
@@ -126,15 +115,15 @@ public class Loader {
                     /*ObjC uncomment*///if ([Port isOpenGL]) [gles_view addImageToTexture:images[img_cur]];
                     if (Port.OPEN_GL)
                         graphics.addTexture((Image) images.get(img_cur));//при ините текстуры битмап убьётся
-                    Manager.log(String.valueOfC("Memory, img:").concatI(img_cur).concatC("; MEM:").concatL(Manager.getFreeMemory()));
+                    SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Memory, img:").concatI(img_cur).concatC("; MEM:").concatL(Manager.getFreeMemory()));
                     if (DEBUG/* && false*/) {
                         img_square += ((Image) images.get(img_cur)).getWidth() * ((Image) images.get(img_cur)).getHeight();
                     }
 
-                } catch (Exception ex) {
+                } catch (Exception e) {
                     if (DEBUG)
-                        Manager.log(String.valueOfC("Loading image error. img:").concatI(img_cur).concatC("\tfile:").concatI(pack_cur).concatC("\tdata_len:").concatI(data_len));
-                    Manager.logEx(ex);
+                        SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Loading image error. img:").concatI(img_cur).concatC("\tfile:").concatI(pack_cur).concatC("\tdata_len:").concatI(data_len));
+                    ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
                 }
                 data.free();
                 System.gc();
@@ -146,10 +135,10 @@ public class Loader {
 
         } catch (Exception ex) {
             if (DEBUG) ex.printStackTrace();
-            Manager.log(String.valueOfC("File is not loaded, name:").concat(pack_name));
+            SystemEnvironment.getInstance().getDebug().log(String.valueOfC("File is not loaded, name:").concat(pack_name));
         }
         if (DEBUG) {
-            Manager.log(String.valueOfC("Loaded :").concatI(img_square).concatC(" pixels\tMemory x2:").concatI(img_square * 2));
+            SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Loaded :").concatI(img_square).concatC(" pixels\tMemory x2:").concatI(img_square * 2));
         }
 
     }
@@ -192,7 +181,9 @@ public class Loader {
                     }
                     arrayByte.free();
                 }
-                if (DEBUG/* && false*/) Manager.log(str);
+                if (DEBUG/* && false*/) {
+                    SystemEnvironment.getInstance().getDebug().log(str);
+                }
             }
             dis.close();
             dis = null;
@@ -200,8 +191,8 @@ public class Loader {
             if (DEBUG) drawData();
             //convertData();
 
-        } catch (Exception ex) {
-            Manager.logEx(ex);
+        } catch (Exception e) {
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
 
     }
@@ -251,15 +242,17 @@ public class Loader {
                     }
                     /*ObjC uncomment*///free(arr);
                 }
-                if (DEBUG/* && false*/) Manager.log(str);
+                if (DEBUG/* && false*/) {
+                    SystemEnvironment.getInstance().getDebug().log(str);
+                }
             }
             dis.close();
             dis = null;
 
             //if (DEBUG) drawData();
 
-        } catch (Exception ex) {
-            Manager.logEx(ex);
+        } catch (Exception e) {
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
 
     }
@@ -285,12 +278,12 @@ public class Loader {
                         str = str.concatI(dualArrayShort.get(i, x)).concatC(",");
                     }
                 } catch (Exception e) {
-                    Manager.log(String.valueOfC("Loader.drawData error."));
+                    ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("Loader.drawData error."), e);
                 }
             }
             str = str.concatC("\n");
         }
-        Manager.log(str);
+        SystemEnvironment.getInstance().getDebug().log(str);
     }
 
     //загрузка текстов из файла
@@ -316,7 +309,7 @@ public class Loader {
             }
             dis.close();
         } catch (Exception e) {
-            Manager.logEx(e);
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
         return text_list;
     }
@@ -348,7 +341,7 @@ public class Loader {
             is.close();
 
         } catch (IOException e) {
-            Debug.logEx(e);
+            ((ConsoleDebug) SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
     }
 }

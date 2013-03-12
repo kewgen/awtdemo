@@ -1,6 +1,7 @@
 package com.geargames.awtdemo.application;
 
-import com.geargames.Debug;
+import com.geargames.ConsoleDebug;
+import com.geargames.common.env.SystemEnvironment;
 
 public final class MIDlet extends com.geargames.MIDlet {
 
@@ -13,12 +14,11 @@ public final class MIDlet extends com.geargames.MIDlet {
         Manager manager = (Manager)getManager();
         try {
             if (manager == null) {
-                Debug.setMIDlet(this);
                 manager = Manager.getInstance(this);
             }
             manager.startApp();
         } catch (Exception e) {
-            Debug.logEx(e);
+            ((ConsoleDebug) SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
     }
 
@@ -36,7 +36,7 @@ public final class MIDlet extends com.geargames.MIDlet {
         try {
 
         } catch (Exception e) {
-            Debug.logEx(e);
+            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
         }
 
     }
