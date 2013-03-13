@@ -7,8 +7,14 @@ import com.geargames.awt.DrawablePElement;
  * Date: 25.12.12 23:38
  */
 public abstract class DrawablePPanel extends DrawablePElement {
-    public abstract void onHide();
-    public abstract void onShow();
+
+    public void onHide() {
+
+    }
+
+    public void onShow() {
+
+    }
 
     public void show()
     {
@@ -29,4 +35,5 @@ public abstract class DrawablePPanel extends DrawablePElement {
 //    {
 //        PPanelManager.getInstance().hideModal(/*this*/);
 //    }
+
 }

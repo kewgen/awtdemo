@@ -16,22 +16,27 @@ import com.geargames.packer.Graphics;
  */
 public class PButton_Horizontal_StubMotionListener extends PDummyRadioButton {
 
-    private HorizontalList horizontalList;
+    private PPanel_HorizontalList panelOwner;
 
-    public PButton_Horizontal_StubMotionListener(HorizontalList horizontalList, PObject prototype) {
+    public PButton_Horizontal_StubMotionListener(PPanel_HorizontalList panelOwner, PObject prototype) {
         super(prototype);
-        this.horizontalList = horizontalList;
+        this.panelOwner = panelOwner;
     }
 
     public void onClick() {
         StubMotionListener motionListener = new StubMotionListener();
-        horizontalList.setMotionListener(
+        motionListener.setScrollListener(panelOwner.getScrollBar());
+        panelOwner.getHorizontalList().setMotionListener(
                 //todo: adjustStubMotionListener только для Vertical?
                 ScrollHelper.adjustStubMotionListener(
-                        motionListener, horizontalList.getDrawRegion(),
-                        horizontalList.getShownItemsAmount(), horizontalList.getItemSize(), Graphics.LEFT
+                        motionListener,
+                        panelOwner.getHorizontalList().getDrawRegion(),
+                        panelOwner.getHorizontalList().getShownItemsAmount(),
+                        panelOwner.getHorizontalList().getItemSize(),
+                        Graphics.LEFT
                 )
         );
+        panelOwner.getScrollBar().onPositionChanged();
     }
 
     public void showHint(int x, int y) {

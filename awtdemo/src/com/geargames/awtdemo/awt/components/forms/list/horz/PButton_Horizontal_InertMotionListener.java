@@ -15,21 +15,25 @@ import com.geargames.common.packer.PObject;
  */
 public class PButton_Horizontal_InertMotionListener extends PDummyRadioButton {
 
-    private HorizontalList horizontalList;
+    private PPanel_HorizontalList panelOwner;
 
-    public PButton_Horizontal_InertMotionListener(HorizontalList horizontalList, PObject prototype) {
+    public PButton_Horizontal_InertMotionListener(PPanel_HorizontalList panelOwner, PObject prototype) {
         super(prototype);
-        this.horizontalList = horizontalList;
+        this.panelOwner = panelOwner;
     }
 
     public void onClick() {
         InertMotionListener motionListener = new InertMotionListener();
-        horizontalList.setMotionListener(
+        motionListener.setScrollListener(panelOwner.getScrollBar());
+        panelOwner.getHorizontalList().setMotionListener(
                 ScrollHelper.adjustHorizontalInertMotionListener(
-                        motionListener, horizontalList.getDrawRegion(),
-                        horizontalList.getShownItemsAmount(), horizontalList.getItemSize()
+                        motionListener,
+                        panelOwner.getHorizontalList().getDrawRegion(),
+                        panelOwner.getHorizontalList().getShownItemsAmount(),
+                        panelOwner.getHorizontalList().getItemSize()
                 )
         );
+        panelOwner.getScrollBar().onPositionChanged();
     }
 
     public void showHint(int x, int y) {

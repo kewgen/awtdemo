@@ -110,6 +110,7 @@ public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListen
     }
 
     private int tickCount = 0;
+    private final int MAX_TICK_COUNT = 20;
 
     /**
      * Метод вызывается каждый раз при срабатывании таймера.
@@ -117,11 +118,12 @@ public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListen
      */
     public void onTimer(int timerId) {
         if (timerId == TimerIdMap.AWTDEMO_PROGRESSBARS_TICK) {
+            simpleIndicator1.setValue((int)(((float)tickCount / MAX_TICK_COUNT) * simpleIndicator1.getCardinality()));
+            simpleIndicator2.setValue((int)(((float)tickCount / MAX_TICK_COUNT) * simpleIndicator2.getCardinality()));
             tickCount++;
-            simpleIndicator1.setValue(tickCount);
-            simpleIndicator2.setValue(tickCount / 2);
-            if (tickCount == 20)
+            if (tickCount > MAX_TICK_COUNT) {
                 tickCount = 0;
+            }
         }
     }
 }

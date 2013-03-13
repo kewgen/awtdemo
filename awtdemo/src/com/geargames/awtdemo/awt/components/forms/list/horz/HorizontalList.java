@@ -1,9 +1,6 @@
 package com.geargames.awtdemo.awt.components.forms.list.horz;
 
 import com.geargames.awt.components.PHorizontalScrollView;
-import com.geargames.awt.utils.ScrollHelper;
-import com.geargames.awt.utils.motions.*;
-import com.geargames.common.Graphics;
 import com.geargames.common.packer.Index;
 import com.geargames.common.packer.PFrame;
 import com.geargames.common.packer.PObject;
@@ -34,25 +31,7 @@ public class HorizontalList extends PHorizontalScrollView {
         }
     }
 
-    public void initiateMotionListener() {
-        CenteredElasticInertMotionListener motionListener = new CenteredElasticInertMotionListener();
-        motionListener.setInstinctPosition(false);
-        setMotionListener(ScrollHelper.adjustHorizontalCenteredMenuMotionListener(
-                motionListener, getDrawRegion(), getItemsAmount(), getItemSize(), getPrototype().getDrawRegion().getMinX()));
-
-//        InertMotionListener motionListener = new InertMotionListener();
-//        setMotionListener(ScrollHelper.adjustHorizontalInertMotionListener(
-//                motionListener, getDrawRegion(), getShownItemsAmount(), getItemSize()));
-
-//        ElasticInertMotionListener motionListener = new ElasticInertMotionListener();
-//        setMotionListener(motionListener);
-    }
-
-    public void initiate(Graphics graphics) {
-        initiateMotionListener();
-        setInitiated(true);
-    }
-
+    @Override
     public Vector getItems() {
         return items;
     }

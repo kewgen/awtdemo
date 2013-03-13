@@ -2,6 +2,7 @@ package com.geargames.awtdemo.awt.components.forms.list.horz;
 
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
+import com.geargames.awt.utils.ScrollListener;
 import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.application.Render;
@@ -28,6 +29,7 @@ public class PPanel_HorizontalList extends DrawablePPanel {
             super(prototype);
         }
 
+        @Override
         protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
                 case 13:
@@ -48,6 +50,7 @@ public class PPanel_HorizontalList extends DrawablePPanel {
             }
         }
 
+        @Override
         protected void createDefaultElementByIndex(IndexObject index) {
             switch (index.getSlot()) {
                 // Игнорируем некоторые элементы формы пакера
@@ -60,7 +63,21 @@ public class PPanel_HorizontalList extends DrawablePPanel {
         }
     }
 
+    protected class PHorizontalScrollBar extends PSpriteProgressIndicator implements ScrollListener {
+
+        public PHorizontalScrollBar(PObject prototype) {
+            super(prototype);
+        }
+
+        @Override
+        public void onPositionChanged() {
+            setPercentage(horizontalList.getScrollPercent());
+        }
+    }
+
     PContentPanelImpl сontentPanel;
+    HorizontalList horizontalList;
+    PHorizontalScrollBar scrollBar;
     PEntitledClosePanelButton buttonClose;
 
     public PPanel_HorizontalList() {
@@ -96,8 +113,15 @@ public class PPanel_HorizontalList extends DrawablePPanel {
         frames.add(render.getFrame(593)); // бугай
 
         PObject listPrototype = render.getObject(Graph.OBJ_LIST_FIGHTER);
-        HorizontalList horizontalList = new HorizontalList(frames, listPrototype);
+        horizontalList = new HorizontalList(frames, listPrototype);
         addChild(horizontalList, 0+229, 0+14);
+
+//----- Компонент "Полоса прокрутки" для списка ------------------------------------------------------------------------
+
+        PObject prototypeIndicator1 = Application.getInstance().getRender().getObject(Graph.OBJ_IND_1);
+
+        scrollBar = new PHorizontalScrollBar(prototypeIndicator1);
+        addChild(scrollBar, 9, 85);
 
 //----- Кнопки настройки Горизонтального списка ------------------------------------------------------------------------
 
@@ -110,23 +134,24 @@ public class PPanel_HorizontalList extends DrawablePPanel {
 
         // Четыре кнопки выбора соответствующих MotionListener
         PRadioButton buttonListener1 = new PButton_Horizontal_CenteredElasticInertMotionListener(
-                horizontalList, Application.getInstance().getRender().getObject(58));
+                this, Application.getInstance().getRender().getObject(58));
         buttonListener1.setChecked(true);
+        buttonListener1.onClick();
         radioGroup.addButton(buttonListener1);
         addChild(buttonListener1, 7, 112);
 
         PRadioButton buttonListener2 = new PButton_Horizontal_InertMotionListener(
-                horizontalList, Application.getInstance().getRender().getObject(59));
+                this, Application.getInstance().getRender().getObject(59));
         radioGroup.addButton(buttonListener2);
         addChild(buttonListener2, 60, 112);
 
         PRadioButton buttonListener3 = new PButton_Horizontal_ElasticInertMotionListener(
-                horizontalList, Application.getInstance().getRender().getObject(60));
+                this, Application.getInstance().getRender().getObject(60));
         radioGroup.addButton(buttonListener3);
         addChild(buttonListener3, 113, 112);
 
         PRadioButton buttonListener4 = new PButton_Horizontal_StubMotionListener(
-                horizontalList, Application.getInstance().getRender().getObject(61));
+                this, Application.getInstance().getRender().getObject(61));
         radioGroup.addButton(buttonListener4);
         addChild(buttonListener4, 166, 112);
 
@@ -148,6 +173,14 @@ public class PPanel_HorizontalList extends DrawablePPanel {
     }
 
     public void onShow() {
+    }
+
+    public HorizontalList getHorizontalList() {
+        return horizontalList;
+    }
+
+    public PHorizontalScrollBar getScrollBar() {
+        return scrollBar;
     }
 
 }
