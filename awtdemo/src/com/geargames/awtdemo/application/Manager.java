@@ -1,17 +1,16 @@
 package com.geargames.awtdemo.application;
 
-import com.geargames.ConsoleDebug;
-import com.geargames.MIDlet;
-import com.geargames.Recorder;
+import com.geargames.common.logging.Debug;
+import com.geargames.common.util.Recorder;
+import com.geargames.platform.MIDlet;
 import com.geargames.common.String;
-import com.geargames.common.env.SystemEnvironment;
-import com.geargames.packer.Canvas;
-import com.geargames.packer.Display;
+import com.geargames.platform.packer.Canvas;
+import com.geargames.platform.packer.Display;
 import com.geargames.common.Graphics;
 import com.geargames.common.Event;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 
-public final class Manager extends com.geargames.Manager implements Runnable {
+public final class Manager extends com.geargames.platform.Manager implements Runnable {
 
     public final static boolean DEBUG = true; // Главный дебаг, если false отключает все остальные дебаги
 
@@ -61,7 +60,7 @@ public final class Manager extends com.geargames.Manager implements Runnable {
 
         canvas.detectKeys();
         canvas.setFullScreenMode(true);
-        Recorder.setContext(midlet);
+//        Recorder.setContext(midlet);
         app = Application.getInstance();
         loading();
     }
@@ -83,13 +82,13 @@ public final class Manager extends com.geargames.Manager implements Runnable {
             }
             graphics.drawImage(app.getBuffer(), Port.SCREEN_DX, Port.SCREEN_DY);
         } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
+            Debug.error(String.valueOfC(""), e);
         }
 //        if (Port.OPEN_GL && Port.isAndroid()) {
 //            game.app.getGraphics().finish();
 //        }
         app.setIsDrawing(false);
-//        Debug.trace(" paint");
+//        Debug.debug(" paint");
     }
 
     public void repaintStart() {
@@ -159,19 +158,19 @@ public final class Manager extends com.geargames.Manager implements Runnable {
     public void stopMainThread() {// Останавливает поток Main game.Game loop
         running = false;
         thread = null;
-        SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Manager.stopMainThread"));
+        Debug.debug(String.valueOfC("Manager.stopMainThread"));
     }
 
     public void run_() {
         /*ObjC uncomment*///NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-        SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Manager.run_"));
+        Debug.debug(String.valueOfC("Manager.run_"));
         running = true;
         runStart();
         /*ObjC uncomment*///[pool release];
     }
 
     public void run() {
-        SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Manager.run - Main thread running"));
+        Debug.debug(String.valueOfC("Manager.run - Main thread running"));
         running = true;
         try {
             runStart();
@@ -180,9 +179,9 @@ public final class Manager extends com.geargames.Manager implements Runnable {
             }
             runStop();
         } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
+            Debug.error(String.valueOfC(""), e);
             stopMainThread();
-            SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Application.run").concatC(e.toString()));
+            Debug.debug(String.valueOfC("Application.run").concatC(e.toString()));
         }
     }
 
@@ -202,17 +201,17 @@ public final class Manager extends com.geargames.Manager implements Runnable {
             isSuspended = false;
             Display.getDisplay(midlet).setCurrent(this);
         } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("onStart error [FILELINE]"), e);
+            Debug.error(String.valueOfC("onStart error [FILELINE]"), e);
         }
     }
 
     protected final void runStop() {
         try {
-            SystemEnvironment.getInstance().getDebug().log(String.valueOfC("runStop"));
+            Debug.debug(String.valueOfC("runStop"));
             app.onStop(true);
             //midlet.notifyDestroyed();
         } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("Error during stop [FILELINE]"), e);
+            Debug.error(String.valueOfC("Error during stop [FILELINE]"), e);
         }
     }
 
@@ -286,7 +285,7 @@ public final class Manager extends com.geargames.Manager implements Runnable {
 //                app.killTimer(TIMERID_KEYDELAY);
             }
         } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("keyReleased [FILELINE]"), e);
+            Debug.error(String.valueOfC("keyReleased [FILELINE]"), e);
         }
     }
 
@@ -333,7 +332,7 @@ public final class Manager extends com.geargames.Manager implements Runnable {
     }
 
     public void menuPressed() {
-        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("Manager.menuPressed"));
+        Debug.debug(String.valueOfC("Manager.menuPressed"));
     }
 
     // ------------------ SERVICES ------------------------

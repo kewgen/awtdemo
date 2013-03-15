@@ -1,7 +1,6 @@
 package com.geargames.awtdemo.application;
 
-import com.geargames.ConsoleDebug;
-import com.geargames.Recorder;
+import com.geargames.common.logging.Debug;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.TextHint;
 import com.geargames.awtdemo.packer.PUnitCreator;
@@ -9,36 +8,24 @@ import com.geargames.awt.timers.TimerManager;
 import com.geargames.common.String;
 import com.geargames.common.Event;
 import com.geargames.common.env.Environment;
-import com.geargames.common.env.SystemEnvironment;
 import com.geargames.common.packer.PFont;
 import com.geargames.common.packer.PFontManager;
-import com.geargames.common.util.ArrayByte;
 import com.geargames.common.util.ArrayIntegerDual;
 import com.geargames.awtdemo.awt.components.PPanelManager;
-import com.geargames.packer.Graphics;
-import com.geargames.packer.Image;
+import com.geargames.platform.packer.Graphics;
+import com.geargames.platform.packer.Image;
 
 import java.awt.Point;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 
-public final class Application extends com.geargames.awt.Application {
+
+public final class Application extends com.geargames.common.Application {
 
     public static final int FPS_MAXIMUM = 30;
-    private final java.lang.String RMS_SETTINGS = "awtdemo";
 
     private Loader loader;
     private Render render;
     private PFontManager fontManager;
     private PPanelManager panels = PPanelManager.getInstance();
-
-    private boolean vibrationEnabled;
-    private boolean soundEnabled;
-
-    private int userId, userMidletId;
-    private int clientId;
 
     private boolean isLoading = true; // true, если данные загружаются
 
@@ -86,8 +73,8 @@ public final class Application extends com.geargames.awt.Application {
             if (render != null) {
                 getGraphics().setRender(render);
             }
-        } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
+        } catch (Exception ex) {
+            Debug.critical(String.valueOfC("Exception during the creation of screen buffer"), ex);
         }
     }
 
@@ -110,8 +97,8 @@ public final class Application extends com.geargames.awt.Application {
             Manager.getInstance().repaintStart();
             Thread.yield();
             Manager.paused(10);
-        } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
+        } catch (Exception ex) {
+            Debug.error(String.valueOfC("Exception during splash drawing"), ex);
         }
     }
 
@@ -124,7 +111,7 @@ public final class Application extends com.geargames.awt.Application {
 
         tSleep = System.currentTimeMillis();
 
-        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("Memory total, free: ").
+        Debug.config(String.valueOfC("Memory total, free: ").
                 concatL(/*Debug.formatSize*/(Manager.getTotalMemory())).concatC(", ").
                 concatL(/*Debug.formatSize*/(Manager.getFreeMemory())));
 
@@ -152,7 +139,6 @@ public final class Application extends com.geargames.awt.Application {
 
 //        drawSplash(String.valueOfC("Init network..."));
 
-        initPreferenceOnStart();
         isLoading = false;
 
         TextHint textHint = TextHint.getInstance();
@@ -164,114 +150,12 @@ public final class Application extends com.geargames.awt.Application {
         stateInfoString = String.valueOfC("");
     }
 
-    public void resetPreference() {
-        vibrationEnabled = true;
-        soundEnabled = true;
-    }
-
-    private void initPreferenceOnStart() {
-        if (!loadOptionsRMS()) {
-            resetPreference();
-            saveOptionsRMS();
-        }
-    }
-
     protected void onStop(boolean correct) {
-        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("onStop.disconnect"));
-        if (correct) {
-            saveOptionsRMS();
-        }
-        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("Application.onStop"));
-    }
-
-    public void destroy(boolean correct) {
-        SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("destroy ").concatC(correct ? "correct" : "uncorrect"));
-        Manager.getInstance().destroy(correct);
-    }
-
-    public boolean saveOptionsRMS() {
-        boolean res = false;
-        ByteArrayOutputStream baos = null;
-        DataOutputStream dos = null;
-        try {
-            baos = new ByteArrayOutputStream();
-            dos = new DataOutputStream(baos);
-
-            dos.writeByte(1);
-            dos.writeBoolean(vibrationEnabled);
-            dos.writeBoolean(soundEnabled);
-            dos.writeInt(userId);
-            dos.writeInt(clientId);
-            dos.writeInt(userMidletId);
-
-            res = Recorder.RMSStoreSave(RMS_SETTINGS, baos, false);
-
-            SystemEnvironment.getInstance().getDebug().trace(String.valueOfC("Rms.Prefs saved: vibra:").concatC(vibrationEnabled ? "On" : "Off").concatC(" sound:").concatC(soundEnabled ? "On" : "Off").concatC(" userId:").concatI(userId).concatC(" clientId:").concatI(clientId));
-        } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("Save prefs "), e);
-            res = false;
-        } finally {
-            try {
-                if (dos != null) {
-                    dos.close();
-                }
-                if (baos != null) {
-                    baos.close();
-                }
-            } catch (Exception e) {
-                ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
-            }
-            return res;
-        }
-    }
-
-    public boolean loadOptionsRMS() {
-        boolean res = false;
-
-        try {
-            ArrayByte bData = Recorder.RMSStoreRead(RMS_SETTINGS, false);
-            if (bData != null) {
-                ByteArrayInputStream bais = new ByteArrayInputStream(bData.getArray());
-                DataInputStream dis = new DataInputStream(bais);
-                try {
-                    byte version = dis.readByte();
-                    if (version == 1) {
-                        vibrationEnabled = dis.readBoolean();
-                        soundEnabled = dis.readBoolean();
-                        userId = dis.readInt();
-                        clientId = dis.readInt();
-                        userMidletId = dis.readInt();
-                        res = true;
-
-                        SystemEnvironment.getInstance().getDebug().log(String.valueOfC("Rms.Prefs load:"));
-                        SystemEnvironment.getInstance().getDebug().log(String.valueOfC(" id:").concatI(userId));
-                    }
-                } catch (Exception e) {
-                    ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("RMSLoad prefs "), e);
-                    Recorder.RMSStoreClean(RMS_SETTINGS);
-                    return false;
-                }
-                if (dis != null) {
-                    dis.close();
-                }
-                /*ObjC uncomment*///[bais release];
-                /*ObjC uncomment*///[dis release];
-            }
-            return res;
-        } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).trace(String.valueOfC("RMSLoad stream "), e);
-            return false;
-        }
+        Debug.debug(String.valueOfC("Application.onStop"));
     }
 
     public PFontManager getFontManager() {
         return fontManager;
-    }
-
-    protected void eventProcess() {
-        super.eventProcess();
-//        if (Application.isTimer(Manager.TIMERID_KEYDELAY) && !Application.isTimer(Manager.TIMERID_KEYREPEAT))//TODO сделать один интервал на все фпс
-//            eventAdd(Event.EVENT_KEY_REPEATED, Manager.getInstance().getPressedKey(), null);
     }
 
     // ---------------MAIN LOOP------------------
@@ -298,7 +182,7 @@ public final class Application extends com.geargames.awt.Application {
             }
             manageFPS(FPS_MAXIMUM);
         } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
+            Debug.error(String.valueOfC(""), e); //todo: Добавить сообщение об ошибке
         }
     }
 
@@ -310,8 +194,7 @@ public final class Application extends com.geargames.awt.Application {
     public void manageFPS(int fps) {
         if (fps != 0) {
             int timeFPS = (1000 / fps);//задержка для установленного фпс
-            Environment environment = SystemEnvironment.getInstance().getEnvironment();
-            long timeElapsed = environment.currentTimeMillis() - tSleep;//реальная задержка
+            long timeElapsed = Environment.currentTimeMillis() - tSleep;//реальная задержка
             long paused = timeFPS - timeElapsed;//делаем затержку для выдерживания фпс
             if (timeElapsed <= 0) {
                 timeElapsed = 1;
@@ -320,7 +203,7 @@ public final class Application extends com.geargames.awt.Application {
                 Manager.paused(paused);
             }
             fps_cur = (fps_cur + 1000 / (timeElapsed/* - (paused > 0 ? paused : 0)*/)) / 2;
-            tSleep = environment.currentTimeMillis();
+            tSleep = Environment.currentTimeMillis();
         } else {
             Manager.paused(1);
         }
@@ -379,8 +262,8 @@ public final class Application extends com.geargames.awt.Application {
                 //TODO установить фонт!
                 graphics.drawString(stateInfoString, 12, Port.getH() - 36, 0);
             }
-        } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
+        } catch (Exception ex) {
+            Debug.error(String.valueOfC("Drawing operation failed"), ex);
         }
         /*ObjC uncomment*///if ([Port isOpenGL]) [gles_view paintEnd];
     }
@@ -403,8 +286,8 @@ public final class Application extends com.geargames.awt.Application {
     {
         try {
             return Image.createImage(String.valueOfC("/s1.png"), Manager.getInstance());
-        } catch (Exception e) {
-            ((ConsoleDebug)SystemEnvironment.getInstance().getDebug()).logEx(e);
+        } catch (Exception ex) {
+            Debug.error(String.valueOfC("Image loading failed"), ex);
             return null;
         }
     }

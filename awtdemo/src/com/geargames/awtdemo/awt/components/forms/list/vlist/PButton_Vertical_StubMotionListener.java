@@ -8,7 +8,7 @@ import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
 import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
-import com.geargames.packer.Graphics;
+import com.geargames.platform.packer.Graphics;
 
 /**
  * User: abarakov

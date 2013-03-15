@@ -8,7 +8,7 @@ public class Engine {
 
     /*
     com.geargames.app
-    com.geargames.env
+    com.geargames.platform.env
     com.geargames.engine
     */
 
@@ -41,7 +41,7 @@ public class Engine {
 
     /*
     // Engine
-    public abstract class Main extends Logger { // com.geargames.Main
+    public abstract class Main extends Logger { // Main
 
         public Application createApplication()
         {
