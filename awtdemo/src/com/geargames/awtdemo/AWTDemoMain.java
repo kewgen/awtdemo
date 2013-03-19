@@ -3,6 +3,7 @@ package com.geargames.awtdemo;
 import com.geargames.awtdemo.application.MIDlet;
 import com.geargames.awtdemo.application.Port;
 import com.geargames.common.logging.Logger;
+import com.geargames.common.util.Recorder;
 
 import java.io.IOException;
 
@@ -13,7 +14,10 @@ import java.io.IOException;
 public class AWTDemoMain extends com.geargames.platform.Main {
 
     public static void main(String[] args) throws IOException {
-        Logger.logFileName = com.geargames.common.String.valueOfC("awtdemo");
+        Logger.logFileName         = "awtdemo";
+        Recorder.storageFolder     = "awtdemo.data.storage";
+        Recorder.storageProperties = "awtdemo.property.storage";
+
         AWTDemoMain main = new AWTDemoMain();
         main.commonMain(args);
         Port.init();

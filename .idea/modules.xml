@@ -4,14 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/awtdemo/awtdemo.iml" filepath="$PROJECT_DIR$/awtdemo/awtdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../awt/awt/gg.awt.console.iml" filepath="$PROJECT_DIR$/../awt/awt/gg.awt.console.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../gg/awt/gg.awt.console.iml" filepath="$PROJECT_DIR$/../gg/awt/gg.awt.console.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../awt/gg.awt.console.iml" filepath="$PROJECT_DIR$/../awt/gg.awt.console.iml" />
       <module fileurl="file://$PROJECT_DIR$/../awt/common/gg.common.iml" filepath="$PROJECT_DIR$/../awt/common/gg.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../gg/common/gg.common.iml" filepath="$PROJECT_DIR$/../gg/common/gg.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../common/gg.common.iml" filepath="$PROJECT_DIR$/../common/gg.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/../awt/console/gg.console.iml" filepath="$PROJECT_DIR$/../awt/console/gg.console.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../gg/console/gg.console.iml" filepath="$PROJECT_DIR$/../gg/console/gg.console.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../console/gg.console.iml" filepath="$PROJECT_DIR$/../console/gg.console.iml" />
     </modules>
   </component>
 </project>
