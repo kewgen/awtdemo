@@ -1,4 +1,4 @@
-package com.geargames.awtdemo;
+package com.geargames.awtdemo.localize;
 
 import com.geargames.awtdemo.localize.CommonLangConsts;
 
