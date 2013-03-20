@@ -1,7 +1,6 @@
 package com.geargames.awtdemo.application;
 
 import com.geargames.common.logging.Debug;
-import com.geargames.common.util.Recorder;
 import com.geargames.platform.MIDlet;
 import com.geargames.common.String;
 import com.geargames.platform.packer.Canvas;
@@ -37,7 +36,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         self_manger = this;
         midlet = midlet_;
         isSuspended = false;
-        /*ObjC uncomment*///return self;
     }
 
     public static Manager getInstance(MIDlet midlet_) {
@@ -49,18 +47,11 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         return self_manger;
     }
 
-    // Для андроида после выхода из спячки
-    public static Manager getManager() {
-        return self_manger;
-    }
-
-
     public void create() {
         isSuspended = false;
 
         canvas.detectKeys();
         canvas.setFullScreenMode(true);
-//        Recorder.setContext(midlet);
         app = Application.getInstance();
         loading();
     }
@@ -72,7 +63,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
 
     // ------------------ Screen ------------------------
     public void paint(Graphics graphics) {
-//        Manager.log("Manager.paint");
         if (Port.IS_CONSOLE) {
             graphics.onCache(5000);
         }
@@ -84,11 +74,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         } catch (Exception e) {
             Debug.error(String.valueOfC(""), e);
         }
-//        if (Port.OPEN_GL && Port.isAndroid()) {
-//            game.app.getGraphics().finish();
-//        }
         app.setIsDrawing(false);
-//        Debug.debug(" paint");
     }
 
     public void repaintStart() {
@@ -115,7 +101,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         create();
         if (Port.OPEN_GL && Port.IS_ANDROID) {//вызов потока аи и рендера делает OpenGL
             run_();
-            //onResume();//оживляем GLSurface
         } else {
             startMainThread();
         }
@@ -124,7 +109,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
     // Обработчик события pauseApp мидлета
     public void pauseApp() {
         isSuspended = true;
-        //onPause();
         Display.getDisplay(midlet).setCurrent(null);
     }
 
@@ -139,12 +123,8 @@ public final class Manager extends com.geargames.platform.Manager implements Run
     public void destroy(boolean correct) {
         destroy_correct = correct;
         stopMainThread();
-//        if (game.Port.isAndroid()) {
-//            midlet.onDestroy();
-//        }
         if (Port.OPEN_GL && Port.IS_ANDROID) runStop();
         midlet.notifyDestroyed();
-//        setCanvasDisplay(null);
     }
 
     // ------------THREAD CONTROL----------------
@@ -162,11 +142,9 @@ public final class Manager extends com.geargames.platform.Manager implements Run
     }
 
     public void run_() {
-        /*ObjC uncomment*///NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
         Debug.debug(String.valueOfC("Manager.run_"));
         running = true;
         runStart();
-        /*ObjC uncomment*///[pool release];
     }
 
     public void run() {
@@ -189,9 +167,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         return running;
     }
 
-    public void loadTextures() {//OpenGL загрузка текстур
-    }
-
     public void mainLoop() {//Вызов основного игрового цикла. Он должен вызывать рендер нужных фреймов
         app.mainLoop();
     }
@@ -209,7 +184,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         try {
             Debug.debug(String.valueOfC("runStop"));
             app.onStop(true);
-            //midlet.notifyDestroyed();
         } catch (Exception e) {
             Debug.error(String.valueOfC("Error during stop [FILELINE]"), e);
         }
@@ -218,47 +192,9 @@ public final class Manager extends com.geargames.platform.Manager implements Run
 
     // ------------KEYS CONTROL----------------
 
-    private int lastKey = 0;
     private int pressedKey = 0;
-    public final static int KEYDELAY = 10 * 1000;
-    public final static int TIMERID_KEYDELAY = 0xDEDAAE77;
-    public final static int KEYREPEAT = 200;
-    public final static int TIMERID_KEYREPEAT = 0xEBEA888;
 
-    final public static byte SK_OK = 0;
-    final public static byte SK_EXIT = 3;
     final public static byte SK_NONE = 7;
-
-
-    public final void setLSK(byte label) {
-        okLabelN = label;
-        enabledOkKey = okLabelN != SK_NONE;
-    }
-
-    public final boolean isLSKEnabled() {
-        return enabledOkKey;
-    }
-
-    public final byte getLSK() {
-        return okLabelN;
-    }
-
-    public final void setRSK(byte label) {
-        cancelLabelN = label;
-        enabledCancelKey = cancelLabelN != SK_NONE;
-    }
-
-    public final boolean isRSKEnabled() {
-        return enabledCancelKey;
-    }
-
-    public final byte getRSK() {
-        return cancelLabelN;
-    }
-
-    public int getPressedKey() {
-        return pressedKey;
-    }
 
     public void keyPressed(int key) {
         switch (key) {
@@ -268,24 +204,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
             case Event.EVENT_KEY_DOWN:
                 app.eventAdd(Event.EVENT_KEY_DOWN, 0, null);
                 break;
-        }
-    }
-
-    protected void keyRepeated(int key) {
-    }
-
-    protected void keyReleased(int key) {
-        if (!enabledOkKey && key == Canvas.KEY_OK || !enabledCancelKey && key == Canvas.KEY_CANCEL)
-            return;
-        try {
-            if (canvas.isKeyValid(key) || canvas.isTouchSupport) {
-                app.eventAdd(Event.EVENT_KEY_RELEASED, key, null);
-                lastKey = pressedKey = 0;
-//                app.killTimer(TIMERID_KEYREPEAT);
-//                app.killTimer(TIMERID_KEYDELAY);
-            }
-        } catch (Exception e) {
-            Debug.error(String.valueOfC("keyReleased [FILELINE]"), e);
         }
     }
 
@@ -324,8 +242,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
 
     private long touch_up_last;//время последнего отжатия
     private long touch_down_last;//время последнего нажатия
-    private final long TOUCH_DOUBLE_CLICK_MLS = 100;//интервал между нажатиями засчитываемый как двойной клик
-
 
     public void backPressed() {
         destroy(true);
@@ -340,14 +256,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         return isSuspended;
     }
 
-    protected Display getDisplay() {
-        return Display.getDisplay(midlet);
-    }
-
-    public void vibrate() {
-        Display.getDisplay(midlet).vibrate(300);
-    }
-
     public static void paused(long pause) {
         try {
             Thread.sleep(1);//иногда пролетает мгновенно и получаем ArithmeticException: / by zero
@@ -355,18 +263,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
             Thread.yield();
         } catch (Exception e) {
             e.printStackTrace();
-        }
-    }
-
-    void platformRequest(String str) {
-        boolean is_close = false;
-        try {
-            is_close = midlet.platformRequest(str);
-        } catch (Exception e) {
-        }
-        Manager.paused(100);
-        if (is_close) {
-            runStop();
         }
     }
 
@@ -380,14 +276,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
 
     public MIDlet getMidlet() {
         return midlet;
-    }
-
-    public void setMidlet(MIDlet midlet) {
-        this.midlet = midlet;
-    }
-
-    public Application getApplication() {
-        return app;
     }
 
     public Canvas getCanvas() {
@@ -411,9 +299,6 @@ public final class Manager extends com.geargames.platform.Manager implements Run
 
     public int getFrameTotalCount() {
         return 0;
-    }
-
-    public void setOpenGLDrawCount(int drawCount) {
     }
 
     public int getSizeExpectedResources() {

@@ -15,8 +15,8 @@ public class AWTDemoMain extends com.geargames.platform.Main {
 
     public static void main(String[] args) throws IOException {
         Logger.logFileName         = "awtdemo";
-        Recorder.storageFolder     = "awtdemo.data.storage";
-        Recorder.storageProperties = "awtdemo.property.storage";
+        Recorder.storageFolder     = "data.storage";
+        Recorder.storageProperties = "property.storage";
 
         AWTDemoMain main = new AWTDemoMain();
         main.commonMain(args);
