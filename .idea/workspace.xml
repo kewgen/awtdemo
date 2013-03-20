@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="1. SpinBox'ы получили два новых свойства MinValue, MaxValue и одно событие onValueChanged;&#10;2. Метод superDraw переименован в postDraw и перенесен в новый интерфейс PostDrawable; внесены соответствующие изменения в код нескольких компонентов;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Manager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Manager.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\localize\langConsts.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts.java" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,13 +78,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="12" selection-start="1461" selection-end="1461" vertical-scroll-proportion="3.321839">
+            <state line="44" column="12" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LangConsts.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="1.5632184">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,9 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../awt/console/com/geargames/platform/network/SendHTTP.java" />
-        <option value="$PROJECT_DIR$/../awt/console/com/geargames/platform/forms/Notification.java" />
-        <option value="$PROJECT_DIR$/../awt/console/com/geargames/platform/media/Pool.java" />
         <option value="$PROJECT_DIR$/../awt/common/com/geargames/common/logging/Logger.java" />
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain1.java" />
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/q1/AWTDemoMain.java" />
@@ -157,6 +160,9 @@
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Manager.java" />
         <option value="$PROJECT_DIR$/../awt/common/com/geargames/common/util/Recorder.java" />
         <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/AWTDemoMain.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts1.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/LangConsts.java" />
+        <option value="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts.java" />
       </list>
     </option>
   </component>
@@ -478,111 +484,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="awtdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -736,11 +638,12 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.geargames.regolith.units" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.geargames.regolith" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\geargames\awtdemo\awtdemo" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.geargames.awtdemo" />
+      <recent name="com.geargames.regolith" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.androidTest">
@@ -1339,7 +1242,19 @@
       <created>1363724567914</created>
       <updated>1363724567914</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Почистил класс manager от не используемого кода">
+      <created>1363781345845</created>
+      <updated>1363781345845</updated>
+    </task>
+    <task id="LOCAL-00097" summary="перенесен класс LangConsts, попытка избавиться от косяка с именем файла">
+      <created>1363784611963</created>
+      <updated>1363784611963</updated>
+    </task>
+    <task id="LOCAL-00098" summary="перенесен класс LangConsts, попытка избавиться от косяка с именем файла">
+      <created>1363784676307</created>
+      <updated>1363784676307</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -1431,7 +1346,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="повторно переименован класс LangConsts" />
+    <option name="LAST_COMMIT_MESSAGE" value="перенесен класс LangConsts, попытка избавиться от косяка с именем файла" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1444,8 +1359,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.55825245" />
-    <MESSAGE value="Реализация таймеров. Добавление класса AWTObject. Изменения в SpinButton, TextHint и сопутствующих классов для поддержки таймеров. Исправление и добаление комментариев." />
-    <MESSAGE value="Добавление базовых возможностей в демку всплывающих подсказок" />
     <MESSAGE value="Добавление в класс TextHint полей для хранения значений по умолчанию основных свойств всплывающей подсказки. Например шрифта или времени отображения всплывающей подсказки по умолчанию." />
     <MESSAGE value="Исправлен баг в таймерах. В компоненте PGradualSpinButton теперь используется динамический id таймера." />
     <MESSAGE value="Каталог с модулями общего кода (awt, common, console и др.) теперь это awt, вместо geargames." />
@@ -1468,7 +1381,9 @@
     <MESSAGE value="1. Маленькие изменения в Debug классах;&#10;2. В некоторых классах вернулись к использованию java.lang.String;&#10;3. Определены статические переменные storageFolder и storageProperties в классе Recorder вместо жестких значений в классе Main." />
     <MESSAGE value="1. Заданы проектные значения переменным storageFolder и storageProperties в классе.&#10;2. Удалено дублирующее подключение модулей gg.*" />
     <MESSAGE value="1. Тестовый модуль androidTest перемещен в проект awtdemo из проекта regolith;&#10;2. Три тестовых каталога из testsrc, также перемещены в проект awtdemo из проекта regolith;&#10;3. Добавлен модуль project так, чтобы все модули из awtdemo отображались в общем root каталоге, как единый проект." />
+    <MESSAGE value="Почистил класс manager от не используемого кода" />
     <MESSAGE value="повторно переименован класс LangConsts" />
+    <MESSAGE value="перенесен класс LangConsts, попытка избавиться от косяка с именем файла" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1520,13 +1435,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="143" selection-end="143" vertical-scroll-proportion="0.20987654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awtdemo/testsrc/com/geargames/graphics/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="147" selection-end="147" vertical-scroll-proportion="0.23985891">
@@ -1631,10 +1539,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="12" selection-start="1461" selection-end="1461" vertical-scroll-proportion="3.321839">
+        <state line="44" column="12" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/localize/LangConsts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="167" selection-end="167" vertical-scroll-proportion="1.5632184">
+          <folding />
         </state>
       </provider>
     </entry>
