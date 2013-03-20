@@ -1,4 +1,6 @@
-package com.geargames.awtdemo.localize;
+package com.geargames.awtdemo;
+
+import com.geargames.awtdemo.localize.CommonLangConsts;
 
 /**
  * User: abarakov
