@@ -3,6 +3,7 @@ package com.geargames.awtdemo.awt.components.forms.texts;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
 import com.geargames.awtdemo.application.Application;
+import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
@@ -24,6 +25,7 @@ public class PPanel_Text extends DrawablePPanel {
             super(prototype);
         }
 
+        @Override
         protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
                 case 13:
@@ -31,27 +33,25 @@ public class PPanel_Text extends DrawablePPanel {
                     buttonClose = new PEntitledClosePanelButton((PObject) index.getPrototype());
                     addActiveChild(buttonClose, index);
                     break;
-                case 19:
+                case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
-                    caption.setText(String.valueOfC("ТЕКСТОВЫЕ КОМПОНЕНТЫ"));
+                    caption.setText(String.valueOfC("TEXTS"));
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
-                    break;
-                default:
-//                    super.createDefaultElementByIndex(index);
                     break;
             }
         }
 
-        protected void createDefaultElementByIndex(IndexObject index) {
-            switch (index.getSlot()) {
+        @Override
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
+            switch (parentPrototype.getIndexes().indexOf(index)) {
                 // Игнорируем некоторые элементы формы пакера
-                case 0:
-                case 2:
+                case 1:
+                case 3:
                     break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
             }
         }
     }
@@ -60,7 +60,7 @@ public class PPanel_Text extends DrawablePPanel {
     PEntitledClosePanelButton buttonClose;
 
     public PPanel_Text() {
-        this(Application.getInstance().getRender().getObject(12));
+        this(Application.getInstance().getRender().getObject(Graph.PAN_BATTLE_CREATE));
     }
 
     private void addChild(PElement element, int X, int Y) {
@@ -141,33 +141,38 @@ public class PPanel_Text extends DrawablePPanel {
 
         // Кнопка-переключатель возможности скроллить список с помощью касаний
         PToggleButton buttonStuck = new PButton_ToggleStuck(
-                new ScrollableArea[] {textArea1, textArea2}, Application.getInstance().getRender().getObject(58));
+                new ScrollableArea[] {textArea1, textArea2}, Application.getInstance().getRender().getObject(61));
         addChild(buttonStuck, 20, 160);
 
         // Кнопка-переключатель режима отсечения крайних элементов списка
         PToggleButton buttonStrictlyClipped = new PButton_ToggleStrictlyClipped(
-                new ScrollableArea[] {textArea1, textArea2}, Application.getInstance().getRender().getObject(59));
+                new ScrollableArea[] {textArea1, textArea2}, Application.getInstance().getRender().getObject(62));
         addChild(buttonStrictlyClipped, 73, 160);
 
         // Кнопка-переключатель функции "обрезки" текста, не помещающегося в пределах области отрисовки
         PToggleButton buttonEllipsis = new PButton_ToggleEllipsis(
-                new TextArea[] {textArea1, textArea2}, Application.getInstance().getRender().getObject(60));
+                new TextArea[] {textArea1, textArea2}, Application.getInstance().getRender().getObject(63));
         addChild(buttonEllipsis, 126, 160);
 
         // Кнопка-переключатель цвета
-        PTouchButton buttonColor = new PButton_ToggleColor(
-                new TextArea[] {textArea1, textArea2}, String.valueOfC("COLOR"));
+        PEntitledTouchButton buttonColor = new PButton_ToggleColor(
+                new TextArea[] {textArea1, textArea2});
+        buttonColor.setText(String.valueOfC("COLOR"));
         addChild(buttonColor, 20, 210);
 
         // Кнопка-переключатель горизонтального выравнивания
-        PTouchButton buttonFormat = new PButton_ToggleFormat(
-                new TextArea[] {textArea1, textArea2}, String.valueOfC("FORMAT"));
+        PEntitledTouchButton buttonFormat = new PButton_ToggleFormat(
+                new TextArea[] {textArea1, textArea2});
+        buttonFormat.setText(String.valueOfC("FORMAT"));
         addChild(buttonFormat, 175, 210);
     }
 
+    @Override
     public void onHide() {
     }
 
+    @Override
     public void onShow() {
     }
+
 }

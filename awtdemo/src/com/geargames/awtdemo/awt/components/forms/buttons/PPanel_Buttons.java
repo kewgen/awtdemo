@@ -3,12 +3,10 @@ package com.geargames.awtdemo.awt.components.forms.buttons;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.components.*;
 import com.geargames.awtdemo.application.Application;
+import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
-import com.geargames.awtdemo.awt.components.common.PDummyEntitledRadioButton;
-import com.geargames.awtdemo.awt.components.common.PDummyEntitledToggleButton;
-import com.geargames.awtdemo.awt.components.common.PDummyEntitledTouchButton;
-import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
+import com.geargames.awtdemo.awt.components.common.*;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
@@ -27,87 +25,102 @@ public class PPanel_Buttons extends DrawablePPanel {
             super(prototype);
         }
 
+        @Override
         protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
-            PElement element = null;
+            PElement element;
             switch (index.getSlot()) {
                 case 1:
                     element = new PDummyTouchButton((PObject) index.getPrototype());
+                    addActiveChild(element, index);
                     break;
                 case 2:
                     element = new PDummyTouchButton((PObject) index.getPrototype());
+                    addActiveChild(element, index);
                     break;
                 case 3:
-                    element = new PDummyEntitledTouchButton(String.valueOfC("TOUCH"));
+                    element = new PDummyEntitledTouchButton();
+                    ((PDummyEntitledTouchButton)element).setText(String.valueOfC("TOUCH"));
+                    addActiveChild(element, index);
                     break;
                 case 5:
                     element = new PDummyToggleButton((PObject) index.getPrototype());
+                    addActiveChild(element, index);
                     break;
                 case 6:
                     element = new PDummyToggleButton((PObject) index.getPrototype());
+                    addActiveChild(element, index);
                     break;
                 case 7:
-                    element = new PDummyEntitledToggleButton(String.valueOfC("TOGGLE"));
+                    element = new PDummyEntitledToggleButton();
+                    ((PDummyEntitledToggleButton)element).setText(String.valueOfC("TOGGLE"));
+                    addActiveChild(element, index);
                     break;
                 case 9:
                     element = new PDummyRadioButton((PObject) index.getPrototype());
-                    if (radioGroup == null)
+                    addActiveChild(element, index);
+                    if (radioGroup == null) {
                         radioGroup = new PRadioGroup(4);
+                    }
                     radioGroup.addButton((PRadioButton)element);
                     break;
                 case 10:
                     element = new PDummyRadioButton((PObject) index.getPrototype());
-                    if (radioGroup == null)
+                    addActiveChild(element, index);
+                    if (radioGroup == null) {
                         radioGroup = new PRadioGroup(4);
+                    }
                     radioGroup.addButton((PRadioButton)element);
                     break;
                 case 11:
-                    element = new PDummyEntitledRadioButton(String.valueOfC("RADIO"));
-                    if (radioGroup == null)
+                    element = new PDummyEntitledRadioButton();
+                    ((PDummyEntitledRadioButton)element).setText(String.valueOfC("RADIO"));
+                    addActiveChild(element, index);
+                    if (radioGroup == null) {
                         radioGroup = new PRadioGroup(4);
+                    }
                     radioGroup.addButton((PRadioButton)element);
                     break;
                 case 13:
                     // Кнопка закрытия окна
                     buttonClose = new PEntitledClosePanelButton((PObject) index.getPrototype());
-                    element = buttonClose;
+                    addActiveChild(buttonClose, index);
                     break;
                 case 15:
                     element = new PSimpleLabel(index);
                     ((PSimpleLabel)element).setText(String.valueOfC("TOUCH BUTTONS"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
+                    addPassiveChild(element, index);
                     break;
                 case 16:
                     element = new PSimpleLabel(index);
                     ((PSimpleLabel)element).setText(String.valueOfC("TOGGLE BUTTONS"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
+                    addPassiveChild(element, index);
                     break;
                 case 17:
                     element = new PSimpleLabel(index);
                     ((PSimpleLabel)element).setText(String.valueOfC("RADIO BUTTONS"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
+                    addPassiveChild(element, index);
                     break;
-                case 19:
+                case 109:
                     // Заголовок окна
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setText(String.valueOfC("КНОПКИ"));
+                    ((PSimpleLabel)element).setText(String.valueOfC("BUTTONS"));
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontFormTitle());
+                    addPassiveChild(element, index);
                     break;
-                default:
-//                    super.createDefaultElementByIndex(index);
-                    break;
-            }
-            if (element != null) {
-                addActiveChild(element, index);
             }
         }
 
-        protected void createDefaultElementByIndex(IndexObject index) {
-            switch (index.getSlot()) {
+        @Override
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
+            switch (parentPrototype.getIndexes().indexOf(index)) {
                 // Игнорируем некоторые элементы формы пакера
-                case 0:
+                case 1:
                     break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
             }
         }
     }
@@ -116,11 +129,7 @@ public class PPanel_Buttons extends DrawablePPanel {
     PEntitledClosePanelButton buttonClose;
 
     public PPanel_Buttons() {
-        this(Application.getInstance().getRender().getObject(12));
-    }
-
-    private void addChild(PElement element, int X, int Y) {
-        сontentPanel.addActiveChild(element, X - 227, Y - 163);
+        this(Application.getInstance().getRender().getObject(Graph.PAN_BATTLE_CREATE));
     }
 
     public PPanel_Buttons(PObject prototype) {
@@ -132,9 +141,12 @@ public class PPanel_Buttons extends DrawablePPanel {
         buttonClose.setParent(this);
     }
 
+    @Override
     public void onHide() {
     }
 
+    @Override
     public void onShow() {
     }
+
 }

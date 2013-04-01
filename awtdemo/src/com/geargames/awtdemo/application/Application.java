@@ -4,7 +4,7 @@ import com.geargames.common.logging.Debug;
 import com.geargames.awt.Anchors;
 import com.geargames.awt.TextHint;
 import com.geargames.awtdemo.packer.PUnitCreator;
-import com.geargames.awt.timers.TimerManager;
+import com.geargames.common.timers.TimerManager;
 import com.geargames.common.String;
 import com.geargames.common.Event;
 import com.geargames.common.env.Environment;
@@ -142,7 +142,7 @@ public final class Application extends com.geargames.common.Application {
         isLoading = false;
 
         TextHint textHint = TextHint.getInstance();
-        textHint.setSkinObject(render.getFrame(675), render, 16, 24, 16, 24); //todo: Установить правильный скин и размеры
+        textHint.setSkinObject(render.getObject(Graph.OBJ_HINT));
 //        textHint.setDefaultFont(PFontCollection.getFontHint());
 
         panels.initiate(render);
@@ -160,6 +160,7 @@ public final class Application extends com.geargames.common.Application {
 
     // ---------------MAIN LOOP------------------
 
+    @Override
     public void mainLoop() {
         try {
             if (Manager.getInstance().isSuspended() || isLoading) {
@@ -225,6 +226,7 @@ public final class Application extends com.geargames.common.Application {
     /**
      * Выполнение всех манипуляций на один игровой тик
      */
+    @Override
     protected void onEvent(Event event) {
 //        Object element = event.getData();
 //        if (element != null) {

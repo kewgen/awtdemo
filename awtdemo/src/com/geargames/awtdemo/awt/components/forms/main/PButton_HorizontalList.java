@@ -2,7 +2,6 @@ package com.geargames.awtdemo.awt.components.forms.main;
 
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledTouchButton;
 import com.geargames.awtdemo.awt.components.forms.list.horz.PPanel_HorizontalList;
-import com.geargames.common.String;
 
 /**
  * User: abarakov
@@ -10,10 +9,11 @@ import com.geargames.common.String;
  */
 public class PButton_HorizontalList extends PDummyEntitledTouchButton {
 
-    public PButton_HorizontalList(String caption) {
-        super(caption);
+    public PButton_HorizontalList() {
+        super();
     }
 
+    @Override
     public void onClick() {
         PPanel_HorizontalList panel = new PPanel_HorizontalList();
         panel.showModal();

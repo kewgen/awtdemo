@@ -4,7 +4,7 @@ import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
 import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
-import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
+import com.geargames.awtdemo.awt.components.common.PDummyRadioButton;
 import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
@@ -22,6 +22,7 @@ public class PButton_Horizontal_CenteredElasticInertMotionListener extends PDumm
         this.panelOwner = panelOwner;
     }
 
+    @Override
     public void onClick() {
         CenteredElasticInertMotionListener motionListener = new CenteredElasticInertMotionListener();
         motionListener.setInstinctPosition(false);
@@ -42,6 +43,7 @@ public class PButton_Horizontal_CenteredElasticInertMotionListener extends PDumm
         TextHint.show(String.valueOfC("CenteredElasticInertMotionListener"), x, y);
     }
 
+    @Override
     public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
@@ -53,4 +55,5 @@ public class PButton_Horizontal_CenteredElasticInertMotionListener extends PDumm
         }
         return super.onEvent(code, param, x, y);
     }
+
 }

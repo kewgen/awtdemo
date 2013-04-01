@@ -24,8 +24,8 @@ public class PMenuExamPanel extends DrawablePPanel {
             super(prototype);
         }
 
-        protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype)
-        {
+        @Override
+        protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
                 case 10:
                 case 11:
@@ -41,19 +41,17 @@ public class PMenuExamPanel extends DrawablePPanel {
                         closeButtonList = new ArrayList();
                     closeButtonList.add(element);
                     break;
-//                default:
-//                    super.createDefaultElementByIndex(index);
-//                    break;
             }
         }
 
-        protected void createDefaultElementByIndex(IndexObject index)
-        {
-            switch (index.getSlot()) {
-                case 0:
+        @Override
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
+            switch (parentPrototype.getIndexes().indexOf(index)) {
+                // Игнорируем некоторые элементы формы пакера
+                case 2:
                     break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
             }
         }
 
@@ -77,9 +75,12 @@ public class PMenuExamPanel extends DrawablePPanel {
         setElement(сontentPanel);
     }
 
+    @Override
     public void onHide() {
     }
 
+    @Override
     public void onShow() {
     }
+
 }

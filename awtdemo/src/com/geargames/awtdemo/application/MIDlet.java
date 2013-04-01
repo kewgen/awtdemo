@@ -10,6 +10,7 @@ public final class MIDlet extends com.geargames.platform.MIDlet {
         setLocationRelativeTo(null);
     }
 
+    @Override
     public void startApp() {
         Manager manager = (Manager)getManager();
         try {
@@ -20,25 +21,6 @@ public final class MIDlet extends com.geargames.platform.MIDlet {
         } catch (Exception e) {
             Debug.error(String.valueOfC(""), e);
         }
-    }
-
-    protected void onResume() {
-    }
-
-    public void onPause() {
-        Manager manager = (Manager)getManager();
-        if (manager != null) {
-            manager.pauseApp();
-        }
-    }
-
-    public void destroyApp(boolean b) {
-        try {
-
-        } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e);
-        }
-
     }
 
     @Override

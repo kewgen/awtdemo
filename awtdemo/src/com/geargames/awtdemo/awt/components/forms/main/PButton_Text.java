@@ -2,7 +2,6 @@ package com.geargames.awtdemo.awt.components.forms.main;
 
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledTouchButton;
 import com.geargames.awtdemo.awt.components.forms.texts.PPanel_Text;
-import com.geargames.common.String;
 
 /**
  * User: abarakov
@@ -10,10 +9,11 @@ import com.geargames.common.String;
  */
 public class PButton_Text extends PDummyEntitledTouchButton {
 
-    public PButton_Text(String caption) {
-        super(caption);
+    public PButton_Text() {
+        super();
     }
 
+    @Override
     public void onClick() {
         PPanel_Text panel = new PPanel_Text();
         panel.showModal();

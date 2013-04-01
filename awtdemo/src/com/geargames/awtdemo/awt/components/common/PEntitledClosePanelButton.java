@@ -17,7 +17,8 @@ public class PEntitledClosePanelButton extends PEntitledTouchButton {
     private DrawablePPanel parent;
 
     public PEntitledClosePanelButton(PObject prototype) {
-        super(prototype, String.valueOfC("ЗАКРЫТЬ"));
+        super(prototype);
+        setText(String.valueOfC("CLOSE"));
         setFont(PFontCollection.getFontButtonCaption());
     }
 
@@ -29,6 +30,7 @@ public class PEntitledClosePanelButton extends PEntitledTouchButton {
         this.parent = parent;
     }
 
+    @Override
     public void onClick() {
         parent.hide();
     }

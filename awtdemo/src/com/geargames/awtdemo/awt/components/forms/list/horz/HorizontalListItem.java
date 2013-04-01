@@ -20,18 +20,22 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
         setRegion(NullRegion.instance);
     }
 
+//    @Override
 //    public boolean onEvent(int code, int param, int x, int y) {
 //        return false;
 //    }
 //
+//    @Override
 //    public Region getTouchRegion() {
 //        return region;
 //    }
 //
+//    @Override
 //    public Region getDrawRegion() {
 //        return region;
 //    }
 
+//    @Override
 //    public void setRegion(Region drawRegion) {
 //        this.region = drawRegion;
 //    }
@@ -44,11 +48,13 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
         this.value = value;
     }
 
+    @Override
     public void draw(Graphics graphics, int x, int y) {
 //        graphics.drawString(com.geargames.common.String.valueOfC(value), x, y, Anchors.CENTER_ANCHOR);
         value.draw(graphics, x, y);
     }
 //
+//    @Override
 //    public void onClick() {
 //
 //    }

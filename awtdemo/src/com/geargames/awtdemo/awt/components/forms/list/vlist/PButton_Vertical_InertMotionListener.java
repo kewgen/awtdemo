@@ -4,7 +4,7 @@ import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
 import com.geargames.awt.utils.motions.InertMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
-import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
+import com.geargames.awtdemo.awt.components.common.PDummyRadioButton;
 import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
@@ -22,6 +22,7 @@ public class PButton_Vertical_InertMotionListener extends PDummyRadioButton {
         this.verticalList = verticalList;
     }
 
+    @Override
     public void onClick() {
         InertMotionListener motionListener = new InertMotionListener();
         verticalList.setMotionListener(
@@ -36,6 +37,7 @@ public class PButton_Vertical_InertMotionListener extends PDummyRadioButton {
         TextHint.show(String.valueOfC("InertMotionListener"), x, y);
     }
 
+    @Override
     public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
@@ -47,4 +49,5 @@ public class PButton_Vertical_InertMotionListener extends PDummyRadioButton {
         }
         return super.onEvent(code, param, x, y);
     }
+
 }

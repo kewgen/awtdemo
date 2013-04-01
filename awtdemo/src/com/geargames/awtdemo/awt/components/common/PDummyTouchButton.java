@@ -1,4 +1,4 @@
-package com.geargames.awtdemo.awt.components.forms.buttons;
+package com.geargames.awtdemo.awt.components.common;
 
 import com.geargames.awt.components.PTouchButton;
 import com.geargames.common.packer.PObject;

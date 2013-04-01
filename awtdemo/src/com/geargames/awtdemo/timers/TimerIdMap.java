@@ -5,7 +5,7 @@ package com.geargames.awtdemo.timers;
  * Date: 25.02.13 10:16
  * Список кодов клиентских таймеров.
  */
-public class TimerIdMap extends com.geargames.awt.timers.TimerIdMap {
+public class TimerIdMap extends com.geargames.common.timers.TimerIdMap {
     /*
      * Пожалуйста, выбирайте id следуя следующему правилу:
      *     отрицательные id - для всех системных таймеров (таймеров общего кода);

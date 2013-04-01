@@ -19,7 +19,7 @@ public class VerticalList extends PVerticalScrollView {
         super(listPrototype);
 
         items = new Vector(collectionSize);
-        for (int i=0; i<collectionSize; i++) {
+        for (int i = 0; i < collectionSize; i++) {
             PPrototypeElement item = new PPrototypeElement();
             item.setPrototype(getPrototype().getPrototype());
             items.add(item);
@@ -31,12 +31,15 @@ public class VerticalList extends PVerticalScrollView {
         setMotionListener(motionListener);
     }
 
+    @Override
     public void initiate(Graphics graphics) {
         initiateMotionListener();
         setInitiated(true);
     }
 
+    @Override
     public Vector getItems() {
         return items;
     }
+
 }

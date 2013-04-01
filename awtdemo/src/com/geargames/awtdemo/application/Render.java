@@ -81,8 +81,6 @@ public class Render extends PManager {
         EM_E = Graph.Emitter_I_Y;//указатель на последний индекс
         EM_I_ID = Graph.Emitter_index_I_ID;
         EM_I_TYPE = Graph.Emitter_index_I_TYPE;
-        //TODO определится со значением
-        //com.geargames.common.packer.Render.EM_I_LAYER = Graph.Emitter_index_I_LAYER_TYPE;
         EM_I_SLOT = Graph.Emitter_index_I_SLOT;
         EM_I_SHIFT = Graph.Emitter_index_I_W;
         EM_I_X = Graph.Emitter_index_I_X;

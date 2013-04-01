@@ -23,6 +23,7 @@ public class PPanel_SpinBoxes extends DrawablePPanel {
             super(prototype);
         }
 
+        @Override
         protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
                 case 13:
@@ -30,27 +31,25 @@ public class PPanel_SpinBoxes extends DrawablePPanel {
                     buttonClose = new PEntitledClosePanelButton((PObject) index.getPrototype());
                     addActiveChild(buttonClose, index);
                     break;
-                case 19:
+                case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
                     caption.setText(String.valueOfC("SPIN BOXES"));
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
-                default:
-//                    super.createDefaultElementByIndex(index);
-                    break;
             }
         }
 
-        protected void createDefaultElementByIndex(IndexObject index) {
-            switch (index.getSlot()) {
+        @Override
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
+            switch (parentPrototype.getIndexes().indexOf(index)) {
                 // Игнорируем некоторые элементы формы пакера
-                case 0:
-                case 2:
+                case 1:
+                case 3:
                     break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
             }
         }
     }
@@ -77,31 +76,38 @@ public class PPanel_SpinBoxes extends DrawablePPanel {
 //----- Элементы формы -------------------------------------------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();
-        label1.setText(String.valueOfC("P GRADUAL SPIN BOX"));
+        label1.setText(String.valueOfC("P GRADUAL SPIN BOX (0..200)"));
         label1.setFont(PFontCollection.getFontLabel());
         addChild(label1, 20, 40);
 
         PObject prototypeIndicator = Application.getInstance().getRender().getObject(Graph.OBJ_SPINBOX);
 
         PGradualSpinBox gradualSpinBox = new PGradualSpinBox(prototypeIndicator);
-        gradualSpinBox.setValue((short)0);
+        gradualSpinBox.setMinValue(0);
+        gradualSpinBox.setMaxValue(200);
+        gradualSpinBox.setValue(0);
         gradualSpinBox.setFont(PFontCollection.getFontLabel());
-        addChild(gradualSpinBox, 270, 20);
+        addChild(gradualSpinBox, 320, 20);
 
         PSimpleLabel label2 = new PSimpleLabel();
-        label2.setText(String.valueOfC("P STEP SPIN BOX"));
+        label2.setText(String.valueOfC("P STEP SPIN BOX (-10..10)"));
         label2.setFont(PFontCollection.getFontLabel());
         addChild(label2, 20, 90);
 
         PStepSpinBox stepSpinBox = new PStepSpinBox(prototypeIndicator);
-        stepSpinBox.setValue((short)0);
+        stepSpinBox.setMinValue(-10);
+        stepSpinBox.setMaxValue(10);
+        stepSpinBox.setValue(0);
         stepSpinBox.setFont(PFontCollection.getFontLabel());
-        addChild(stepSpinBox, 270, 70);
+        addChild(stepSpinBox, 320, 70);
     }
 
+    @Override
     public void onHide() {
     }
 
+    @Override
     public void onShow() {
     }
+
 }

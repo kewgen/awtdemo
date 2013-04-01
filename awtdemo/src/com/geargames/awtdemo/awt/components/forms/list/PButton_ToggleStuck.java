@@ -3,7 +3,7 @@ package com.geargames.awtdemo.awt.components.forms.list;
 import com.geargames.awt.TextHint;
 import com.geargames.awt.components.ScrollableArea;
 import com.geargames.awtdemo.awt.components.PPanelManager;
-import com.geargames.awtdemo.awt.components.forms.buttons.PDummyToggleButton;
+import com.geargames.awtdemo.awt.components.common.PDummyToggleButton;
 import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
@@ -21,6 +21,7 @@ public class PButton_ToggleStuck extends PDummyToggleButton {
         this.scrollableArea = scrollableArea;
     }
 
+    @Override
     public void onCheckedChanged() {
         scrollableArea.setStuck(this.getChecked());
     }
@@ -29,6 +30,7 @@ public class PButton_ToggleStuck extends PDummyToggleButton {
         TextHint.show(String.valueOfC("Toggle stuck"), x, y);
     }
 
+    @Override
     public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
@@ -40,4 +42,5 @@ public class PButton_ToggleStuck extends PDummyToggleButton {
         }
         return super.onEvent(code, param, x, y);
     }
+
 }

@@ -28,17 +28,18 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
     };
     private int indexColor = 0;
 
-    public PButton_ToggleColor(TextArea[] textAreaList, PObject prototype, String text) {
-        super(prototype, text);
+    public PButton_ToggleColor(TextArea[] textAreaList, PObject prototype) {
+        super(prototype);
         setFont(PFontCollection.getFontButtonCaption());
         this.textAreaList = textAreaList;
     }
 
-    public PButton_ToggleColor(TextArea[] textAreaList, String text) {
-        this(textAreaList, Application.getInstance().getRender().getObject(Graph.OBJ_BUT), text);
+    public PButton_ToggleColor(TextArea[] textAreaList) {
+        this(textAreaList, Application.getInstance().getRender().getObject(Graph.OBJ_BUT));
         this.textAreaList = textAreaList;
     }
 
+    @Override
     public void onClick() {
         indexColor++;
         if (indexColor == colorList.length) {
@@ -54,6 +55,7 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
         TextHint.show(String.valueOfC("Toggle color"), x, y);
     }
 
+    @Override
     public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
@@ -65,4 +67,5 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
         }
         return super.onEvent(code, param, x, y);
     }
+
 }

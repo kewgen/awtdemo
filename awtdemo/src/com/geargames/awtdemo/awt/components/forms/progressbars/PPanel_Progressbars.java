@@ -8,8 +8,8 @@ import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
 import com.geargames.awtdemo.timers.TimerIdMap;
-import com.geargames.awt.timers.TimerManager;
-import com.geargames.awt.timers.OnTimerListener;
+import com.geargames.common.timers.TimerManager;
+import com.geargames.common.timers.TimerListener;
 import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
@@ -18,7 +18,7 @@ import com.geargames.common.packer.PObject;
  * User: abarakov
  * Date: 15.02.13
 */
-public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListener {
+public class PPanel_Progressbars extends DrawablePPanel implements TimerListener {
 
     protected class PContentPanelImpl extends PContentPanel {
 
@@ -26,6 +26,7 @@ public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListen
             super(prototype);
         }
 
+        @Override
         protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
                 case 13:
@@ -33,27 +34,25 @@ public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListen
                     buttonClose = new PEntitledClosePanelButton((PObject) index.getPrototype());
                     addActiveChild(buttonClose, index);
                     break;
-                case 19:
+                case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
                     caption.setText(String.valueOfC("PROGRESS BARS"));
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
-                default:
-//                    super.createDefaultElementByIndex(index);
-                    break;
             }
         }
 
-        protected void createDefaultElementByIndex(IndexObject index) {
-            switch (index.getSlot()) {
+        @Override
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
+            switch (parentPrototype.getIndexes().indexOf(index)) {
                 // Игнорируем некоторые элементы формы пакера
-                case 0:
-                case 2:
+                case 1:
+                case 3:
                     break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
             }
         }
     }
@@ -102,9 +101,11 @@ public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListen
         TimerManager.setPeriodicTimer(TimerIdMap.AWTDEMO_PROGRESSBARS_TICK, 500, this);
     }
 
+    @Override
     public void onShow() {
     }
 
+    @Override
     public void onHide() {
         TimerManager.killTimer(TimerIdMap.AWTDEMO_PROGRESSBARS_TICK);
     }
@@ -116,6 +117,7 @@ public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListen
      * Метод вызывается каждый раз при срабатывании таймера.
      * @param timerId - идентификатор сработавшего таймера, который вызвал данный метод.
      */
+    @Override
     public void onTimer(int timerId) {
         if (timerId == TimerIdMap.AWTDEMO_PROGRESSBARS_TICK) {
             simpleIndicator1.setValue((int)(((float)tickCount / MAX_TICK_COUNT) * simpleIndicator1.getCardinality()));
@@ -126,4 +128,5 @@ public class PPanel_Progressbars extends DrawablePPanel implements OnTimerListen
             }
         }
     }
+
 }

@@ -2,7 +2,6 @@ package com.geargames.awtdemo.awt.components.forms.main;
 
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledTouchButton;
 import com.geargames.awtdemo.awt.components.forms.hints.PPanel_Hints;
-import com.geargames.common.String;
 
 /**
  * User: abarakov
@@ -10,10 +9,11 @@ import com.geargames.common.String;
  */
 public class PButton_Hints extends PDummyEntitledTouchButton {
 
-    public PButton_Hints(String caption) {
-        super(caption);
+    public PButton_Hints() {
+        super();
     }
 
+    @Override
     public void onClick() {
         PPanel_Hints panel = new PPanel_Hints();
         panel.showModal();

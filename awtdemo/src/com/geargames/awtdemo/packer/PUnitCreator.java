@@ -9,6 +9,7 @@ import com.geargames.awtdemo.packer.PUnitStub;
  */
 public class PUnitCreator extends PCreator {
 
+    @Override
     public PUnit createUnit(int pid, int size) {
         return new PUnitStub(size);
     }

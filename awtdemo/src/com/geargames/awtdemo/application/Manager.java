@@ -56,12 +56,13 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         loading();
     }
 
+    @Override
     public void loading() {
         app.loading();
     }
 
-
     // ------------------ Screen ------------------------
+    @Override
     public void paint(Graphics graphics) {
         if (Port.IS_CONSOLE) {
             graphics.onCache(5000);
@@ -84,6 +85,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
     }
 
     //изменение размеров экранного буфера
+    @Override
     public void resizeScreenBuffer(int w, int h) {
         if (app == null) {
             return;
@@ -147,6 +149,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         runStart();
     }
 
+    @Override
     public void run() {
         Debug.debug(String.valueOfC("Manager.run - Main thread running"));
         running = true;
@@ -167,6 +170,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         return running;
     }
 
+    @Override
     public void mainLoop() {//Вызов основного игрового цикла. Он должен вызывать рендер нужных фреймов
         app.mainLoop();
     }
@@ -196,6 +200,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
 
     final public static byte SK_NONE = 7;
 
+    @Override
     public void keyPressed(int key) {
         switch (key) {
             case Event.EVENT_KEY_UP:
@@ -207,6 +212,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         }
     }
 
+    @Override
     public boolean onTouchEvent(int action, int x, int y) {
         x -= Port.SCREEN_DX;
         y -= Port.SCREEN_DY;
@@ -243,10 +249,12 @@ public final class Manager extends com.geargames.platform.Manager implements Run
     private long touch_up_last;//время последнего отжатия
     private long touch_down_last;//время последнего нажатия
 
+    @Override
     public void backPressed() {
         destroy(true);
     }
 
+    @Override
     public void menuPressed() {
         Debug.debug(String.valueOfC("Manager.menuPressed"));
     }
@@ -274,33 +282,42 @@ public final class Manager extends com.geargames.platform.Manager implements Run
         return Runtime.getRuntime().freeMemory();
     }
 
+    @Override
     public MIDlet getMidlet() {
         return midlet;
     }
 
+    @Override
     public Canvas getCanvas() {
         return canvas;
     }
 
+    @Override
     public void onResume() {
     }
 
+    @Override
     public void onPause() {
     }
 
+    @Override
     public void onLowMemory() {
     }
 
+    @Override
     public void draw() {
     }
 
+    @Override
     public void loadSplash() {
     }
 
+    @Override
     public int getFrameTotalCount() {
         return 0;
     }
 
+    @Override
     public int getSizeExpectedResources() {
         return 0;
     }

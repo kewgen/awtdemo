@@ -13,6 +13,7 @@ public class PUnitStub extends PUnit {
         super(prototypesCount);
     }
 
+    @Override
     public void draw(Graphics graphics, int x, int y, Object unit) {
     }
 }

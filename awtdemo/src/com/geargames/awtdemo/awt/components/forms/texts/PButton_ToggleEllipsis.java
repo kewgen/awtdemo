@@ -3,7 +3,7 @@ package com.geargames.awtdemo.awt.components.forms.texts;
 import com.geargames.awt.TextHint;
 import com.geargames.awt.components.TextArea;
 import com.geargames.awtdemo.awt.components.PPanelManager;
-import com.geargames.awtdemo.awt.components.forms.buttons.PDummyToggleButton;
+import com.geargames.awtdemo.awt.components.common.PDummyToggleButton;
 import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
@@ -21,6 +21,7 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
         this.textAreaList = textAreaList;
     }
 
+    @Override
     public void onClick() {
         for (int i = 0; i < textAreaList.length; i++) {
             TextArea textArea = textAreaList[i];
@@ -32,6 +33,7 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
         TextHint.show(String.valueOfC("Toggle ellipsis"), x, y);
     }
 
+    @Override
     public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
@@ -43,4 +45,5 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
         }
         return super.onEvent(code, param, x, y);
     }
+
 }

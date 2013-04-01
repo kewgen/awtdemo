@@ -4,7 +4,7 @@ import com.geargames.awt.TextHint;
 import com.geargames.awt.utils.ScrollHelper;
 import com.geargames.awt.utils.motions.StubMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
-import com.geargames.awtdemo.awt.components.forms.buttons.PDummyRadioButton;
+import com.geargames.awtdemo.awt.components.common.PDummyRadioButton;
 import com.geargames.common.Event;
 import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
@@ -23,6 +23,7 @@ public class PButton_Horizontal_StubMotionListener extends PDummyRadioButton {
         this.panelOwner = panelOwner;
     }
 
+    @Override
     public void onClick() {
         StubMotionListener motionListener = new StubMotionListener();
         motionListener.setScrollListener(panelOwner.getScrollBar());
@@ -43,6 +44,7 @@ public class PButton_Horizontal_StubMotionListener extends PDummyRadioButton {
         TextHint.show(String.valueOfC("StubMotionListener"), x, y);
     }
 
+    @Override
     public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
 //            if (getTouchRegion().isWithIn(x, y) && !isState()) {
@@ -54,4 +56,5 @@ public class PButton_Horizontal_StubMotionListener extends PDummyRadioButton {
         }
         return super.onEvent(code, param, x, y);
     }
+
 }

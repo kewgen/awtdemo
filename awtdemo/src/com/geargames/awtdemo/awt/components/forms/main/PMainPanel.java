@@ -1,8 +1,8 @@
 package com.geargames.awtdemo.awt.components.forms.main;
 
 import com.geargames.awt.Anchors;
-import com.geargames.awt.components.PButton;
 import com.geargames.awt.components.PElement;
+import com.geargames.awt.components.PEntitledTouchButton;
 import com.geargames.awtdemo.application.Graph;
 import com.geargames.common.Graphics;
 import com.geargames.common.packer.IndexObject;
@@ -28,11 +28,14 @@ public class PMainPanel extends DrawablePPanel {
             super(prototype);
         }
 
+        @Override
         protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
         }
 
-        protected void createDefaultElementByIndex(IndexObject index) {
+        @Override
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
         }
+
     }
 
     private PSprite spriteBorder;
@@ -62,40 +65,52 @@ public class PMainPanel extends DrawablePPanel {
 
 //----- Кнопки для открывания форм с демо компонентами -----------------------------------------------------------------
 
-        PButton buttonButtons = new PButton_Buttons(String.valueOfC("BUTTONS"));
+        PEntitledTouchButton buttonButtons = new PButton_Buttons();
+        buttonButtons.setText(String.valueOfC("BUTTONS"));
         addChild(buttonButtons, 20, 20);
 
-        PButton buttonText = new PButton_Text(String.valueOfC("TEXTS"));
+        PEntitledTouchButton buttonText = new PButton_Text();
+        buttonText.setText(String.valueOfC("TEXTS"));
         addChild(buttonText, 180, 20);
 
-        PButton buttonHorizontalList = new PButton_HorizontalList(String.valueOfC("HORZ LISTS"));
+        PEntitledTouchButton buttonHorizontalList = new PButton_HorizontalList();
+        buttonHorizontalList.setText(String.valueOfC("HORZ LISTS"));
         addChild(buttonHorizontalList, 20, 70);
 
-        PButton buttonVerticalList = new PButton_VerticalList(String.valueOfC("VERT LISTS"));
+        PEntitledTouchButton buttonVerticalList = new PButton_VerticalList();
+        buttonVerticalList.setText(String.valueOfC("VERT LISTS"));
         addChild(buttonVerticalList, 180, 70);
 
-        PButton buttonMenuExam = new PButton_MenuExam(String.valueOfC("MENU EXAMPLE"));
+        PEntitledTouchButton buttonMenuExam = new PButton_MenuExam();
+        buttonMenuExam.setText(String.valueOfC("MENU EXAMPLE"));
         addChild(buttonMenuExam, 20, 120);
 
-        PButton buttonProgressbars = new PButton_Progressbars(String.valueOfC("PROGRESS BARS"));
+        PEntitledTouchButton buttonProgressbars = new PButton_Progressbars();
+        buttonProgressbars.setText(String.valueOfC("PROGRESS BARS"));
         addChild(buttonProgressbars, 180, 120);
 
-        PButton buttonSpinBoxes = new PButton_SpinBoxes(String.valueOfC("SPIN BOXES"));
+        PEntitledTouchButton buttonSpinBoxes = new PButton_SpinBoxes();
+        buttonSpinBoxes.setText(String.valueOfC("SPIN BOXES"));
         addChild(buttonSpinBoxes, 20, 170);
 
-        PButton buttonSpinHints = new PButton_Hints(String.valueOfC("HINTS"));
+        PEntitledTouchButton buttonSpinHints = new PButton_Hints();
+        buttonSpinHints.setText(String.valueOfC("HINTS"));
         addChild(buttonSpinHints, 180, 170);
 
-        PButton buttonExit = new PButton_Exit(String.valueOfC("EXIT"));
+        PEntitledTouchButton buttonExit = new PButton_Exit();
+        buttonExit.setText(String.valueOfC("EXIT"));
         addChild(buttonExit, 20, 375);
     }
 
+    @Override
     public void onHide() {
     }
 
+    @Override
     public void onShow() {
     }
 
+    @Override
     public void draw(Graphics graphics) {
         spriteBorder.draw(graphics, this.getX(), this.getY());
         super.draw(graphics);

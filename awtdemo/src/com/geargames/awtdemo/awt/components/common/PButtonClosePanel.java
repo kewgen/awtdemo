@@ -26,6 +26,7 @@ public class PButtonClosePanel extends PTouchButton {
         this.parent = parent;
     }
 
+    @Override
     public void onClick() {
         parent.hide();
     }

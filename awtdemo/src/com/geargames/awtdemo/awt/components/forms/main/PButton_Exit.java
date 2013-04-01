@@ -1,7 +1,6 @@
 package com.geargames.awtdemo.awt.components.forms.main;
 
 import com.geargames.awtdemo.awt.components.common.PDummyEntitledTouchButton;
-import com.geargames.common.String;
 
 /**
  * User: abarakov
@@ -9,10 +8,11 @@ import com.geargames.common.String;
  */
 public class PButton_Exit extends PDummyEntitledTouchButton {
 
-    public PButton_Exit(String caption) {
-        super(caption);
+    public PButton_Exit() {
+        super();
     }
 
+    @Override
     public void onClick() {
         System.exit(0);
     }

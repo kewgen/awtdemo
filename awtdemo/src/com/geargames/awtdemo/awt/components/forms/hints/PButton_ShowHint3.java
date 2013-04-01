@@ -13,14 +13,16 @@ import com.geargames.common.String;
  */
 public class PButton_ShowHint3 extends PDummyEntitledToggleButton {
 
-    public PButton_ShowHint3(String text) {
-        super(text);
+    public PButton_ShowHint3() {
+        super();
     }
 
+    @Override
     public void onClick() {
         // Не требуется
     }
 
+    @Override
     public boolean onEvent(int code, int param, int x, int y) {
         if (code == Event.EVENT_TOUCH_RELEASED) {
             TextHint.show(String.valueOfC("БЫСТРО ВСПЛЫВАЮЩАЯ И МЕДЛЕННО СКРЫВАЮЩАЯСЯ ПОДСКАЗКА ИСПОЛЬЗУЮЩАЯ РАСТРОВЫЙ ШРИФТ"),

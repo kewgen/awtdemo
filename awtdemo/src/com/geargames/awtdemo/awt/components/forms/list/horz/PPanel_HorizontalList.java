@@ -37,28 +37,25 @@ public class PPanel_HorizontalList extends DrawablePPanel {
                     buttonClose = new PEntitledClosePanelButton((PObject) index.getPrototype());
                     addActiveChild(buttonClose, index);
                     break;
-                case 19:
+                case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
                     caption.setFont(PFontCollection.getFontFormTitle());
                     caption.setText(String.valueOfC("ГОРИЗОНТАЛЬНЫЙ СПИСОК"));
                     addPassiveChild(caption, index);
                     break;
-                default:
-//                    super.createDefaultElementByIndex(index);
-                    break;
             }
         }
 
         @Override
-        protected void createDefaultElementByIndex(IndexObject index) {
-            switch (index.getSlot()) {
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
+            switch (parentPrototype.getIndexes().indexOf(index)) {
                 // Игнорируем некоторые элементы формы пакера
-                case 0:
-                case 2:
+                case 1:
+                case 3:
                     break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
             }
         }
     }
@@ -100,17 +97,17 @@ public class PPanel_HorizontalList extends DrawablePPanel {
 
         ArrayList frames = new ArrayList();
         Render render = Application.getInstance().getRender();
-        frames.add(render.getFrame(596)); // ?
-        frames.add(render.getFrame(593)); // бугай
-        frames.add(render.getFrame(595)); // офицер
-        frames.add(render.getFrame(596)); // ?
-        frames.add(render.getFrame(596)); // ?
-        frames.add(render.getFrame(593)); // бугай
-        frames.add(render.getFrame(595)); // офицер
-        frames.add(render.getFrame(596)); // ?
-        frames.add(render.getFrame(596)); // ?
-        frames.add(render.getFrame(595)); // офицер
-        frames.add(render.getFrame(593)); // бугай
+        frames.add(render.getFrame(1324)); // ?
+        frames.add(render.getFrame(1320)); // бугай
+        frames.add(render.getFrame(1322)); // офицер
+        frames.add(render.getFrame(1324)); // ?
+        frames.add(render.getFrame(1324)); // ?
+        frames.add(render.getFrame(1320)); // бугай
+        frames.add(render.getFrame(1322)); // офицер
+        frames.add(render.getFrame(1324)); // ?
+        frames.add(render.getFrame(1324)); // ?
+        frames.add(render.getFrame(1322)); // офицер
+        frames.add(render.getFrame(1320)); // бугай
 
         PObject listPrototype = render.getObject(Graph.OBJ_LIST_FIGHTER);
         horizontalList = new HorizontalList(frames, listPrototype);
@@ -134,44 +131,46 @@ public class PPanel_HorizontalList extends DrawablePPanel {
 
         // Четыре кнопки выбора соответствующих MotionListener
         PRadioButton buttonListener1 = new PButton_Horizontal_CenteredElasticInertMotionListener(
-                this, Application.getInstance().getRender().getObject(58));
+                this, Application.getInstance().getRender().getObject(61));
         buttonListener1.setChecked(true);
         buttonListener1.onClick();
         radioGroup.addButton(buttonListener1);
         addChild(buttonListener1, 7, 112);
 
         PRadioButton buttonListener2 = new PButton_Horizontal_InertMotionListener(
-                this, Application.getInstance().getRender().getObject(59));
+                this, Application.getInstance().getRender().getObject(62));
         radioGroup.addButton(buttonListener2);
         addChild(buttonListener2, 60, 112);
 
         PRadioButton buttonListener3 = new PButton_Horizontal_ElasticInertMotionListener(
-                this, Application.getInstance().getRender().getObject(60));
+                this, Application.getInstance().getRender().getObject(63));
         radioGroup.addButton(buttonListener3);
         addChild(buttonListener3, 113, 112);
 
         PRadioButton buttonListener4 = new PButton_Horizontal_StubMotionListener(
-                this, Application.getInstance().getRender().getObject(61));
+                this, Application.getInstance().getRender().getObject(64));
         radioGroup.addButton(buttonListener4);
         addChild(buttonListener4, 166, 112);
 
         // Кнопка-переключатель возможности скроллить список с помощью касаний
         PToggleButton buttonStuck = new PButton_ToggleStuck(
-                horizontalList, Application.getInstance().getRender().getObject(58));
+                horizontalList, Application.getInstance().getRender().getObject(61));
         addChild(buttonStuck, 235, 112);
 
         // Кнопка-переключатель режима отсечения крайних элементов списка
         PToggleButton buttonStrictlyClipped = new PButton_ToggleStrictlyClipped(
-                horizontalList, Application.getInstance().getRender().getObject(59));
+                horizontalList, Application.getInstance().getRender().getObject(62));
         addChild(buttonStrictlyClipped, 288, 112);
 
 //        PDummyEntitledTouchButton button1 = new PDummyEntitledTouchButton(String.valueOfC("TOUCH"));
 
     }
 
+    @Override
     public void onHide() {
     }
 
+    @Override
     public void onShow() {
     }
 

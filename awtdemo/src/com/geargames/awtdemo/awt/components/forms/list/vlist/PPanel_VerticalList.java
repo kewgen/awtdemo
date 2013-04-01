@@ -25,6 +25,7 @@ public class PPanel_VerticalList extends DrawablePPanel {
             super(prototype);
         }
 
+        @Override
         protected void createSlotElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
 //                case 13:
@@ -32,7 +33,7 @@ public class PPanel_VerticalList extends DrawablePPanel {
 //                    buttonClose = new PEntitledClosePanelButton((PObject) index.getPrototype());
 //                    addActiveChild(buttonClose, index);
 //                    break;
-//                case 19:
+//                case 109:
 //                    // Заголовок окна
 //                    PSimpleLabel caption = new PSimpleLabel(index);
 //                    caption.setFont(PFontCollection.getFontFormTitle());
@@ -51,19 +52,20 @@ public class PPanel_VerticalList extends DrawablePPanel {
                     addActiveChild(verticalList, index);
                     break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
                     break;
             }
         }
 
-        protected void createDefaultElementByIndex(IndexObject index) {
+        @Override
+        protected void createDefaultElementByIndex(IndexObject index, PObject parentPrototype) {
             switch (index.getSlot()) {
 //                // Игнорируем некоторые элементы формы пакера
 //                case 0:
 //                case 2:
 //                    break;
                 default:
-                    super.createDefaultElementByIndex(index);
+                    super.createDefaultElementByIndex(index, parentPrototype);
             }
         }
     }
@@ -102,42 +104,44 @@ public class PPanel_VerticalList extends DrawablePPanel {
 
         // Четыре кнопки выбора соответствующих MotionListener
         PRadioButton buttonListener1 = new PButton_Vertical_CenteredElasticInertMotionListener(
-                verticalList, Application.getInstance().getRender().getObject(58));
+                verticalList, Application.getInstance().getRender().getObject(61));
         radioGroup.addButton(buttonListener1);
         addChild(buttonListener1, 7, 42);
 
         PRadioButton buttonListener2 = new PButton_Vertical_InertMotionListener(
-                verticalList, Application.getInstance().getRender().getObject(59));
+                verticalList, Application.getInstance().getRender().getObject(62));
         radioGroup.addButton(buttonListener2);
         addChild(buttonListener2, 60, 42);
 
         PRadioButton buttonListener3 = new PButton_Vertical_ElasticInertMotionListener(
-                verticalList, Application.getInstance().getRender().getObject(60));
+                verticalList, Application.getInstance().getRender().getObject(63));
         radioGroup.addButton(buttonListener3);
         buttonListener3.setChecked(true);
         addChild(buttonListener3, 113, 42);
 
         PRadioButton buttonListener4 = new PButton_Vertical_StubMotionListener(
-                verticalList, Application.getInstance().getRender().getObject(61));
+                verticalList, Application.getInstance().getRender().getObject(64));
         radioGroup.addButton(buttonListener4);
         addChild(buttonListener4, 166, 42);
 
         // Кнопка-переключатель возможности скроллить список с помощью касаний
         PToggleButton buttonStuck = new PButton_ToggleStuck(
-                verticalList, Application.getInstance().getRender().getObject(58));
+                verticalList, Application.getInstance().getRender().getObject(61));
         addChild(buttonStuck, 7, 112);
 
         // Кнопка-переключатель режима отсечения крайних элементов списка
         PToggleButton buttonStrictlyClipped = new PButton_ToggleStrictlyClipped(
-                verticalList, Application.getInstance().getRender().getObject(59));
+                verticalList, Application.getInstance().getRender().getObject(62));
         addChild(buttonStrictlyClipped, 60, 112);
 
 //        PDummyEntitledTouchButton button1 = new PDummyEntitledTouchButton(String.valueOfC("TOUCH"));
     }
 
+    @Override
     public void onHide() {
     }
 
+    @Override
     public void onShow() {
     }
 

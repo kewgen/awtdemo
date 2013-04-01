@@ -4,7 +4,6 @@ import com.geargames.awt.components.PEntitledTouchButton;
 import com.geargames.awtdemo.application.Application;
 import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -13,15 +12,16 @@ import com.geargames.common.packer.PObject;
  */
 public class PDummyEntitledTouchButton extends PEntitledTouchButton {
 
-    public PDummyEntitledTouchButton(PObject prototype, String caption) {
-        super(prototype, caption);
+    public PDummyEntitledTouchButton(PObject prototype) {
+        super(prototype);
         setFont(PFontCollection.getFontButtonCaption());
     }
 
-    public PDummyEntitledTouchButton(String caption) {
-        this(Application.getInstance().getRender().getObject(Graph.OBJ_BUT), caption);
+    public PDummyEntitledTouchButton() {
+        this(Application.getInstance().getRender().getObject(Graph.OBJ_BUT));
     }
 
+    @Override
     public void onClick() {
     }
 }

@@ -4,7 +4,6 @@ import com.geargames.awt.components.PEntitledRadioButton;
 import com.geargames.awtdemo.application.Application;
 import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -13,15 +12,16 @@ import com.geargames.common.packer.PObject;
  */
 public class PDummyEntitledRadioButton extends PEntitledRadioButton {
 
-    public PDummyEntitledRadioButton(PObject prototype, String caption) {
-        super(prototype, caption);
+    public PDummyEntitledRadioButton(PObject prototype) {
+        super(prototype);
         setFont(PFontCollection.getFontButtonCaption());
     }
 
-    public PDummyEntitledRadioButton(String caption) {
-        this(Application.getInstance().getRender().getObject(Graph.OBJ_BUT), caption);
+    public PDummyEntitledRadioButton() {
+        this(Application.getInstance().getRender().getObject(Graph.OBJ_BUT));
     }
 
+    @Override
     public void onClick() {
     }
 }
