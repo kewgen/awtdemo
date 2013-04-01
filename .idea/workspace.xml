@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="workspace.xml">
       <change type="DELETED" beforePath="D:\Projects\awtdemo\.idea\workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/androidTest.iml" afterPath="$PROJECT_DIR$/androidTest/androidTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/gen/com/example/BuildConfig.java" afterPath="$PROJECT_DIR$/androidTest/gen/com/example/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/AndroidGraphics.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/AndroidGraphics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/GGRenderer.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/GGRenderer.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\Graphics.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/Graphics.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\Image.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/Image.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\ResourceState.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/ResourceState.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\ResourceUnloadStyle.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/ResourceUnloadStyle.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\opengl\Graphics.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/opengl/Graphics.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\opengl\Image.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/opengl/GLTexture.java" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1795,7 +1785,15 @@
       <created>1364801601834</created>
       <updated>1364801601834</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Очередная попытка добавить workspace.xml в игнор">
+      <created>1364801651324</created>
+      <updated>1364801651324</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Небольшие изменения в androidTest">
+      <created>1364801780187</created>
+      <updated>1364801780187</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -1887,7 +1885,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Очередная попытка добавить workspace.xml в игнор" />
+    <option name="LAST_COMMIT_MESSAGE" value="Небольшие изменения в androidTest" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1900,7 +1898,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.55825245" />
-    <MESSAGE value="1. AWTObject переименован в Eventable;&#10;2. Метод event() класса Eventable переименован в onEvent() и добавлена его пустая реализация. В связи с этим, пустые реализации метода, в дочерних классах, были удалены;&#10;3. Добавлено два новых свойства в базовый класс PElement - visible и enabled. В соответствии с этим, некоторые классы были подправлены (PContentPanel, DrawablePPanel). Собственная реализация некоторыми классами свойства visible была удалена;&#10;4. Метод кнопки action() переименован в onClick() и добавлена его пустая реализация;&#10;5. В класс кнопок добавлен метод onCheckedChanged();&#10;6. В класс кнопок добавлен скин нового состояния - disabled;&#10;7. Изменение и редактирование комментариев в коде." />
     <MESSAGE value="1. Методы event(), action() и isState() переименованы в onEvent(), onClick() и getChecked() соответственно, пустые реализации методов удалены;&#10;2. Изменение и редактирование комментариев в коде." />
     <MESSAGE value="1. Метод onTimer перенесен в новый интерфейс OnTimerListener, добавлены соответствующие исправления в код;&#10;2. Полностью избавились от события Event.EVENT_TICK, теперь все на таймерах;&#10;3. Удалены устаревшие классы Etimer, Ticker." />
     <MESSAGE value="1. Метод onTimer перенесен в новый интерфейс OnTimerListener, добавлены соответствующие исправления в код;&#10;2. Полностью избавились от события Event.EVENT_TICK, теперь все на таймерах;&#10;" />
@@ -1925,6 +1922,7 @@
     <MESSAGE value="1. Новые ресурсы пакера;&#10;2. Заголовок кнопок теперь устанавливается не в конструкторе, а с помощью setText();&#10;3. Многие надписи на русском перевел на английские;&#10;4. Ссылки на объекты пакера теперь через константы из Graph;&#10;5. Добавил аннотации @Override." />
     <MESSAGE value="Подправил TextHint под использование скина PObject и автоматическое вычисление размеров" />
     <MESSAGE value="Очередная попытка добавить workspace.xml в игнор" />
+    <MESSAGE value="Небольшие изменения в androidTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
