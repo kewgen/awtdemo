@@ -7,7 +7,6 @@ import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
-import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 
@@ -34,7 +33,7 @@ public class PPanel_SpinBoxes extends DrawablePPanel {
                 case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
-                    caption.setText(String.valueOfC("SPIN BOXES"));
+                    caption.setText("SPIN BOXES");
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
@@ -76,7 +75,7 @@ public class PPanel_SpinBoxes extends DrawablePPanel {
 //----- Элементы формы -------------------------------------------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();
-        label1.setText(String.valueOfC("P GRADUAL SPIN BOX (0..200)"));
+        label1.setText("P GRADUAL SPIN BOX (0..200)");
         label1.setFont(PFontCollection.getFontLabel());
         addChild(label1, 20, 40);
 
@@ -90,7 +89,7 @@ public class PPanel_SpinBoxes extends DrawablePPanel {
         addChild(gradualSpinBox, 320, 20);
 
         PSimpleLabel label2 = new PSimpleLabel();
-        label2.setText(String.valueOfC("P STEP SPIN BOX (-10..10)"));
+        label2.setText("P STEP SPIN BOX (-10..10)");
         label2.setFont(PFontCollection.getFontLabel());
         addChild(label2, 20, 90);
 

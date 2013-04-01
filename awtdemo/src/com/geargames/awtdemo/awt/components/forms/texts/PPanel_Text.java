@@ -8,7 +8,6 @@ import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
 import com.geargames.common.Graphics;
-import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 import com.geargames.common.util.Region;
@@ -36,7 +35,7 @@ public class PPanel_Text extends DrawablePPanel {
                 case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
-                    caption.setText(String.valueOfC("TEXTS"));
+                    caption.setText("TEXTS");
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
@@ -78,11 +77,11 @@ public class PPanel_Text extends DrawablePPanel {
 //----- Компонент "Текстовая надпись" (Текстовая метка) ----------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();                        // Создание компонента
-        label1.setText(String.valueOfC("LABEL WITH SYSTEM FONT"));       // Задаем текст компонента
+        label1.setText("LABEL WITH SYSTEM FONT");                        // Задаем текст компонента
         addChild(label1, 20, 30); // TODO : Почему 30 вместо 20?
 
         PSimpleLabel label2 = new PSimpleLabel();                        // Создание компонента
-        label2.setText(String.valueOfC("LABEL WITH RASTER FONT"));       // Задаем текст компонента
+        label2.setText("LABEL WITH RASTER FONT");                        // Задаем текст компонента
         label2.setFont(PFontCollection.getFontLabel());                  // Задаем растровый шрифт
         addChild(label2, 20, 50); // TODO : Почему 50 вместо 40?
 
@@ -92,7 +91,7 @@ public class PPanel_Text extends DrawablePPanel {
         Region regionTextArea1 = textArea1.getDrawRegion();              // Размеры компонента
         regionTextArea1.setWidth(160);                                   // Ширина компонента
         regionTextArea1.setHeight(80);                                   // Высота компонента
-        textArea1.setText(String.valueOfC(                               // Задаем текст компонента
+        textArea1.setText(                                               // Задаем текст компонента
                 "\n" +
                 "\n" +
                 "\n" +
@@ -105,7 +104,7 @@ public class PPanel_Text extends DrawablePPanel {
                 "Line5\n" +
                 "Line6" +
                 "\n" +
-                "\n"));
+                "\n");
         textArea1.setFont(null);                                         // Системный шрифт будет использоваться при отображении
         textArea1.setColor(0xffffff);                                    // Цвет текста и рамки компонента (синий)
         textArea1.setFormat(Graphics.LEFT);                              // Выравнивание текста по горизонтали
@@ -122,13 +121,13 @@ public class PPanel_Text extends DrawablePPanel {
         Region regionTextArea2 = textArea2.getDrawRegion();              // Размеры компонента
         regionTextArea2.setWidth(160);                                   // Ширина компонента
         regionTextArea2.setHeight(80);                                   // Высота компонента
-        textArea2.setText(String.valueOfC(                               // Задаем текст компонента
+        textArea2.setText(                                               // Задаем текст компонента
                 "LINE1\n" +
                 "LINE2 LONG\n" +
                 "LINE3 LONG LONG LONG\n" +
                 "LINE4 LONG LONGLONG LONG LONGLONGLONG LONG LONG LONG LONG LONGLONGLONGLONG LONGLONG LONGLONGLONG LONG LONG LONG LONG LONG LONG LONG LONG LONG LONG LONG LONG LONG\n" +
                 "LINE5\n" +
-                "LINE6"));
+                "LINE6");
         textArea2.setFont(PFontCollection.getFont10());                  // Растровый шрифт будет использоваться при отображении
         textArea2.setColor(0xffffff);                                    // Цвет текста и рамки компонента (синий)
         textArea2.setFormat(Graphics.LEFT);                              // Выравнивание текста по горизонтали
@@ -157,13 +156,13 @@ public class PPanel_Text extends DrawablePPanel {
         // Кнопка-переключатель цвета
         PEntitledTouchButton buttonColor = new PButton_ToggleColor(
                 new TextArea[] {textArea1, textArea2});
-        buttonColor.setText(String.valueOfC("COLOR"));
+        buttonColor.setText("COLOR");
         addChild(buttonColor, 20, 210);
 
         // Кнопка-переключатель горизонтального выравнивания
         PEntitledTouchButton buttonFormat = new PButton_ToggleFormat(
                 new TextArea[] {textArea1, textArea2});
-        buttonFormat.setText(String.valueOfC("FORMAT"));
+        buttonFormat.setText("FORMAT");
         addChild(buttonFormat, 175, 210);
     }
 

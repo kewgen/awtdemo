@@ -5,7 +5,6 @@ import com.geargames.awt.components.TextArea;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.common.PDummyToggleButton;
 import com.geargames.common.Event;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -30,7 +29,7 @@ public class PButton_ToggleEllipsis extends PDummyToggleButton {
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("Toggle ellipsis"), x, y);
+        TextHint.show("Toggle ellipsis", x, y);
     }
 
     @Override

@@ -8,7 +8,6 @@ import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.common.Event;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -52,7 +51,7 @@ public class PButton_ToggleColor extends PEntitledTouchButton {
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("Toggle color"), x, y);
+        TextHint.show("Toggle color", x, y);
     }
 
     @Override

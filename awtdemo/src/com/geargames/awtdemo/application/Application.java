@@ -5,7 +5,6 @@ import com.geargames.awt.Anchors;
 import com.geargames.awt.TextHint;
 import com.geargames.awtdemo.packer.PUnitCreator;
 import com.geargames.common.timers.TimerManager;
-import com.geargames.common.String;
 import com.geargames.common.Event;
 import com.geargames.common.env.Environment;
 import com.geargames.common.packer.PFont;
@@ -74,7 +73,7 @@ public final class Application extends com.geargames.common.Application {
                 getGraphics().setRender(render);
             }
         } catch (Exception ex) {
-            Debug.critical(String.valueOfC("Exception during the creation of screen buffer"), ex);
+            Debug.critical("Exception during the creation of screen buffer", ex);
         }
     }
 
@@ -98,12 +97,12 @@ public final class Application extends com.geargames.common.Application {
             Thread.yield();
             Manager.paused(10);
         } catch (Exception ex) {
-            Debug.error(String.valueOfC("Exception during splash drawing"), ex);
+            Debug.error("Exception during splash drawing", ex);
         }
     }
 
     public void drawSplash(java.lang.String str) {
-        stateInfoString = String.valueOfC(str);
+        stateInfoString = str;
         drawSplash();
     }
 
@@ -111,9 +110,9 @@ public final class Application extends com.geargames.common.Application {
 
         tSleep = System.currentTimeMillis();
 
-        Debug.config(String.valueOfC("Memory total, free: ").
-                concatL(/*Debug.formatSize*/(Manager.getTotalMemory())).concatC(", ").
-                concatL(/*Debug.formatSize*/(Manager.getFreeMemory())));
+        Debug.config("Memory total, free: " +
+                /*Debug.formatSize*/(Manager.getTotalMemory()) + ", " +
+                /*Debug.formatSize*/(Manager.getFreeMemory()));
 
         drawSplash("Loading...");
 
@@ -147,11 +146,11 @@ public final class Application extends com.geargames.common.Application {
 
         panels.initiate(render);
 
-        stateInfoString = String.valueOfC("");
+        stateInfoString = "";
     }
 
     protected void onStop(boolean correct) {
-        Debug.debug(String.valueOfC("Application.onStop"));
+        Debug.debug("Application.onStop");
     }
 
     public PFontManager getFontManager() {
@@ -183,7 +182,7 @@ public final class Application extends com.geargames.common.Application {
             }
             manageFPS(FPS_MAXIMUM);
         } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e); //todo: Добавить сообщение об ошибке
+            Debug.error("", e); //todo: Добавить сообщение об ошибке
         }
     }
 
@@ -265,7 +264,7 @@ public final class Application extends com.geargames.common.Application {
                 graphics.drawString(stateInfoString, 12, Port.getH() - 36, 0);
             }
         } catch (Exception ex) {
-            Debug.error(String.valueOfC("Drawing operation failed"), ex);
+            Debug.error("Drawing operation failed", ex);
         }
         /*ObjC uncomment*///if ([Port isOpenGL]) [gles_view paintEnd];
     }
@@ -287,9 +286,9 @@ public final class Application extends com.geargames.common.Application {
     protected Image createBackgroundImage()
     {
         try {
-            return Image.createImage(String.valueOfC("/s1.png"), Manager.getInstance());
+            return Image.createImage("/s1.png", Manager.getInstance());
         } catch (Exception ex) {
-            Debug.error(String.valueOfC("Image loading failed"), ex);
+            Debug.error("Image loading failed", ex);
             return null;
         }
     }
@@ -303,4 +302,5 @@ public final class Application extends com.geargames.common.Application {
     {
         backgroundImage = image;
     }
+
 }

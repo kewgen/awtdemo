@@ -6,7 +6,6 @@ import com.geargames.awt.utils.motions.InertMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.common.PDummyRadioButton;
 import com.geargames.common.*;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -38,7 +37,7 @@ public class PButton_Horizontal_InertMotionListener extends PDummyRadioButton {
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("InertMotionListener"), x, y);
+        TextHint.show("InertMotionListener", x, y);
     }
 
     @Override

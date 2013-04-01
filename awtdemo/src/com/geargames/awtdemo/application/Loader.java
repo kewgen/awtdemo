@@ -1,9 +1,7 @@
 package com.geargames.awtdemo.application;
 
 import com.geargames.common.logging.Debug;
-import com.geargames.platform.logging.ConsoleDebug;
 import com.geargames.common.Port;
-import com.geargames.common.String;
 import com.geargames.common.packer.PManager;
 import com.geargames.common.util.ArrayByte;
 import com.geargames.common.util.ArrayList;
@@ -78,10 +76,10 @@ public class Loader {
 
     private void loadImages(Graphics graphics, int pack_cur, int size) {//инициализация имиджей из пакетов
 
-        String pack_name = String.valueOfC("/i").concatI(pack_cur);
+        String pack_name = "/i" + pack_cur;
         if (Port.IS_DOUBLE_GRAPHIC/* || (Port.isFourThirdsGraphic() && game.Port.isAndroid())*/)
-            pack_name = pack_name.concatC("_x2");
-        else if (Port.IS_FOURTHIRDS_GRAPHIC) pack_name = pack_name.concatC("_x4_3");
+            pack_name = pack_name + "_x2";
+        else if (Port.IS_FOURTHIRDS_GRAPHIC) pack_name = pack_name + "_x4_3";
         int img_count = size;//картинок в каждом пакете
 
         int img_square = 0;
@@ -89,7 +87,7 @@ public class Loader {
         int data_len;
         ArrayByte data;
 
-        Debug.debug(String.valueOfC("Load images from ").concat(pack_name).concatC("\tcount:").concatI(img_count));
+        Debug.debug("Load images from " + pack_name + "\tcount:" + img_count);
         try {
 
             DataInputStream dis = new DataInputStream(manager.getMidlet().getResourceAsStream(pack_name));
@@ -104,7 +102,7 @@ public class Loader {
                 int len_b2 = dis.readByte() & 0xff;
                 data_len = len_b0 << 16 | len_b1 << 8 | len_b2;
                 if (DEBUG) {
-                    Debug.debug(String.valueOfC(" ").concatI(img_cur).concatC(" ").concatI(data_len).concatC(" "));
+                    Debug.debug(img_cur + " " + data_len + " ");
                 }
 
                 data = new ArrayByte(data_len);
@@ -116,16 +114,16 @@ public class Loader {
                     /*ObjC uncomment*///if ([Port isOpenGL]) [gles_view addImageToTexture:images[img_cur]];
                     if (Port.OPEN_GL)
                         graphics.addTexture((Image) images.get(img_cur));//при ините текстуры битмап убьётся
-                    Debug.debug(String.valueOfC("Memory, img:").concatI(img_cur).concatC("; MEM:").concatL(Manager.getFreeMemory()));
+                    Debug.debug("Memory, img:" + img_cur + "; MEM:" + Manager.getFreeMemory());
                     if (DEBUG/* && false*/) {
                         img_square += ((Image) images.get(img_cur)).getWidth() * ((Image) images.get(img_cur)).getHeight();
                     }
 
                 } catch (Exception e) {
                     if (DEBUG) {
-                        Debug.debug(String.valueOfC("Loading image error. img:").concatI(img_cur).concatC("\tfile:").concatI(pack_cur).concatC("\tdata_len:").concatI(data_len));
+                        Debug.debug("Loading image error. img:" + img_cur + "\tfile:" + pack_cur + "\tdata_len:" + data_len);
                     }
-                    Debug.error(String.valueOfC(""), e);
+                    Debug.error("", e);
                 }
                 data.free();
                 System.gc();
@@ -139,10 +137,10 @@ public class Loader {
             if (DEBUG) {
                 ex.printStackTrace();
             }
-            Debug.error(String.valueOfC("File is not loaded, name:").concat(pack_name), ex);
+            Debug.error("File is not loaded, name:" + pack_name, ex);
         }
         if (DEBUG) {
-            Debug.debug(String.valueOfC("Loaded :").concatI(img_square).concatC(" pixels\tMemory x2:").concatI(img_square * 2));
+            Debug.debug("Loaded :" + img_square + " pixels\tMemory x2:" + img_square * 2);
         }
 
     }
@@ -151,20 +149,20 @@ public class Loader {
 
         try {
 
-            String name = String.valueOfC("/d0");
+            String name = "/d0";
             DataInputStream dis = new DataInputStream(manager.getMidlet().getResourceAsStream(name));
 
             dualArrayShort = new ArrayShortDual(PARAM_COUNT);
             for (int i = 0; i < Graph.PARAM_BYTE_COUNT + Graph.PARAM_SHORT_COUNT + Graph.PARAM_INT_COUNT; i++) {
                 int len = dis.readShort();
                 dualArrayShort.createY(i, len);
-                String str = String.valueOfC("Load ").concatI(i).concatC("\tlen:").concatI(len).concatC(" ");
+                String str = "Load " + i + "\tlen:" + len + " ";
                 if (i < Graph.PARAM_BYTE_COUNT) {//BYTE
                     ArrayByte arrayByte = new ArrayByte(len);
                     dis.read(arrayByte.getArray(), 0, len);
                     for (int a = 0; a < len; a++) {
                         dualArrayShort.set(i, a, arrayByte.get(a));
-                        if (DEBUG) str = str.concatI(dualArrayShort.get(i, a)).concatC(",");
+                        if (DEBUG) str += dualArrayShort.get(i, a) + ",";
                     }
                     arrayByte.free();
                 } else if (i < Graph.PARAM_BYTE_COUNT + Graph.PARAM_SHORT_COUNT) {//SHORT
@@ -172,7 +170,7 @@ public class Loader {
                     dis.read(arrayByte.getArray(), 0, len * 2);
                     for (int a = 0; a < len; a++) {
                         dualArrayShort.set(i, a, (short) ((arrayByte.get(a * 2) << 8) | (arrayByte.get(a * 2 + 1) & 0xff)));
-                        if (DEBUG) str = str.concatI(dualArrayShort.get(i, a)).concatC(",");
+                        if (DEBUG) str += dualArrayShort.get(i, a) + ",";
                     }
                     arrayByte.free();
                 } else {//INT
@@ -181,7 +179,7 @@ public class Loader {
                     for (int a = 0; a < len; a++) {
                         dualArrayShort.set(i, a, (short) ((arrayByte.get(a * 4) << 24) | ((arrayByte.get(a * 4 + 1) & 0xff) << 16)
                                 | ((arrayByte.get(a * 4 + 2) & 0xff) << 8) | (arrayByte.get(a * 4 + 3) & 0xff)));
-                        if (DEBUG) str = str.concatI(dualArrayShort.get(i, a)).concatC(",");
+                        if (DEBUG) str += dualArrayShort.get(i, a) + ",";
                     }
                     arrayByte.free();
                 }
@@ -196,7 +194,7 @@ public class Loader {
             //convertData();
 
         } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e);
+            Debug.error("", e);
         }
 
     }
@@ -205,7 +203,7 @@ public class Loader {
         //TODO НЕ УДАЛЯТЬ! пока не будет обёртки для ObjC
         try {
 
-            String name = String.valueOfC("/d0");
+            String name = "/d0";
             //name = Port.RETINA ? name.concatC("2") : name;Данные общие для всех экранов айфона
             DataInputStream dis = new DataInputStream(Manager.getInstance().getMidlet().getResourceAsStream(name));
 
@@ -214,7 +212,7 @@ public class Loader {
                 int len = dis.readShort();
                 /*ObjC comment*/
                 arr_i[i] = new short[len];
-                String str = String.valueOfC("Load ").concatI(i).concatC("\tlen:").concatI(len).concatC(" ");
+                String str = "Load " + i + "\tlen:" + len + " ";
                 if (i < Graph.PARAM_BYTE_COUNT) {//BYTE
                     /*ObjC comment*/
                     byte[] arr = new byte[len];
@@ -222,7 +220,7 @@ public class Loader {
                     dis.read(arr, 0, len);
                     for (int a = 0; a < len; a++) {
                         arr_i[i][a] = arr[a];
-                        if (DEBUG) str = str.concatI(arr_i[i][a]).concatC(",");
+                        if (DEBUG) str += arr_i[i][a] + ",";
                     }
                     /*ObjC uncomment*///free(arr);
                 } else if (i < Graph.PARAM_BYTE_COUNT + Graph.PARAM_SHORT_COUNT) {//SHORT
@@ -232,7 +230,7 @@ public class Loader {
                     dis.read(arr, 0, len * 2);
                     for (int a = 0; a < len; a++) {
                         arr_i[i][a] = (short) ((arr[a * 2] << 8) | (arr[a * 2 + 1] & 0xff));
-                        if (DEBUG) str = str.concatI(arr_i[i][a]).concatC(",");
+                        if (DEBUG) str += arr_i[i][a] + ",";
                     }
                     /*ObjC uncomment*///free(arr);
                 } else {//INT
@@ -242,7 +240,7 @@ public class Loader {
                     dis.read(arr, 0, len * 4);
                     for (int a = 0; a < len; a++) {
                         arr_i[i][a] = (short) ((arr[a * 4] << 24) | ((arr[a * 4 + 1] & 0xff) << 16) | ((arr[a * 4 + 2] & 0xff) << 8) | (arr[a * 4 + 3] & 0xff));
-                        if (DEBUG) str = str.concatI(arr_i[i][a]).concatC(",");
+                        if (DEBUG) str += arr_i[i][a] + ",";
                     }
                     /*ObjC uncomment*///free(arr);
                 }
@@ -256,7 +254,7 @@ public class Loader {
             //if (DEBUG) drawData();
 
         } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e);
+            Debug.error("", e);
         }
 
     }
@@ -271,21 +269,21 @@ public class Loader {
     }
 
     public void drawData() {
-        String str = String.valueOfC("");
+        String str = "";
         for (int i = 0; i < Graph.PARAM_BYTE_COUNT + Graph.PARAM_SHORT_COUNT; i++) {
             for (int x = 0; x < 20/* && x < arr_i[i].length*/; x++) {
                 if (dualArrayShort.length(i) <= x) continue;
                 try {
                     if (i < Graph.PARAM_BYTE_COUNT) {//BYTE
-                        str = str.concatI(dualArrayShort.get(i, x)).concatC(",");
+                        str += dualArrayShort.get(i, x) + ",";
                     } else {//SHORT
-                        str = str.concatI(dualArrayShort.get(i, x)).concatC(",");
+                        str += dualArrayShort.get(i, x) + ",";
                     }
                 } catch (Exception e) {
-                    Debug.error(String.valueOfC("Loader.drawData error."), e);
+                    Debug.error("Loader.drawData error.", e);
                 }
             }
-            str = str.concatC("\n");
+            str += "\n";
         }
         Debug.debug(str);
     }
@@ -296,7 +294,7 @@ public class Loader {
     private Vector getText(String path) {
         StringBuffer strBuff = new StringBuffer();
         text_list = new Vector();
-        text_list.addElement(String.valueOfC(""));//первая строка пустая для совпадения нумерации с текстовым файлом
+        text_list.addElement("");//первая строка пустая для совпадения нумерации с текстовым файлом
         try {
             DataInputStream dis = new DataInputStream(Manager.getInstance().getMidlet().getResourceAsStream(path));
             int ch;
@@ -304,7 +302,7 @@ public class Loader {
                 if (ch == 13) {//\t  выделяем конец строки
                     ch = dis.read();
                     if (ch != 10) throw new Exception("Text error, new line corrupt.");//\n
-                    text_list.addElement(String.valueOfC(strBuff.toString()));
+                    text_list.addElement(strBuff.toString());
                     strBuff = null;
                     strBuff = new StringBuffer();
                 } else {
@@ -313,7 +311,7 @@ public class Loader {
             }
             dis.close();
         } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e);
+            Debug.error("", e);
         }
         return text_list;
     }
@@ -331,21 +329,21 @@ public class Loader {
     }
 
     public void loadPacker(Graphics g, PManager packer) {
-        String name = String.valueOfC("/d0");
+        String name = "/d0";
         try {
             InputStream is = Manager.getInstance().getMidlet().getResourceAsStream(name);
             packer.loadData(is);
             is.close();
 
-            String pack_name = String.valueOfC("/i0");
-            if (Port.IS_DOUBLE_GRAPHIC) pack_name = pack_name.concatC("_x2");
-            else if (Port.IS_FOURTHIRDS_GRAPHIC) pack_name = pack_name.concatC("_x4_3");
+            String pack_name = "/i0";
+            if (Port.IS_DOUBLE_GRAPHIC) pack_name += "_x2";
+            else if (Port.IS_FOURTHIRDS_GRAPHIC) pack_name += "_x4_3";
             is = manager.getMidlet().getResourceAsStream(pack_name);
             packer.loadImages(g, is);
             is.close();
 
         } catch (IOException e) {
-            Debug.error(String.valueOfC(""), e);
+            Debug.error("", e);
         }
     }
 }

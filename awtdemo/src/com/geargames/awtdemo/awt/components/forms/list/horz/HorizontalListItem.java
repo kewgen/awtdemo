@@ -50,7 +50,7 @@ public class HorizontalListItem extends PPrototypeElement { // PTouchButton {
 
     @Override
     public void draw(Graphics graphics, int x, int y) {
-//        graphics.drawString(com.geargames.common.String.valueOfC(value), x, y, Anchors.CENTER_ANCHOR);
+//        graphics.drawString(value, x, y, Anchors.CENTER_ANCHOR);
         value.draw(graphics, x, y);
     }
 //

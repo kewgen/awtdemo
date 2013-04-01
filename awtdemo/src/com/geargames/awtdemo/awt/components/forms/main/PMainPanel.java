@@ -13,7 +13,6 @@ import com.geargames.awtdemo.application.Port;
 import com.geargames.awtdemo.application.Application;
 import com.geargames.awt.components.PContentPanel;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
-import com.geargames.common.String;
 
 /**
  * User: abarakov
@@ -66,39 +65,39 @@ public class PMainPanel extends DrawablePPanel {
 //----- Кнопки для открывания форм с демо компонентами -----------------------------------------------------------------
 
         PEntitledTouchButton buttonButtons = new PButton_Buttons();
-        buttonButtons.setText(String.valueOfC("BUTTONS"));
+        buttonButtons.setText("BUTTONS");
         addChild(buttonButtons, 20, 20);
 
         PEntitledTouchButton buttonText = new PButton_Text();
-        buttonText.setText(String.valueOfC("TEXTS"));
+        buttonText.setText("TEXTS");
         addChild(buttonText, 180, 20);
 
         PEntitledTouchButton buttonHorizontalList = new PButton_HorizontalList();
-        buttonHorizontalList.setText(String.valueOfC("HORZ LISTS"));
+        buttonHorizontalList.setText("HORZ LISTS");
         addChild(buttonHorizontalList, 20, 70);
 
         PEntitledTouchButton buttonVerticalList = new PButton_VerticalList();
-        buttonVerticalList.setText(String.valueOfC("VERT LISTS"));
+        buttonVerticalList.setText("VERT LISTS");
         addChild(buttonVerticalList, 180, 70);
 
         PEntitledTouchButton buttonMenuExam = new PButton_MenuExam();
-        buttonMenuExam.setText(String.valueOfC("MENU EXAMPLE"));
+        buttonMenuExam.setText("MENU EXAMPLE");
         addChild(buttonMenuExam, 20, 120);
 
         PEntitledTouchButton buttonProgressbars = new PButton_Progressbars();
-        buttonProgressbars.setText(String.valueOfC("PROGRESS BARS"));
+        buttonProgressbars.setText("PROGRESS BARS");
         addChild(buttonProgressbars, 180, 120);
 
         PEntitledTouchButton buttonSpinBoxes = new PButton_SpinBoxes();
-        buttonSpinBoxes.setText(String.valueOfC("SPIN BOXES"));
+        buttonSpinBoxes.setText("SPIN BOXES");
         addChild(buttonSpinBoxes, 20, 170);
 
         PEntitledTouchButton buttonSpinHints = new PButton_Hints();
-        buttonSpinHints.setText(String.valueOfC("HINTS"));
+        buttonSpinHints.setText("HINTS");
         addChild(buttonSpinHints, 180, 170);
 
         PEntitledTouchButton buttonExit = new PButton_Exit();
-        buttonExit.setText(String.valueOfC("EXIT"));
+        buttonExit.setText("EXIT");
         addChild(buttonExit, 20, 375);
     }
 

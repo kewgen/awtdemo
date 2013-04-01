@@ -10,7 +10,6 @@ import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
 import com.geargames.awtdemo.timers.TimerIdMap;
 import com.geargames.common.timers.TimerManager;
 import com.geargames.common.timers.TimerListener;
-import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 
@@ -37,7 +36,7 @@ public class PPanel_Progressbars extends DrawablePPanel implements TimerListener
                 case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
-                    caption.setText(String.valueOfC("PROGRESS BARS"));
+                    caption.setText("PROGRESS BARS");
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
@@ -82,7 +81,7 @@ public class PPanel_Progressbars extends DrawablePPanel implements TimerListener
 //----- Элементы формы -------------------------------------------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();
-        label1.setText(String.valueOfC("P SIMPLE INDICATOR"));
+        label1.setText("P SIMPLE INDICATOR");
         label1.setFont(PFontCollection.getFontLabel());
         addChild(label1, 20, 40);
 

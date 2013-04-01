@@ -1,6 +1,5 @@
 package com.geargames.awtdemo.application;
 
-import com.geargames.common.String;
 import com.geargames.common.logging.Debug;
 
 public final class MIDlet extends com.geargames.platform.MIDlet {
@@ -19,7 +18,7 @@ public final class MIDlet extends com.geargames.platform.MIDlet {
             }
             manager.startApp();
         } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e);
+            Debug.error("", e);
         }
     }
 

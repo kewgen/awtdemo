@@ -5,7 +5,6 @@ import com.geargames.awt.utils.motions.ElasticInertMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.common.PDummyRadioButton;
 import com.geargames.common.Event;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -34,7 +33,7 @@ public class PButton_Vertical_ElasticInertMotionListener extends PDummyRadioButt
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("ElasticInertMotionListener"), x, y);
+        TextHint.show("ElasticInertMotionListener", x, y);
     }
 
     @Override

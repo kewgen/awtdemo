@@ -9,7 +9,6 @@ import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.common.Event;
 import com.geargames.common.Graphics;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -50,7 +49,7 @@ public class PButton_ToggleFormat extends PEntitledTouchButton {
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("Toggle format"), x, y);
+        TextHint.show("Toggle format", x, y);
     }
 
     @Override

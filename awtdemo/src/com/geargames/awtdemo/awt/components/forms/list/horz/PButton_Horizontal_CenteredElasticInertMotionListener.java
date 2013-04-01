@@ -6,7 +6,6 @@ import com.geargames.awt.utils.motions.CenteredElasticInertMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.common.PDummyRadioButton;
 import com.geargames.common.Event;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -40,7 +39,7 @@ public class PButton_Horizontal_CenteredElasticInertMotionListener extends PDumm
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("CenteredElasticInertMotionListener"), x, y);
+        TextHint.show("CenteredElasticInertMotionListener", x, y);
     }
 
     @Override

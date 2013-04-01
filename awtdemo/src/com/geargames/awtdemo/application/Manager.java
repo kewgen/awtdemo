@@ -2,7 +2,6 @@ package com.geargames.awtdemo.application;
 
 import com.geargames.common.logging.Debug;
 import com.geargames.platform.MIDlet;
-import com.geargames.common.String;
 import com.geargames.platform.packer.Canvas;
 import com.geargames.platform.packer.Display;
 import com.geargames.common.Graphics;
@@ -73,7 +72,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
             }
             graphics.drawImage(app.getBuffer(), Port.SCREEN_DX, Port.SCREEN_DY);
         } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e);
+            Debug.error("", e);
         }
         app.setIsDrawing(false);
     }
@@ -140,18 +139,18 @@ public final class Manager extends com.geargames.platform.Manager implements Run
     public void stopMainThread() {// Останавливает поток Main game.Game loop
         running = false;
         thread = null;
-        Debug.debug(String.valueOfC("Manager.stopMainThread"));
+        Debug.debug("Manager.stopMainThread");
     }
 
     public void run_() {
-        Debug.debug(String.valueOfC("Manager.run_"));
+        Debug.debug("Manager.run_");
         running = true;
         runStart();
     }
 
     @Override
     public void run() {
-        Debug.debug(String.valueOfC("Manager.run - Main thread running"));
+        Debug.debug("Manager.run - Main thread running");
         running = true;
         try {
             runStart();
@@ -160,9 +159,8 @@ public final class Manager extends com.geargames.platform.Manager implements Run
             }
             runStop();
         } catch (Exception e) {
-            Debug.error(String.valueOfC(""), e);
+            Debug.error("Application.run", e);
             stopMainThread();
-            Debug.debug(String.valueOfC("Application.run").concatC(e.toString()));
         }
     }
 
@@ -180,16 +178,16 @@ public final class Manager extends com.geargames.platform.Manager implements Run
             isSuspended = false;
             Display.getDisplay(midlet).setCurrent(this);
         } catch (Exception e) {
-            Debug.error(String.valueOfC("onStart error [FILELINE]"), e);
+            Debug.error("onStart error [FILELINE]", e);
         }
     }
 
     protected final void runStop() {
         try {
-            Debug.debug(String.valueOfC("runStop"));
+            Debug.debug("runStop");
             app.onStop(true);
         } catch (Exception e) {
-            Debug.error(String.valueOfC("Error during stop [FILELINE]"), e);
+            Debug.error("Error during stop [FILELINE]", e);
         }
     }
 
@@ -256,7 +254,7 @@ public final class Manager extends com.geargames.platform.Manager implements Run
 
     @Override
     public void menuPressed() {
-        Debug.debug(String.valueOfC("Manager.menuPressed"));
+        Debug.debug("Manager.menuPressed");
     }
 
     // ------------------ SERVICES ------------------------

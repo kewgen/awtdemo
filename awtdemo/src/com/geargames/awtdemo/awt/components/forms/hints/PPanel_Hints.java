@@ -7,7 +7,6 @@ import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
-import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 
@@ -34,7 +33,7 @@ public class PPanel_Hints extends DrawablePPanel {
                 case 109:
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
-                    caption.setText(String.valueOfC("HINTS"));
+                    caption.setText("HINTS");
                     caption.setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(caption, index);
                     break;
@@ -76,19 +75,19 @@ public class PPanel_Hints extends DrawablePPanel {
         //----- Кнопки для отображения примеров всплывающих подсказок --------------------------------------------------
 
         PButton_ShowHint1 buttonHint1 = new PButton_ShowHint1();
-        buttonHint1.setText(String.valueOfC("HINT 1"));
+        buttonHint1.setText("HINT 1");
         addChild(buttonHint1, 20, 30);
 
         PButton_ShowHint2 buttonHint2 = new PButton_ShowHint2();
-        buttonHint2.setText(String.valueOfC("HINT 2"));
+        buttonHint2.setText("HINT 2");
         addChild(buttonHint2, 180, 30);
 
         PButton_ShowHint3 buttonHint3 = new PButton_ShowHint3();
-        buttonHint3.setText(String.valueOfC("HINT 3"));
+        buttonHint3.setText("HINT 3");
         addChild(buttonHint3, 20, 80);
 
         PButton_ShowHint4 buttonHint4 = new PButton_ShowHint4();
-        buttonHint4.setText(String.valueOfC("HINT 4"));
+        buttonHint4.setText("HINT 4");
         addChild(buttonHint4, 180, 80);
     }
 

@@ -7,7 +7,6 @@ import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.*;
-import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 
@@ -39,7 +38,7 @@ public class PPanel_Buttons extends DrawablePPanel {
                     break;
                 case 3:
                     element = new PDummyEntitledTouchButton();
-                    ((PDummyEntitledTouchButton)element).setText(String.valueOfC("TOUCH"));
+                    ((PDummyEntitledTouchButton)element).setText("TOUCH");
                     addActiveChild(element, index);
                     break;
                 case 5:
@@ -52,7 +51,7 @@ public class PPanel_Buttons extends DrawablePPanel {
                     break;
                 case 7:
                     element = new PDummyEntitledToggleButton();
-                    ((PDummyEntitledToggleButton)element).setText(String.valueOfC("TOGGLE"));
+                    ((PDummyEntitledToggleButton)element).setText("TOGGLE");
                     addActiveChild(element, index);
                     break;
                 case 9:
@@ -73,7 +72,7 @@ public class PPanel_Buttons extends DrawablePPanel {
                     break;
                 case 11:
                     element = new PDummyEntitledRadioButton();
-                    ((PDummyEntitledRadioButton)element).setText(String.valueOfC("RADIO"));
+                    ((PDummyEntitledRadioButton)element).setText("RADIO");
                     addActiveChild(element, index);
                     if (radioGroup == null) {
                         radioGroup = new PRadioGroup(4);
@@ -87,26 +86,26 @@ public class PPanel_Buttons extends DrawablePPanel {
                     break;
                 case 15:
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setText(String.valueOfC("TOUCH BUTTONS"));
+                    ((PSimpleLabel)element).setText("TOUCH BUTTONS");
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
                     addPassiveChild(element, index);
                     break;
                 case 16:
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setText(String.valueOfC("TOGGLE BUTTONS"));
+                    ((PSimpleLabel)element).setText("TOGGLE BUTTONS");
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
                     addPassiveChild(element, index);
                     break;
                 case 17:
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setText(String.valueOfC("RADIO BUTTONS"));
+                    ((PSimpleLabel)element).setText("RADIO BUTTONS");
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontLabel());
                     addPassiveChild(element, index);
                     break;
                 case 109:
                     // Заголовок окна
                     element = new PSimpleLabel(index);
-                    ((PSimpleLabel)element).setText(String.valueOfC("BUTTONS"));
+                    ((PSimpleLabel)element).setText("BUTTONS");
                     ((PSimpleLabel)element).setFont(PFontCollection.getFontFormTitle());
                     addPassiveChild(element, index);
                     break;

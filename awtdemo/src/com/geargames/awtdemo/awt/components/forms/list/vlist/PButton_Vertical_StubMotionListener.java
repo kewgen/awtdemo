@@ -6,7 +6,6 @@ import com.geargames.awt.utils.motions.StubMotionListener;
 import com.geargames.awtdemo.awt.components.PPanelManager;
 import com.geargames.awtdemo.awt.components.common.PDummyRadioButton;
 import com.geargames.common.Event;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 import com.geargames.platform.packer.Graphics;
 
@@ -35,7 +34,7 @@ public class PButton_Vertical_StubMotionListener extends PDummyRadioButton {
     }
 
     public void showHint(int x, int y) {
-        TextHint.show(String.valueOfC("StubMotionListener"), x, y);
+        TextHint.show("StubMotionListener", x, y);
     }
 
     @Override

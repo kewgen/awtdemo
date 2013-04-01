@@ -9,7 +9,6 @@ import com.geargames.awtdemo.awt.components.DrawablePPanel;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
 import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStrictlyClipped;
 import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStuck;
-import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 
@@ -37,7 +36,7 @@ public class PPanel_VerticalList extends DrawablePPanel {
 //                    // Заголовок окна
 //                    PSimpleLabel caption = new PSimpleLabel(index);
 //                    caption.setFont(PFontCollection.getFontFormTitle());
-//                    caption.setData(String.valueOfC("ВЕРТИКАЛЬНЫЙ СПИСОК"));
+//                    caption.setData("ВЕРТИКАЛЬНЫЙ СПИСОК");
 //                    addActiveChild(caption, index);
 //                    break;
                 // Игнорируем некоторые элементы формы пакера
@@ -96,7 +95,7 @@ public class PPanel_VerticalList extends DrawablePPanel {
 //----- Кнопки настройки Вертикального списка ------------------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();
-        label1.setText(String.valueOfC("LISTENER:"));
+        label1.setText("LISTENER:");
         label1.setFont(PFontCollection.getFontLabel());
         addChild(label1, 9, 30);
 
@@ -134,7 +133,7 @@ public class PPanel_VerticalList extends DrawablePPanel {
                 verticalList, Application.getInstance().getRender().getObject(62));
         addChild(buttonStrictlyClipped, 60, 112);
 
-//        PDummyEntitledTouchButton button1 = new PDummyEntitledTouchButton(String.valueOfC("TOUCH"));
+//        PDummyEntitledTouchButton button1 = new PDummyEntitledTouchButton("TOUCH");
     }
 
     @Override

@@ -5,7 +5,6 @@ import com.geargames.awtdemo.application.Application;
 import com.geargames.awtdemo.application.Graph;
 import com.geargames.awtdemo.application.PFontCollection;
 import com.geargames.awtdemo.awt.components.DrawablePPanel;
-import com.geargames.common.String;
 import com.geargames.common.packer.PObject;
 
 /**
@@ -18,7 +17,7 @@ public class PEntitledClosePanelButton extends PEntitledTouchButton {
 
     public PEntitledClosePanelButton(PObject prototype) {
         super(prototype);
-        setText(String.valueOfC("CLOSE"));
+        setText("CLOSE");
         setFont(PFontCollection.getFontButtonCaption());
     }
 

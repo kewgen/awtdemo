@@ -9,7 +9,6 @@ import com.geargames.awtdemo.application.Render;
 import com.geargames.awtdemo.awt.components.common.PEntitledClosePanelButton;
 import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStrictlyClipped;
 import com.geargames.awtdemo.awt.components.forms.list.PButton_ToggleStuck;
-import com.geargames.common.String;
 import com.geargames.common.packer.IndexObject;
 import com.geargames.common.packer.PObject;
 import com.geargames.awtdemo.application.Application;
@@ -41,7 +40,7 @@ public class PPanel_HorizontalList extends DrawablePPanel {
                     // Заголовок окна
                     PSimpleLabel caption = new PSimpleLabel(index);
                     caption.setFont(PFontCollection.getFontFormTitle());
-                    caption.setText(String.valueOfC("ГОРИЗОНТАЛЬНЫЙ СПИСОК"));
+                    caption.setText("HORIZONTAL LIST");
                     addPassiveChild(caption, index);
                     break;
             }
@@ -123,7 +122,7 @@ public class PPanel_HorizontalList extends DrawablePPanel {
 //----- Кнопки настройки Горизонтального списка ------------------------------------------------------------------------
 
         PSimpleLabel label1 = new PSimpleLabel();
-        label1.setText(String.valueOfC("LISTENER:"));
+        label1.setText("LISTENER:");
         label1.setFont(PFontCollection.getFontLabel());
         addChild(label1, 9, 100);
 
