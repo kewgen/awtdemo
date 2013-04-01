@@ -6,7 +6,12 @@ package com.geargames.platform;
 //import com.geargames.common.util.ArrayChar;
 //import com.geargames.common.util.Region;
 
+import android.graphics.Bitmap;
 import android.opengl.GLU;
+import android.opengl.GLUtils;
+import com.geargames.common.logging.Debug;
+import com.geargames.graphics.Image;
+import com.geargames.graphics.opengl.GLTexture;
 
 import javax.microedition.khronos.opengles.*;
 
@@ -56,9 +61,9 @@ public class AndroidGraphics {
     private FloatBuffer colorBuffer;   // буфер цвета вершин
     private FloatBuffer textureBuffer; // буфер текстурных координат
 
-    private static final int VERTEX_TYPE  = GL10.GL_SHORT;
-    private static final int COLOR_TYPE   = GL10.GL_FLOAT; //todo: GL_FLOAT -> GL_UNSIGNED_BYTE ?
-    private static final int TEXTURE_TYPE = GL10.GL_FLOAT;
+    private static final int VERTEX_TYPE    = GL10.GL_SHORT;
+    private static final int COLOR_TYPE     = GL10.GL_FLOAT; //todo: GL_FLOAT -> GL_UNSIGNED_BYTE ?
+    private static final int TEX_COORD_TYPE = GL10.GL_FLOAT;
 
     // Буфер глубины
     private boolean depthTestEnabled = false;
@@ -141,10 +146,10 @@ public class AndroidGraphics {
         gl10.glShadeModel(GL10.GL_SMOOTH);                           checkGLError("glShadeModel");
 
         // Сглаживание линий и полигонов
-        if (lineSmoothEnabled) {
+//        if (lineSmoothEnabled) {
             gl10.glHint(GL10.GL_LINE_SMOOTH_HINT, GL10.GL_NICEST);   checkGLError("glHint");
             gl10.glEnable(GL10.GL_LINE_SMOOTH);                      checkGLError("glEnable");
-        }
+//        }
 
 //        gl10.glEnable(GL10.GL_TEXTURE_2D);                           checkGLError("glEnable");
 //        gl10.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);       checkGLError("glEnableClientState");
@@ -222,55 +227,6 @@ public class AndroidGraphics {
         //todo: Нужно?
 //        gl10.glFinish();
 //        gl10.glFlush();
-    }
-
-    //******************************************************************************************************************
-    //**     Изображения                                                                                              **
-    //******************************************************************************************************************
-
-//    // Нарисовать изображение в соответствующих координатах и с заданным выравниванием
-//    void drawImage(Image image, int x, int y);
-//    void drawImage(Image image, float x, float y);
-//
-//    // Нарисовать часть изображения image ограниченную прямоугольником (srcX1, srcY1), (srcX2, srcY2) в пределах
-//    // целевого прямоугольника (destX1, destY1), (destX2, destY2)
-//    boolean drawImage(Image image,
-//                      int srcX1, int srcY1, int srcX2, int srcY2,
-//                      int destX1, int destY1, int destX2, int destY2);
-//    boolean drawImage(Image image,
-//                      float srcX1, float srcY1, float srcX2, float srcY2,
-//                      float destX1, float destY1, float destX2, float destY2);
-////    boolean drawImage(Image image, Rect source, Rect dest);
-//    boolean drawImage(Image image, Region source, Region dest);
-//
-//    // Нарисовать часть изображения
-//    // drawRegion
-//    void drawSubimage(Image image, int srcX, int srcY, int width, int height, int dstX, int dstY/*, PAffine affine*/);
-//    void drawSubimage(Image image, float srcX, float srcY, float width, float height, float dstX, float dstY);
-//
-//    // Нарисовать фрейм, часть изображения в заданных координатах
-//    public void drawFrame(PFrame frame, int x, int y);
-//    public void drawFrame(PFrame frame, float x, float y);
-
-    //todo: Добавить возможность рисования изображений или их частей с заполнением, т.е. с дублированием изображения
-
-////    void onCache(int len);//включить кеширование картинок
-//
-//    void addTexture(Image image);
-//
-//    Image createImage(byte[] array, int i, int data_len) throws IOException;
-//
-//    Image createImage();
-
-    public boolean glIsTexture(int texture) {
-        return gl11.glIsTexture(texture);
-    }
-
-    public int getMaxTextureSize() {
-        int[] params = new int[1];
-        gl10.glGetIntegerv(gl10.GL_MAX_TEXTURE_SIZE, params, 0);
-        checkGLError("glGetIntegerv");
-        return params[0];
     }
 
     //******************************************************************************************************************
@@ -577,9 +533,149 @@ public class AndroidGraphics {
         }
         colorBuffer.position(0);
         gl10.glEnableClientState(GL10.GL_COLOR_ARRAY);          checkGLError("glEnableClientState");  //todo: Делать это из другого места
-        gl10.glColorPointer(4, GL10.GL_FLOAT, 0, colorBuffer);  checkGLError("glColorPointer");
+        gl10.glColorPointer(4, COLOR_TYPE, 0, colorBuffer);     checkGLError("glColorPointer");
         gl10.glDrawArrays(GL11.GL_TRIANGLE_STRIP, 0, 4);        checkGLError("glDrawArrays");
         gl10.glDisableClientState(GL10.GL_COLOR_ARRAY);         checkGLError("glDisableClientState"); //todo: Делать это из другого места
+    }
+
+    //******************************************************************************************************************
+    //**     Изображения                                                                                              **
+    //******************************************************************************************************************
+
+    private void drawTexture(GLTexture texture) {
+        gl11.glBindTexture(GL10.GL_TEXTURE_2D, texture.getTexLink()); checkGLError("glBindTexture");
+
+        gl10.glEnable(GL10.GL_TEXTURE_2D);                            checkGLError("glEnable");
+        gl10.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);        checkGLError("glEnableClientState");
+
+        gl10.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);              checkGLError("glDrawArrays");
+
+        gl10.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY);       checkGLError("glDisableClientState");
+        gl10.glDisable(GL10.GL_TEXTURE_2D);                           checkGLError("glDisable");
+    }
+
+    // Массив текстурных координат для отрисовки текстуры целиком. Координаты перевернуты по вертикали.
+    private static final float[] TEX_СOORD_FULL_TEXTURE_2D = {
+            0.0f, 1.0f, // v0
+            0.0f, 0.0f, // v1
+            1.0f, 1.0f, // v2
+            1.0f, 0.0f  // v3
+    };
+
+    // Нарисовать изображение в соответствующих координатах
+    public void drawImage(Image image, short x, short y) {
+        if (image instanceof GLTexture) {
+//            Debug.error("");
+            return;
+        }
+
+        vertexBuffer.position(0);
+        vertexBuffer.put(x);                              // v0
+        vertexBuffer.put(y);
+        vertexBuffer.put(x);                              // v1
+        vertexBuffer.put((short)(y + image.getHeight()));
+        vertexBuffer.put((short)(x + image.getWidth()));  // v2
+        vertexBuffer.put(y);
+        vertexBuffer.put((short)(x + image.getWidth()));  // v3
+        vertexBuffer.put((short)(y + image.getHeight()));
+        vertexBuffer.position(0);
+
+        //todo: Преобразовать текстурные координаты через менеджер текстур
+        textureBuffer.position(0);
+        textureBuffer.put(TEX_СOORD_FULL_TEXTURE_2D);
+//        textureBuffer.put(0.0f);    // v0
+//        textureBuffer.put(1.0f);
+//        textureBuffer.put(0.0f);    // v1
+//        textureBuffer.put(0.0f);
+//        textureBuffer.put(1.0f);    // v2
+//        textureBuffer.put(1.0f);
+//        textureBuffer.put(1.0f);    // v3
+//        textureBuffer.put(0.0f);
+        textureBuffer.position(0);
+
+        gl10.glTexCoordPointer(2, TEX_COORD_TYPE, 0, textureBuffer);  checkGLError("glTexCoordPointer");
+        gl10.glVertexPointer  (2, VERTEX_TYPE,    0, vertexBuffer);   checkGLError("glVertexPointer");
+        drawTexture((GLTexture)image);
+    }
+
+//    void drawImage(Image image, float x, float y);
+//
+//    // Нарисовать часть изображения image ограниченную прямоугольником (srcX1, srcY1), (srcX2, srcY2) в пределах
+//    // целевого прямоугольника (destX1, destY1), (destX2, destY2)
+//    boolean drawImage(Image image,
+//                      int srcX1, int srcY1, int srcX2, int srcY2,
+//                      int destX1, int destY1, int destX2, int destY2);
+//    boolean drawImage(Image image,
+//                      float srcX1, float srcY1, float srcX2, float srcY2,
+//                      float destX1, float destY1, float destX2, float destY2);
+////    boolean drawImage(Image image, Rect source, Rect dest);
+//    boolean drawImage(Image image, Region source, Region dest);
+//
+//    // Нарисовать часть изображения
+//    // drawRegion
+//    void drawSubimage(Image image, int srcX, int srcY, int width, int height, int dstX, int dstY/*, PAffine affine*/);
+//    void drawSubimage(Image image, float srcX, float srcY, float width, float height, float dstX, float dstY);
+//
+//    // Нарисовать фрейм, часть изображения в заданных координатах
+//    public void drawFrame(PFrame frame, int x, int y);
+//    public void drawFrame(PFrame frame, float x, float y);
+
+    //todo: Добавить возможность рисования изображений или их частей с заполнением, т.е. с дублированием изображения
+
+////    void onCache(int len);//включить кеширование картинок
+//
+//    void addTexture(Image image);
+//
+//    Image createImage(byte[] array, int i, int data_len) throws IOException;
+//
+//    GLTexture loadImage(byte[] array, int width, int height, int format);
+
+    public GLTexture loadImage(Image image, int format) {
+        int[] textures = new int[1];
+        gl10.glGenTextures(1, textures, 0);  checkGLError("glGenTextures");
+
+        int textureId = textures[0];
+        if (textureId == 0) {
+            Debug.error("Texture not gen");
+        }
+
+        gl10.glBindTexture(GL10.GL_TEXTURE_2D, textureId);  checkGLError("glBindTexture");
+
+        // Create Nearest Filtered Texture
+        gl10.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER, GL10.GL_LINEAR); //LINEAR - при уменьшении - лучшее сглаживание
+        gl10.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MAG_FILTER, GL10.GL_LINEAR);
+
+        // Different possible texture parameters, e.g. GL10.GL_CLAMP_TO_EDGE
+        gl10.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_S, GL10.GL_REPEAT);
+        gl10.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_REPEAT);
+
+        checkGLError("glTexParameterf");
+
+//        gl10.glTexImage2D(GL10.GL_TEXTURE_2D, 0, GL10.GL_RGBA, image.getHeight(), image.getHeight(),
+//                0, texture.format, GL10.GL_UNSIGNED_BYTE, texture.pixels);
+
+//        Bitmap.Config.
+
+        // Use the Android GLUtils to specify a two-dimensional texture image
+        // from our image
+//        GLUtils.texImage2D(GL10.GL_TEXTURE_2D, 0, image.getBitmap(), 0);
+
+        checkGLError("glTexImage2D");
+
+        return null;
+    }
+    
+//    Image createImage();
+
+    public boolean glIsTexture(int texture) {
+        return gl11.glIsTexture(texture);
+    }
+
+    public int getMaxTextureSize() {
+        int[] params = new int[1];
+        gl10.glGetIntegerv(gl10.GL_MAX_TEXTURE_SIZE, params, 0);
+        checkGLError("glGetIntegerv");
+        return params[0];
     }
 
     //******************************************************************************************************************

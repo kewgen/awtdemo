@@ -1,37 +1,34 @@
 package com.geargames.graphics.opengl;
 
-import com.geargames.platform.Manager;
-import com.geargames.common.String;
-
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+//import com.geargames.platform.Manager;
+//import com.geargames.common.String;
+//
+//import javax.imageio.ImageIO;
+//import java.awt.image.BufferedImage;
+//import java.awt.image.ImageObserver;
+//import java.awt.image.ImageProducer;
 
 /**
  * Реализация класса Image для OpenGL.
  */
 // OGLImage, Texture
-public class Image extends com.geargames.graphics.Image {
+public class GLTexture extends com.geargames.graphics.Image {
 
-    @Override
-    public boolean isLoaded() {
-        return false;
-    }
-
-    @Override
-    protected void load() {
-
-    }
-
-    @Override
-    protected void release() {
-
-    }
-
+//    @Override
+//    public boolean isLoaded() {
+//        return false;
+//    }
+//
+//    @Override
+//    protected void load() {
+//
+//    }
+//
+//    @Override
+//    protected void release() {
+//
+//    }
+//
     @Override
     public int getWidth() {
 //        return image.getWidth(null);
@@ -44,9 +41,26 @@ public class Image extends com.geargames.graphics.Image {
         return 0;
     }
 
+    // getTexLink -> getTexName, getTextureID
+    public int getTexLink() {
+        return 0;
+    }
 
 
+//    public GLTexture loadImage(byte[] array, int i, int data_len) {
+//        int[] textures = new int[1];
+//        gl10.glGenTextures(1, textures, 0);                 checkGLError("glGenTextures");
+//
+//        int textureId = textures[0];
+//        if (textureId == 0) {
+//            Debug.error("Texture not gen.");
+//        }
+//
+//        gl10.glBindTexture(GL10.GL_TEXTURE_2D, textureId);  checkGLError("glBindTexture");
+//        gl10.glTexImage2D(GL11.GL_BG);                      checkGLError("glTexImage2D");
+//    }
 
+//
 //    public static Image createImage(int w, int h) throws IOException {
 //        if (w == 0 || h == 0) return null;
 //        return new Image(new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB));

@@ -1,13 +1,11 @@
 package com.geargames.platform;
 
-import android.opengl.GLES20;
-import android.opengl.GLU;
-import android.os.Debug;
+//import android.opengl.GLES20;
+//import android.opengl.GLU;
 
 import java.nio.*;
 import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
-import javax.microedition.khronos.opengles.GL11;
+import javax.microedition.khronos.opengles.*;
 
 public class GGRenderer implements android.opengl.GLSurfaceView.Renderer {
 
@@ -84,6 +82,7 @@ public class GGRenderer implements android.opengl.GLSurfaceView.Renderer {
 //            graphics.drawRect(n-0.2f * i, -0.2f * i, 0.4f * i, 0.4f * i);
 //        }
 
+        gl.glEnable(GL10.GL_BLEND);
         graphics.drawLine((short)10, (short) 10, (short)310, (short)210);
         graphics.drawLine((short)10, (short)210, (short)310, (short) 10);
 
