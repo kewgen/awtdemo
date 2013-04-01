@@ -2,111 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a43cc73-0a98-4aaa-8c77-4d901f5fabc8" name="Default" comment="workspace.xml">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/Interface-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/Interface.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/Man_body_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/arms_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/arms_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/arms_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/arms_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/arms_run.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/arms_run_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/body_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/body_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/body_run.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/font_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/head_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/interface_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/interface_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/interface_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/interface_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/interface_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/legs_8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/loc_fence.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/loc_ground.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/unit_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/unit_fire.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/weapon_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/weapon_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/images/weapon_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/packer_320_480_full/d0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/packer_320_480_full/i0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/sys.pack" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_port/packer_320_480_full/Graph.java" />
       <change type="DELETED" beforePath="D:\Projects\awtdemo\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\application\MELock.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/d0" afterPath="$PROJECT_DIR$/res/d0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/i0" afterPath="$PROJECT_DIR$/res/i0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../awt/awt/com/geargames/awt/TextHint.java" afterPath="$PROJECT_DIR$/../awt/awt/com/geargames/awt/TextHint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../awt/awt/com/geargames/awt/components/PContentPanel.java" afterPath="$PROJECT_DIR$/../awt/awt/com/geargames/awt/components/PContentPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../awt/awt/com/geargames/awt/utils/ItemSkin.java" afterPath="$PROJECT_DIR$/../awt/awt/com/geargames/awt/utils/ItemSkin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/androidTest.iml" afterPath="$PROJECT_DIR$/androidTest/androidTest.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/gen/com/example/BuildConfig.java" afterPath="$PROJECT_DIR$/androidTest/gen/com/example/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/AndroidGraphics.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/AndroidGraphics.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/GGRenderer.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/platform/GGRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Application.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Graph.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Graph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/MIDlet.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/MIDlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Manager.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Manager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Render.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/application/Render.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PButtonClosePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledRadioButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledToggleButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyEntitledTouchButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PEntitledClosePanelButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/buttons/PPanel_Buttons.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint1.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint2.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint3.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint4.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PButton_ShowHint4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PPanel_Hints.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/hints/PPanel_Hints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/PButton_ToggleStrictlyClipped.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/PButton_ToggleStrictlyClipped.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/PButton_ToggleStuck.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/PButton_ToggleStuck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/HorizontalListItem.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/HorizontalListItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_CenteredElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_CenteredElasticInertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_ElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_ElasticInertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_InertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_StubMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PButton_Horizontal_StubMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PPanel_HorizontalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/horz/PPanel_HorizontalList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_CenteredElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_CenteredElasticInertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_ElasticInertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_ElasticInertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_InertMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_InertMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_StubMotionListener.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PButton_Vertical_StubMotionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PPanel_VerticalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/PPanel_VerticalList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/VerticalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/list/vlist/VerticalList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Buttons.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Buttons.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Exit.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Exit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Hints.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Hints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_HorizontalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_HorizontalList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_MenuExam.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_MenuExam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Progressbars.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Progressbars.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_SpinBoxes.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_SpinBoxes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Text.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_Text.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_VerticalList.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PButton_VerticalList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/main/PMainPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/menu/PMenuExamPanel.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/menu/PMenuExamPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/progressbars/PPanel_Progressbars.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/spinboxes/PPanel_SpinBoxes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleColor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleEllipsis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleFormat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStrictlyClipped.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PButton_ToggleStuck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/forms/texts/PPanel_Text.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/packer/PUnitCreator.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/packer/PUnitCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/packer/PUnitStub.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/packer/PUnitStub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerIdMap.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/timers/TimerIdMap.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\buttons\PDummyRadioButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyRadioButton.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\buttons\PDummyToggleButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyToggleButton.java" />
-      <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\src\com\geargames\awtdemo\awt\components\forms\buttons\PDummyTouchButton.java" afterPath="$PROJECT_DIR$/awtdemo/src/com/geargames/awtdemo/awt/components/common/PDummyTouchButton.java" />
       <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\Graphics.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/Graphics.java" />
       <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\Image.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/Image.java" />
       <change type="MOVED" beforePath="D:\Projects\awtdemo\awtdemo\testsrc\com\geargames\graphics\ResourceState.java" afterPath="$PROJECT_DIR$/androidTest/src/com/geargames/graphics/ResourceState.java" />
@@ -1879,7 +1779,15 @@
       <created>1363785243559</created>
       <updated>1363785243560</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="1. Новые ресурсы пакера;&#10;2. Заголовок кнопок теперь устанавливается не в конструкторе, а с помощью setText();&#10;3. Многие надписи на русском перевел на английские;&#10;4. Ссылки на объекты пакера теперь через константы из Graph;&#10;5. Добавил аннотации @Override.">
+      <created>1364801341153</created>
+      <updated>1364801341153</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Подправил TextHint под использование скина PObject и автоматическое вычисление размеров">
+      <created>1364801414328</created>
+      <updated>1364801414328</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -1971,7 +1879,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подправил TextHint под использование скина PObject и автоматическое вычисление размеров" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1984,8 +1892,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.55825245" />
-    <MESSAGE value="Исправлен баг в таймерах. В компоненте PGradualSpinButton теперь используется динамический id таймера." />
-    <MESSAGE value="Каталог с модулями общего кода (awt, common, console и др.) теперь это awt, вместо geargames." />
     <MESSAGE value="Отключен debug для timer'ов." />
     <MESSAGE value="1. AWTObject переименован в Eventable;&#10;2. Метод event() класса Eventable переименован в onEvent() и добавлена его пустая реализация. В связи с этим, пустые реализации метода, в дочерних классах, были удалены;&#10;3. Добавлено два новых свойства в базовый класс PElement - visible и enabled. В соответствии с этим, некоторые классы были подправлены (PContentPanel, DrawablePPanel). Собственная реализация некоторыми классами свойства visible была удалена;&#10;4. Метод кнопки action() переименован в onClick() и добавлена его пустая реализация;&#10;5. В класс кнопок добавлен метод onCheckedChanged();&#10;6. В класс кнопок добавлен скин нового состояния - disabled;&#10;7. Изменение и редактирование комментариев в коде." />
     <MESSAGE value="1. Методы event(), action() и isState() переименованы в onEvent(), onClick() и getChecked() соответственно, пустые реализации методов удалены;&#10;2. Изменение и редактирование комментариев в коде." />
@@ -2009,6 +1915,8 @@
     <MESSAGE value="повторно переименован класс LangConsts" />
     <MESSAGE value="перенесен класс LangConsts, попытка избавиться от косяка с именем файла" />
     <MESSAGE value="workspace.xml" />
+    <MESSAGE value="1. Новые ресурсы пакера;&#10;2. Заголовок кнопок теперь устанавливается не в конструкторе, а с помощью setText();&#10;3. Многие надписи на русском перевел на английские;&#10;4. Ссылки на объекты пакера теперь через константы из Graph;&#10;5. Добавил аннотации @Override." />
+    <MESSAGE value="Подправил TextHint под использование скина PObject и автоматическое вычисление размеров" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
