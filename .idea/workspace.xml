@@ -1791,7 +1791,11 @@
       <created>1364801541206</created>
       <updated>1364801541206</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Очередная попытка добавить workspace.xml в игнор">
+      <created>1364801601834</created>
+      <updated>1364801601834</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
